@@ -87,7 +87,12 @@
       </nav>
       <div class="mid-moto">
         <div class="container">
-          <div class="moto-wrapper" data-aos="fade-left">
+          <div
+            class="moto-wrapper"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <div class="rectangle">
               <img src="../assets/Icons/Rectangle.svg" alt="" />
             </div>
@@ -2110,7 +2115,7 @@ export default {
       }
     }
   }
-  @include responsive($lg) {
+  @include responsive($xl) {
     .blog {
       margin-top: 15rem;
       .container {
@@ -2119,6 +2124,15 @@ export default {
           font-size: 1rem;
           margin-left: 25rem;
           margin-right: 25rem;
+        }
+        .blog-post {
+          p {
+            margin-top: 4rem;
+            font-size: 1.13rem;
+          }
+          .link {
+            margin-top: 10rem;
+          }
         }
       }
     }
@@ -2304,6 +2318,11 @@ export default {
                   text-align: center;
                   margin-top: 0.98rem;
                   margin-bottom: 0.98rem;
+                  div {
+                    p {
+                      font-size: 1rem;
+                    }
+                  }
                 }
               }
             }
