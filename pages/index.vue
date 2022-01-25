@@ -609,9 +609,7 @@ Message
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-easing="ease-in"
             data-aos-mirror="true"
-            data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
             <h2>Blog</h2>
@@ -637,9 +635,7 @@ Message
             data-aos="fade-down"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-easing="ease-in"
             data-aos-mirror="true"
-            data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
             <div class="title">
@@ -668,9 +664,7 @@ Message
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
-            data-aos-easing="ease-in"
             data-aos-mirror="true"
-            data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
             <h2>Blog</h2>
@@ -942,13 +936,7 @@ export default {
           .moto-wrapper {
             margin-top: 10rem;
 
-            .rectangle {
-              img {
-                width: 20rem;
-              }
-            }
             .moto {
-              margin-top: 15rem;
               p {
                 font-size: 3rem;
                 margin-top: 1.88rem;
@@ -2017,7 +2005,7 @@ export default {
         text-align: center;
         line-height: 1.13rem;
         font-size: 0.8rem;
-        color: $A-lightblue;
+        color: $A-grey;
       }
       .news {
         margin-top: 7rem;
