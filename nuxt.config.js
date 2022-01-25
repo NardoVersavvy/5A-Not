@@ -1,5 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
+  router: {
+    base: '/5A/'
+  },
   head: {
     title: '5A',
     htmlAttrs: {
