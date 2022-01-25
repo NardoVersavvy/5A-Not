@@ -1039,16 +1039,17 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
+            margin-top: 5rem;
             .rectangle {
               img {
-                width: 30rem;
+                width: 20rem;
               }
             }
 
             .moto {
               margin-top: 15rem;
               p {
-                font-size: 5rem;
+                font-size: 3rem;
                 margin-top: 1.88rem;
                 line-height: 3rem;
                 margin-left: -2rem;
