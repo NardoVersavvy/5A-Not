@@ -849,7 +849,7 @@ export default {
               margin-bottom: 1rem;
               .scroll-link {
                 @extend .text-medium;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 color: $A-darkerblue;
               }
               .sublinks {
@@ -894,8 +894,8 @@ export default {
           place-items: center;
           .rectangle {
             img {
-              margin-top: 10rem;
-              width: 18rem;
+              margin-top: 5rem;
+              width: 15rem;
             }
           }
           .moto {
@@ -921,13 +921,18 @@ export default {
           .moto-wrapper {
             display: flex;
             justify-content: center;
-            margin-top: 8rem;
-
+            margin-top: 5rem;
+            .rectangle {
+              img {
+                margin-top: 5rem;
+                width: 18rem;
+              }
+            }
             .moto {
-              margin-top: 15rem;
+              margin-top: 10rem;
               p {
                 font-size: 3rem;
-                margin-top: 1.88rem;
+                margin-top: 1rem;
                 margin-left: -2rem;
               }
             }
@@ -942,6 +947,13 @@ export default {
         .container {
           .moto-wrapper {
             margin-top: 10rem;
+
+            .moto {
+              margin-top: 10rem;
+              p {
+                margin-top: 0.5rem;
+              }
+            }
           }
         }
       }
@@ -976,7 +988,7 @@ export default {
               justify-content: space-between;
               margin-top: 3rem;
               padding-left: 2rem;
-              gap: 5rem;
+              gap: 3rem;
               p {
                 color: #fff;
                 font-size: 1rem;
@@ -1000,7 +1012,7 @@ export default {
                   color: #fff;
                 }
                 a {
-                  font-size: 1.3rem;
+                  font-size: 1rem;
                   color: #fff;
                   &:hover {
                     color: $A-darkerblue;
@@ -1038,18 +1050,18 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
-            margin-top: 2rem;
+            margin-top: 0rem;
             .rectangle {
               img {
-                width: 23rem;
+                width: 20rem;
               }
             }
 
             .moto {
-              margin-top: 10rem;
+              margin-top: 15rem;
               p {
                 font-size: 3.5rem;
-
+                margin-top: 1.5rem;
                 line-height: 2rem;
                 margin-left: -2rem;
               }
@@ -1126,13 +1138,13 @@ export default {
       .container {
         .desc {
           p {
-            font-size: 1.3rem;
+            font-size: 1rem;
           }
         }
         .link {
           margin-top: 2rem;
           p {
-            font-size: 1.3rem;
+            font-size: 1rem;
           }
         }
       }
@@ -1213,7 +1225,7 @@ export default {
         }
         p {
           font-weight: normal;
-          font-size: 1.13;
+          font-size: 1.13rem;
           line-height: 1.75rem;
           color: #fff;
           margin-bottom: 1.2rem;
@@ -1259,7 +1271,7 @@ export default {
           }
           p {
             margin-top: 3rem;
-            font-size: 1.3rem;
+            font-size: 1.13rem;
             margin-bottom: 4rem;
           }
         }
@@ -1419,21 +1431,24 @@ export default {
       .container {
         .decor1 {
           display: block;
-          margin-left: -10rem;
+          margin-left: -8rem;
           img {
             width: 15rem;
+
+            margin-top: -2.8rem;
           }
         }
         .decor {
-          margin-right: -10rem;
+          margin-right: -8rem;
           img {
             width: 15rem;
+            margin-bottom: -2.8rem;
           }
         }
         .counter-number {
           .numbers {
             width: 7rem;
-            font-size: 2rem;
+            font-size: 1.6rem;
             display: grid;
             place-items: center;
             img {
@@ -1445,7 +1460,7 @@ export default {
             }
             .title {
               margin-top: 1rem;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
             }
           }
         }
@@ -1785,7 +1800,7 @@ export default {
           .contact-form {
             background: $A-darkerblue;
             padding: 1rem;
-            height: 60vh;
+            // height: 60vh;
             margin-top: 0;
             h2 {
               margin-top: 0.94rem;
@@ -2183,7 +2198,8 @@ export default {
                 @extend .title;
                 margin-top: 4.37rem;
                 text-align: center;
-                font-size: 1rem;
+                font-size: 1.13rem;
+                font-weight: 500;
                 text-transform: uppercase;
               }
               .desti-list {
@@ -2197,7 +2213,13 @@ export default {
 
                   grid-template-columns: 1fr 1fr;
                   place-items: left;
-                  gap: 2rem;
+                  gap: 1.88rem;
+
+                  li {
+                    a {
+                      font-size: 0.8rem;
+                    }
+                  }
                 }
                 div {
                   // display: grid;
@@ -2223,7 +2245,7 @@ export default {
                     // align-items: center;
                     justify-content: center;
                     gap: 1.88rem;
-                    margin-top: 1.88rem;
+                    margin-top: 0.88rem;
                   }
                 }
               }
@@ -2339,11 +2361,6 @@ export default {
                   text-align: center;
                   margin-top: 0.98rem;
                   margin-bottom: 0.98rem;
-                  div {
-                    p {
-                      font-size: 1rem;
-                    }
-                  }
                 }
               }
             }
@@ -2356,10 +2373,10 @@ export default {
           justify-content: space-between;
           img {
             margin-bottom: 1rem;
-            width: 20rem;
+            // width: 20rem;
           }
           p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
           }
         }
       }
