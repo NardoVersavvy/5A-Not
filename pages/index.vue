@@ -110,9 +110,7 @@
         <div class="desc">
           <p>
             We promise that we will put you first always and handle your affairs
-            with integrity, diligence, and discretion. We promise that we will
-            put you first always and handle your affairs with integrity,
-            diligence, and discretion.
+            with integrity, diligence, and discretion.
           </p>
         </div>
         <div class="link">
