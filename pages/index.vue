@@ -189,10 +189,11 @@
                 ><span
                   class="numbers__window__digit numbers__window__digit--3"
                   data-fake="8395216407"
-                  >2</span
+                  >5</span
                 ></span
               >
             </div>
+            <!-- <p class="title">Traials</p> -->
           </div>
 
           <div class="numbers">
@@ -1290,7 +1291,9 @@ export default {
           padding-right: 1.1rem;
           // border: solid 2px;
           // border-radius: 1rem;
-
+          // .title {
+          //   margin-bottom: -3rem;
+          // }
           img {
             margin-bottom: 0.94rem;
           }
