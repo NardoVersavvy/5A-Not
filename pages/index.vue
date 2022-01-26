@@ -892,7 +892,6 @@ export default {
           .moto {
             margin-top: -3rem;
             p {
-              @extend .title;
               margin-top: 0.94rem;
               font-size: 2rem;
               color: $A-white;
@@ -934,14 +933,6 @@ export default {
         .container {
           .moto-wrapper {
             margin-top: 10rem;
-
-            .moto {
-              p {
-                font-size: 3rem;
-                margin-top: 1.88rem;
-                margin-left: -2rem;
-              }
-            }
           }
         }
       }
@@ -1038,18 +1029,18 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
-            margin-top: 5rem;
+            margin-top: 2rem;
             .rectangle {
               img {
-                width: 25rem;
+                width: 23rem;
               }
             }
 
             .moto {
-              margin-top: 15rem;
+              margin-top: 10rem;
               p {
                 font-size: 3.5rem;
-                margin-top: 1.88rem;
+
                 line-height: 2rem;
                 margin-left: -2rem;
               }
