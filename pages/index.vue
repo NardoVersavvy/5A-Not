@@ -90,8 +90,12 @@
           <div
             class="moto-wrapper"
             data-aos="fade-left"
+            data-aos-offset="20"
             data-aos-delay="50"
             data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
           >
             <div class="rectangle">
               <img src="../assets/Icons/Rectangle.svg" alt="" />
@@ -534,7 +538,7 @@
                   placeholder="Attachement"
                 />
               </div>
-              <textarea class="line" name="message" id="" cols="30" rows="5">
+              <textarea class="line" name="Message" id="" cols="30" rows="5">
 Message
             </textarea
               >
@@ -1050,7 +1054,7 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
-            margin-top: 0rem;
+            margin-top: 3rem;
             .rectangle {
               img {
                 width: 20rem;
