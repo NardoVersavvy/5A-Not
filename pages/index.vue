@@ -140,27 +140,33 @@
         </div>
       </div>
     </section>
-    <section class="the-best">
-      <div
-        class="container"
-        data-aos="fade-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h2>WHY WE ARE THE BEST CHOICE</h2>
-        <p>
-          We are committed to treating each of our clients with courtesy,
-          respect and compassion regardless of the size of their case. We are a
-          firm that will be here in the future, which we’ve guaranteed with a
-          succession plan to maintain our exemplary service to you for decades
-          to come.
-        </p>
+    <section class="best">
+      <div class="container">
+        <div
+          class="best-content"
+          data-aos="fade-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h1>WHY WE ARE THE BEST CHOICE</h1>
+          <p>
+            We are committed to treating each of our clients with courtesy,
+            respect and compassion regardless of the size of their case. We are
+            a firm that will be here in the future, which we’ve guaranteed with
+            a succession plan to maintain our exemplary service to you for
+            decades to come.
+          </p>
+          <div class="button">
+            <a href="" class="btn btn-rounded-lightblue">Contact Today!</a>
+          </div>
+        </div>
       </div>
     </section>
+
     <section class="counter">
       <div class="container">
         <div class="decor1">
@@ -193,7 +199,7 @@
                 ></span
               >
             </div>
-            <!-- <p class="title">Traials</p> -->
+            <p class="title">Trials</p>
           </div>
 
           <div class="numbers">
@@ -219,9 +225,10 @@
                 ></span
               >
             </div>
+            <p class="title">Won</p>
           </div>
           <div class="numbers">
-            <img src="../assets/Icons/lawyer.svg" alt="" />
+            <img class="icon-mid2" src="../assets/Icons/lawyer.svg" alt="" />
             <div class="number-collection">
               <span class="numbers__window"
                 ><span
@@ -237,9 +244,10 @@
                 ></span
               >
             </div>
+            <p class="title">Lawyers</p>
           </div>
           <div class="numbers">
-            <img src="../assets/Icons/awards.svg" alt="" />
+            <img class="icon-mid2" src="../assets/Icons/awards.svg" alt="" />
             <div class="number-collection">
               <span class="numbers__window"
                 ><span
@@ -255,6 +263,7 @@
                 ></span
               >
             </div>
+            <p class="title">Awards</p>
           </div>
         </div>
       </div>
@@ -1182,64 +1191,82 @@ export default {
       }
     }
   }
-  .the-best {
+
+  .best {
     margin-top: 8rem;
+    background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
     .container {
-      h2 {
-        @extend .title;
-        text-align: center;
-      }
-      p {
-        @extend .text;
-        margin-top: 2rem;
-        text-align: center;
-        color: $A-lightblue;
+      padding: 2.5rem 0 4rem;
+
+      .best-content {
+        // max-width: 32.69rem;
+
+        h1 {
+          @extend .h2;
+          color: #fff;
+          margin-bottom: 1.69rem;
+          text-align: center;
+        }
+        p {
+          font-weight: normal;
+          font-size: 1.13;
+          line-height: 1.75rem;
+          color: #fff;
+          margin-bottom: 1.2rem;
+          // max-width: 28.19rem;
+          text-align: center;
+        }
+        .button {
+          display: grid;
+          place-content: center;
+          a {
+            @extend .text;
+            color: #fff;
+          }
+        }
       }
     }
   }
   @include responsive($md) {
-    .the-best {
+    .best {
       .container {
-        h2 {
-          text-align: center;
-          font-size: 1.8rem;
-        }
-        p {
-          margin-top: 3rem;
-          text-align: center;
+        .best-content {
+          margin-left: 5rem;
+          margin-right: 5rem;
         }
       }
     }
   }
   @include responsive($lg) {
-    .the-best {
-      margin-top: 10rem;
-      .container {
-        width: 100%-30%;
-        h2 {
-          text-align: center;
-          font-size: 1.8rem;
-        }
-        p {
-          margin-top: 3rem;
-          text-align: center;
-        }
-      }
+    .best {
+      margin: 7rem 0;
+      background-attachment: none;
     }
   }
   @include responsive($xl) {
-    .the-best {
+    .best {
       margin-top: 15rem;
       .container {
-        h2 {
-          font-size: 2rem;
-        }
-        p {
-          font-size: 1.5rem;
+        .best-content {
+          margin-left: 15rem;
+          margin-right: 15rem;
+          h1 {
+            margin-top: 3rem;
+          }
+          p {
+            margin-top: 3rem;
+            font-size: 1.3rem;
+            margin-bottom: 4rem;
+          }
         }
       }
     }
   }
+
   .counter {
     margin-top: 8rem;
     background-color: #e1e9f2;
@@ -1258,7 +1285,7 @@ export default {
       }
       .decor1 {
         position: absolute;
-
+        display: none;
         top: 0;
         left: 0;
         img {
@@ -1278,18 +1305,22 @@ export default {
 
           padding-bottom: 0.5rem;
           padding-top: 0.5rem;
-          padding-left: 1.1rem;
-          padding-right: 1.1rem;
+
           // border: solid 2px;
           // border-radius: 1rem;
-          // .title {
-          //   margin-bottom: -3rem;
-          // }
+          .title {
+            color: $A-darkerblue;
+            font-size: 1rem;
+            font-weight: 600;
+          }
           img {
             margin-bottom: 0.94rem;
           }
           .icon-mid {
             margin-left: 0.5rem;
+          }
+          .icon-mid2 {
+            margin-left: 1rem;
           }
         }
 
@@ -1350,63 +1381,72 @@ export default {
       }
     }
   }
+
+  @include responsive($lg) {
+    .counter {
+      margin-top: 10rem;
+
+      .container {
+        .counter-number {
+          .numbers {
+            color: $A-lightblue;
+            display: grid;
+            place-items: center;
+            // border: solid 2px;
+            // border-radius: 1rem;
+            width: 6rem;
+
+            img {
+              margin-left: 0.5rem;
+              margin-bottom: 1rem;
+            }
+            .icon-mid {
+              margin-left: 0.5rem;
+            }
+            .icon-mid2 {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @include responsive($xl) {
     .counter {
       margin-top: 15rem;
 
       .container {
         .decor1 {
+          display: block;
           margin-left: -10rem;
           img {
             width: 15rem;
           }
         }
-
         .decor {
           margin-right: -10rem;
           img {
             width: 15rem;
           }
         }
-        .numbers {
-          color: $A-lightblue;
-          font-size: 1.8rem;
-
-          border: solid 3px;
-          border-radius: 1rem;
-          width: 8rem;
-          display: grid;
-          place-items: center;
-          img {
-            margin-left: 0rem;
-            margin-bottom: 1rem;
-          }
-          .icon-mid {
-            margin-left: 0rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .counter {
-      margin-top: 10rem;
-
-      .container {
-        .numbers {
-          color: $A-lightblue;
-          display: grid;
-          place-items: center;
-          border: solid 2px;
-          border-radius: 1rem;
-          width: 6rem;
-
-          img {
-            margin-left: 0.5rem;
-            margin-bottom: 1rem;
-          }
-          .icon-mid {
-            margin-left: 0.5rem;
+        .counter-number {
+          .numbers {
+            width: 7rem;
+            font-size: 2rem;
+            display: grid;
+            place-items: center;
+            img {
+              margin-left: 0rem;
+              margin-bottom: 1rem;
+            }
+            .icon-mid {
+              margin-left: 0rem;
+            }
+            .title {
+              margin-top: 1rem;
+              font-size: 1.5rem;
+            }
           }
         }
       }
@@ -1582,7 +1622,7 @@ export default {
       .container {
         .team-wrapper {
           img {
-            width: 40rem;
+            width: 30rem;
           }
         }
       }
