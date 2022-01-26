@@ -129,7 +129,6 @@
           data-aos-offset="20"
           data-aos-delay="50"
           data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
@@ -148,7 +147,6 @@
         data-aos-offset="20"
         data-aos-delay="50"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
@@ -841,7 +839,7 @@ export default {
               margin-bottom: 1rem;
               .scroll-link {
                 @extend .text-medium;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 color: $A-darkerblue;
               }
               .sublinks {
@@ -954,7 +952,7 @@ export default {
         .container {
           .logo {
             img {
-              width: 20rem;
+              width: 15rem;
             }
           }
           .menu-bar {
@@ -980,7 +978,7 @@ export default {
               gap: 5rem;
               p {
                 color: #fff;
-                font-size: 1.13rem;
+                font-size: 1rem;
               }
               ul {
                 display: flex;
@@ -1042,16 +1040,16 @@ export default {
             margin-top: 5rem;
             .rectangle {
               img {
-                width: 20rem;
+                width: 25rem;
               }
             }
 
             .moto {
               margin-top: 15rem;
               p {
-                font-size: 3rem;
+                font-size: 3.5rem;
                 margin-top: 1.88rem;
-                line-height: 3rem;
+                line-height: 2rem;
                 margin-left: -2rem;
               }
             }
@@ -1612,7 +1610,7 @@ export default {
             p {
               margin-top: 4rem;
               margin-bottom: 5rem;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
               font-weight: 2rem;
             }
           }
