@@ -52,7 +52,9 @@
               <li><a href="" class="scroll-link"> Home</a></li>
 
               <li class="drop-down">
-                <a href="" class="scroll-link drop-down-link">Practice Area</a>
+                <a href="practice" class="scroll-link drop-down-link"
+                  >Practice Area</a
+                >
 
                 <ul class="sublinks">
                   <div class="corp-link">
@@ -755,7 +757,7 @@ export default {};
         display: grid;
         place-content: center;
         .wrapper {
-          margin-top: 10rem;
+          margin-top: 15rem;
           p {
             margin-top: 0.94rem;
             font-size: 2rem;
@@ -769,11 +771,13 @@ export default {};
   }
   @include responsive($md) {
     header {
-      .mid-title {
-        .wrapper {
-          margin-top: 15rem;
-          p {
-            font-size: 2.3rem;
+      nav {
+        .mid-title {
+          .wrapper {
+            margin-top: 15rem;
+            p {
+              font-size: 2.3rem;
+            }
           }
         }
       }
@@ -781,9 +785,11 @@ export default {};
   }
   @include responsive($lg) {
     header {
-      .mid-title {
-        .wrapper {
-          margin-top: 20rem;
+      nav {
+        .mid-title {
+          .wrapper {
+            margin-top: 20rem;
+          }
         }
       }
     }
@@ -871,6 +877,14 @@ export default {};
                   }
                 }
               }
+            }
+          }
+        }
+        .mid-title {
+          .wrapper {
+            margin-top: 15rem;
+            p {
+              font-size: 3rem;
             }
           }
         }
