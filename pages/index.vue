@@ -618,10 +618,8 @@ Message
         <div class="wrapper">
           <div
             class="blog-post"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-mirror="true"
+            data-aos="slide-up"
+            data-aos-delay="100"
             data-aos-anchor-placement="top-center"
           >
             <h2>Blog</h2>
@@ -644,10 +642,8 @@ Message
           </div>
           <div
             class="news"
-            data-aos="fade-down"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-mirror="true"
+            data-aos="slide-up"
+            data-aos-delay="100"
             data-aos-anchor-placement="top-center"
           >
             <div class="title">
@@ -673,10 +669,8 @@ Message
           </div>
           <div
             class="blog-post"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-mirror="true"
+            data-aos="slide-up"
+            data-aos-delay="100"
             data-aos-anchor-placement="top-center"
           >
             <h2>Blog</h2>
@@ -794,8 +788,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .body-main {
-  background: $A-white;
-  overflow: hidden;
   header {
     background: url("../assets/Image/home.jpg") no-repeat;
 
@@ -1054,7 +1046,7 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
-            margin-top: 3rem;
+            margin-top: 5rem;
             .rectangle {
               img {
                 width: 20rem;

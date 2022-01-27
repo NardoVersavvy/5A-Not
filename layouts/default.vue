@@ -5,5 +5,9 @@
 <script>
 </script>
 
-<style>
+<style lang="scss" >
+body {
+  background: $A-white;
+  // overflow: hidden;
+}
 </style>

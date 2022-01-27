@@ -396,7 +396,7 @@ $xxl: 1920px;
 $columns: 12;
 $A-blue: #507fb5;
 $A-darkerblue: #2a2e53;
-$A-lightblue: #679ff5;
+$A-lightblue: #0178cb;
 $A-green: #68854d;
 $A-white: #f1f5f9;
 $A-grey: #797979;
@@ -632,8 +632,7 @@ body {
   border-color: $A-darkerblue;
 }
 .btn-rounded {
-  border-radius: 15px;
-  font-size: 15px;
+  border-radius: 20px;
 }
 
 .btn-rounded-outline-darkerblue {
@@ -645,6 +644,18 @@ body {
   border-color: $A-darkerblue;
   &:hover {
     background: $A-darkerblue;
+    color: #fff;
+  }
+}
+.btn-rounded-outline-lightblue {
+  @extend .btn-rounded;
+  background: transparent;
+  color: $A-lightblue;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border-color: $A-lightblue;
+  &:hover {
+    background: $A-lightblue;
     color: #fff;
   }
 }
@@ -675,6 +686,12 @@ body {
 .btn-rounded-lightblue {
   @extend .btn-rounded;
   background: $A-lightblue;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.btn-rounded-darkerblue {
+  @extend .btn-rounded;
+  background: $A-darkerblue;
   color: #fff;
   margin-bottom: 5px;
 }
