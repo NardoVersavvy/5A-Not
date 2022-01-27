@@ -52,7 +52,9 @@
               <li><a href="" class="scroll-link"> Home</a></li>
 
               <li class="drop-down">
-                <a href="" class="scroll-link drop-down-link">Practice Area</a>
+                <a href="practice" class="scroll-link drop-down-link"
+                  >Practice Area</a
+                >
 
                 <ul class="sublinks">
                   <div class="corp-link">
