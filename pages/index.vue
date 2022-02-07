@@ -1,12 +1,12 @@
 <template>
   <div class="body-main">
-    <header>
-      <nav>
-        <div class="container">
+    <header id="app" class="header">
+      <nav class="nav" id="nav">
+        <div class="container banner">
           <div class="logo">
             <img src="../assets/Icons/Logo.svg" alt="" />
           </div>
-          <div class="menu-bar">
+          <div class="menu-bar menu">
             <hr />
             <hr />
             <hr />
@@ -59,30 +59,45 @@
                 <ul class="sublinks">
                   <div class="corp-link">
                     <li>
-                      <a href=""> CORPORATE AND COMMERCIAL</a>
+                      <a href="coporate"> Coporate and Commercial</a>
                     </li>
-                    <li><a href="">BANKING & FINANCE</a></li>
-                    <li><a href=""> POWER AND ENERGY</a></li>
-                    <li><a href="">ICT & TELECOM</a></li>
+                    <li><a href="coporate">Banking & Finance</a></li>
+                    <li><a href="coporate"> Power and Energy</a></li>
+                    <li><a href="coporate">ICT & Telecom</a></li>
 
                     <li>
-                      <a href="">CHARITIES AND NONPROFIT ORGANIZATIONS</a>
+                      <a href="coporate">Charities & Nonprofit Organizations</a>
                     </li>
                     <li>
-                      <a href="">EMPLOYMENT AND IMMIGRATION</a>
+                      <a href="coporate">Employement and Immigration</a>
                     </li>
-                    <li><a href=""> TAXATION</a></li>
+                    <li><a href="coporate"> Taxation</a></li>
                   </div>
                 </ul>
               </li>
-              <li><a href="" class="scroll-link">Insights</a></li>
+
               <li>
-                <a href="" class="scroll-link">Teams</a>
+                <a href="team" class="scroll-link">Teams</a>
+              </li>
+              <li class="drop-down2">
+                <a href="publication" class="scroll-link drop-down-link2"
+                  >Insights</a
+                >
+                <ul class="sublinks2">
+                  <div class="corp-link2">
+                    <li>
+                      <a href=""> Journal</a>
+                    </li>
+                    <li><a href="">Publication</a></li>
+                    <li><a href=""> Blog</a></li>
+                    <li><a href="">News</a></li>
+                  </div>
+                </ul>
               </li>
               <li>
-                <a href="" class="scroll-link">About Us</a>
+                <a href="about" class="scroll-link">About Us</a>
               </li>
-              <li><a href="" class="scroll-link">Contact Us</a></li>
+              <li><a href="contact" class="scroll-link">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -121,10 +136,15 @@
         </div>
         <div class="link">
           <a href="#">
-            <img src="../assets/Icons/nav-arrow.svg" alt="" />
+            <img
+              src="../assets/Icons/nav-arrow.svg"
+              class="right-arrow"
+              alt=""
+            />
           </a>
           <p>Learn More About 5A</p>
         </div>
+        <div class="hover"></div>
       </div>
     </section>
     <section class="awards">
@@ -146,7 +166,56 @@
         </div>
       </div>
     </section>
-    <section class="best">
+    <section class="topdecor">
+      <div class="left">
+        <img class="left-decor" src="../assets/Icons/leftdecor.svg" alt="" />
+        <img class="edge-decor1" src="../assets/Icons/edge1.svg" alt="" />
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          WHY WE ARE THE BEST CHOICE
+        </h2>
+      </div>
+
+      <img class="pass-decor" src="../assets/Icons/meetdecor.svg" alt="" />
+      <div class="right">
+        <div class="best">
+          <div class="container">
+            <div
+              class="best-content"
+              data-aos="fade-up"
+              data-aos-offset="20"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              <h1></h1>
+              <p>
+                We are committed to treating each of our clients with courtesy,
+                respect and compassion regardless of the size of their case. We
+                are a firm that will be here in the future, which we’ve
+                guaranteed with a succession plan to maintain our exemplary
+                service to you for decades to come.
+              </p>
+              <div class="button">
+                <a href="" class="btn btn-rounded-lightblue">Contact Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <img class="decor" src="../assets/Image/best.JPG" alt="" /> -->
+        <img class="edge-decor" src="../assets/Icons/edge4.svg" alt="" />
+      </div>
+    </section>
+    <!-- <section class="best">
       <div class="container">
         <div
           class="best-content"
@@ -171,7 +240,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="counter">
       <div class="container">
@@ -431,8 +500,32 @@
     <section class="team">
       <div class="container">
         <div class="team-wrapper">
-          <img src="../assets/Image/Team.jpg" data-aos="slide-right" alt="" />
-          <div class="team-desc" data-aos="slide-left">
+          <div
+            class="team-img"
+            data-aos="slide-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img class="edgepic" src="../assets/Icons/edge1.svg" alt="" />
+            <img class="team-pic" src="../assets/Image/Team.jpg" alt="" />
+            <img class="edgepic2" src="../assets/Icons/edge4.svg" alt="" />
+          </div>
+          <div
+            class="team-desc"
+            data-aos="slide-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
             <h4>Meet the Team</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -506,13 +599,17 @@
           </div>
 
           <div class="contact-form">
-            <!-- <img src="../assets/Icons/decor2.svg" alt="" /> -->
             <h2>CONTACT US</h2>
             <p>
               This is the contact form; Please make sure to fill it in order for
               you to reach us
             </p>
             <form action="" class="myform">
+              <img
+                class="contact-decor"
+                src="../assets/Icons/decor2.svg"
+                alt=""
+              />
               <div class="input-box">
                 <input
                   type="text"
@@ -785,20 +882,119 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
+    const dropDown = document.querySelector(".drop-down-link");
+    const dropDownFull = document.querySelector(".nav-links");
+    const sublinks = document.querySelector(".sublinks");
+    console.log(sublinks);
+    dropDown.addEventListener("mouseover", (e) => {
+      const text = e.currentTarget.textContent;
+      const tempBtn = e.currentTarget.getBoundingClientRect();
+      const center = tempBtn.width / 2;
+      sublinks.classList.add("show-links");
+      // sublinks.style.left = `-${center + 5}px`
+      console.log(center);
+    });
+
+    dropDownFull.addEventListener("mouseleave", () => {
+      sublinks.classList.remove("show-links");
+    });
+    const dropDown2 = document.querySelector(".drop-down-link2");
+    const dropDownFull2 = document.querySelector(".nav-links");
+    const sublinks2 = document.querySelector(".sublinks2");
+    console.log(sublinks2);
+    dropDown2.addEventListener("mouseover", (e) => {
+      const text = e.currentTarget.textContent;
+      const tempBtn = e.currentTarget.getBoundingClientRect();
+      const center = tempBtn.width / 2;
+      sublinks2.classList.add("show-links2");
+      // sublinks.style.left = `-${center + 5}px`
+      console.log(center);
+    });
+
+    dropDownFull2.addEventListener("mouseleave", () => {
+      sublinks2.classList.remove("show-links2");
+    });
+
+    const menu = document.querySelector(".menu");
+    const sidebar = document.querySelector(".links-container");
+    const close = document.querySelector(".close-btn");
+    const banner = document.querySelector(".banner");
+    menu.addEventListener("click", () => {
+      sidebar.style.right = "0";
+    });
+    close.addEventListener("click", () => {
+      sidebar.style.right = "-70vw";
+    });
+    const scrollLink = document.querySelectorAll(".scroll-link");
+    window.addEventListener("load", () => {
+      scrollLink.forEach((link) => {
+        if (link.href === path) {
+          link.style.color = "#71deb5";
+          link.style.fontWeight = "bold";
+        }
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".nav");
+      const menu = document.querySelector(".menu");
+      const logo = document.querySelector(".logo a");
+      const navHeight = nav.getBoundingClientRect().height;
+      const scrollHeight = window.pageYOffset;
+
+      if (navHeight < scrollHeight) {
+        nav.classList.add("fixed");
+        logo.innerHTML = `<picture>
+    <source media="(min-width:650px)" srcset=" ">
+    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
+  </picture>`;
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.add("black");
+            if (link.href === path) {
+              link.classList.remove("black");
+              link.style.color = "#71deb5";
+            }
+          });
+        }
+      } else {
+        nav.classList.remove("fixed");
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.remove("black");
+          });
+        }
+      }
+    });
   },
+  created() {},
 };
 </script>
 <style lang="scss" scoped>
 .body-main {
+  .show-links,
+  .show-links2 {
+    display: flex !important;
+  }
+  .fixed {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background: $A-darkerblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+  }
   header {
     background: url("../assets/Image/home.jpg") no-repeat;
-
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
-
     width: 100%;
     height: 100vh;
+
     nav {
       .container {
         display: flex;
@@ -826,34 +1022,43 @@ export default {
           right: -70vw;
           height: 100vh;
           width: 70vw;
-          background: $A-white;
+          background: $A-darkerblue;
           z-index: 9999999999;
           transition: $trans;
+          .upper-nav {
+            display: none;
+          }
           .close-btn {
             padding: 1rem;
-            width: 3rem;
+            width: 5rem;
             position: absolute;
-            top: 2.5rem;
-            right: 2.5rem;
+            top: 0rem;
+            right: 0rem;
           }
           .nav-links {
             height: 50%;
-            padding-top: 20rem;
+            padding-top: 25rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding-left: 2rem;
+            .drop-down2 {
+              a {
+                color: #fff;
+              }
+            }
             li {
               margin-bottom: 1rem;
               .scroll-link {
                 @extend .text-medium;
                 font-size: 1rem;
-                color: $A-darkerblue;
+                color: #fff;
               }
-              .sublinks {
+              .sublinks,
+              .sublinks2 {
                 margin: 1rem 0;
 
-                color: #fff;
+                color: $A-white;
                 h3 {
                   font-family: "medium bt";
                   font-weight: 500;
@@ -872,7 +1077,7 @@ export default {
                     font-size: 0.88rem;
                     display: flex;
                     gap: 0.5rem;
-                    color: #fff;
+                    color: $A-white;
                     transition: color 0.2s linear;
                     img {
                       width: 0.5rem;
@@ -892,14 +1097,14 @@ export default {
           place-items: center;
           .rectangle {
             img {
-              margin-top: 5rem;
+              margin-top: 10rem;
               width: 15rem;
             }
           }
           .moto {
-            margin-top: -3rem;
+            margin-top: -2rem;
             p {
-              margin-top: 0.94rem;
+              margin-top: 0rem;
               font-size: 2rem;
               color: $A-white;
               font-weight: 700;
@@ -922,7 +1127,6 @@ export default {
             margin-top: 5rem;
             .rectangle {
               img {
-                margin-top: 5rem;
                 width: 18rem;
               }
             }
@@ -941,6 +1145,19 @@ export default {
   }
   @include responsive($lg) {
     header {
+      nav {
+        .container {
+          .links-container {
+            width: 30vh;
+            .close-btn {
+              width: 6rem;
+            }
+            .nav-links {
+              padding-top: 15rem;
+            }
+          }
+        }
+      }
       .mid-moto {
         .container {
           .moto-wrapper {
@@ -984,7 +1201,7 @@ export default {
             .upper-nav {
               display: flex;
               justify-content: space-between;
-              margin-top: 3rem;
+              margin-top: 1.5rem;
               padding-left: 2rem;
               gap: 3rem;
               p {
@@ -1002,7 +1219,7 @@ export default {
               padding-top: 0%;
               flex-direction: row;
               gap: 3rem;
-              margin-top: 2rem;
+              margin-top: 1rem;
               padding-left: 2rem;
               position: relative;
               li {
@@ -1011,9 +1228,10 @@ export default {
                 }
                 a {
                   font-size: 1rem;
-                  color: #fff;
+
                   &:hover {
-                    color: $A-darkerblue;
+                    color: $A-lightblue;
+                    font-size: 1.13rem;
                     font-weight: 600;
                   }
                 }
@@ -1023,9 +1241,9 @@ export default {
                   position: absolute;
                   width: auto;
                   display: flex;
-                  background: $A-white;
+                  background: $A-darkerblue;
                   padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 0.5rem;
+                  border-radius: 1rem;
                   display: none;
                   h3 {
                     font-size: 1.13rem;
@@ -1034,8 +1252,31 @@ export default {
                   li {
                     margin-bottom: 1rem;
                     a {
-                      color: #fff;
-                      font-size: 1.13rem;
+                      color: $A-white;
+                      font-size: 1rem;
+                    }
+                  }
+                }
+              }
+              .drop-down2 {
+                .sublinks2 {
+                  position: absolute;
+                  width: auto;
+                  display: flex;
+                  background: $A-darkerblue;
+                  padding: 1.2rem 1rem 1rem 0.5rem;
+                  border-radius: 1rem;
+                  display: none;
+                  h3 {
+                    font-size: 1.13rem;
+                    margin-bottom: 1.2rem;
+                  }
+                  li {
+                    margin-bottom: 1rem;
+
+                    a {
+                      color: $A-white;
+                      font-size: 0.9rem;
                     }
                   }
                 }
@@ -1132,8 +1373,9 @@ export default {
   }
   @include responsive($xl) {
     .description {
-      margin-left: 15rem;
+      margin-left: 10rem;
       .container {
+        position: relative;
         .desc {
           p {
             font-size: 1rem;
@@ -1144,6 +1386,26 @@ export default {
           p {
             font-size: 1rem;
           }
+        }
+        .hover {
+          margin-top: 10rem;
+          margin-left: 2rem;
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0.2rem;
+          content: "";
+          display: block;
+          width: 90%;
+          height: 60%;
+          background: $A-green;
+          z-index: -1;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover .hover {
+          transform: translateY(1rem) rotate(-1.54deg);
+        }
+        &:hover .right-arrow {
+          transform: translateX(0.2rem);
         }
       }
     }
@@ -1190,7 +1452,7 @@ export default {
   }
   @include responsive($xl) {
     .awards {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .circle-bg {
           gap: 8rem;
@@ -1201,81 +1463,291 @@ export default {
       }
     }
   }
-
-  .best {
+  .topdecor {
     margin-top: 8rem;
-    background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    .container {
-      padding: 2.5rem 0 4rem;
+    position: relative;
 
-      .best-content {
-        // max-width: 32.69rem;
+    .left {
+      background: $A-darkerblue;
+      width: 100%;
+      height: 30vh;
+      display: grid;
+      place-items: center;
 
-        h1 {
-          @extend .h2;
-          color: #fff;
-          margin-bottom: 1.69rem;
-          text-align: center;
-        }
-        p {
-          font-weight: normal;
-          font-size: 1.13rem;
-          line-height: 1.75rem;
-          color: #fff;
-          margin-bottom: 1.2rem;
-          // max-width: 28.19rem;
-          text-align: center;
-        }
-        .button {
-          display: grid;
-          place-content: center;
-          a {
-            @extend .text;
-            color: #fff;
+      .left-decor {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+      }
+      .edge-decor1 {
+        top: -0.5rem;
+        left: -0.5rem;
+        position: absolute;
+        z-index: 999;
+      }
+      h2 {
+        @extend .h2;
+
+        color: $A-white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        z-index: 9999;
+      }
+    }
+    .pass-decor {
+      margin-top: -5rem;
+      position: absolute;
+      z-index: 999;
+      opacity: 0.4;
+    }
+    .right {
+      position: relative;
+      .best {
+        background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-attachment: fixed;
+        display: grid;
+        place-items: center;
+        .container {
+          padding: 2.5rem 0 4rem;
+          z-index: 9999;
+          .best-content {
+            // max-width: 32.69rem;
+
+            h1 {
+              @extend .h2;
+              color: #fff;
+              margin-bottom: 1.69rem;
+              text-align: center;
+            }
+            p {
+              font-weight: normal;
+              font-size: 1.13rem;
+              line-height: 1.75rem;
+              color: #fff;
+              margin-bottom: 1.2rem;
+              // max-width: 28.19rem;
+              text-align: center;
+            }
+            .button {
+              display: grid;
+              place-content: center;
+              a {
+                @extend .text;
+                color: #fff;
+              }
+            }
           }
         }
+      }
+      .decor {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+      }
+      .edge-decor {
+        bottom: -0.1rem;
+        right: -0.1rem;
+        position: absolute;
+        z-index: 999;
       }
     }
   }
   @include responsive($md) {
-    .best {
-      .container {
-        .best-content {
-          margin-left: 5rem;
-          margin-right: 5rem;
+    .topdecor {
+      display: flex;
+      width: 100%;
+      .left {
+        height: 40vh;
+        .left-decor {
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+      }
+      .pass-decor {
+        margin-top: 0rem;
+        left: -4rem;
+        bottom: 0;
+        width: 40rem;
+      }
+      .right {
+        .best {
+          height: 40vh;
+        }
+        .decor {
+          height: 40vh;
         }
       }
     }
   }
   @include responsive($lg) {
-    .best {
-      margin: 7rem 0;
-      background-attachment: none;
-    }
-  }
-  @include responsive($xl) {
-    .best {
-      margin-top: 15rem;
-      .container {
-        .best-content {
-          margin-left: 15rem;
-          margin-right: 15rem;
-          h1 {
-            margin-top: 3rem;
-          }
-          p {
-            margin-top: 3rem;
-            font-size: 1.13rem;
-            margin-bottom: 4rem;
-          }
+    .topdecor {
+      display: flex;
+      .edge-decor1 {
+        width: 8rem;
+      }
+      .left {
+        width: 80%;
+        height: 30vh;
+      }
+      .pass-decor {
+        margin-top: 0rem;
+        left: 3.3rem;
+        bottom: 0;
+        width: 50rem;
+      }
+      .right {
+        .decor {
+          height: 30vh;
+        }
+        .edge-decor {
+          width: 8rem;
         }
       }
     }
   }
+  @include responsive($xl) {
+    .topdecor {
+      .left {
+        width: 60%;
+        height: 40vh;
+
+        h2 {
+          margin-left: 3rem;
+          margin-right: 3rem;
+          font-size: 2rem;
+        }
+        .edge-decor1 {
+          width: 10rem;
+        }
+      }
+      .pass-decor {
+        margin-left: 15rem;
+      }
+      .right {
+        .decor {
+          height: 40vh;
+        }
+        .edge-decor {
+          width: 10rem;
+        }
+      }
+    }
+  }
+  @include responsive($xxl) {
+    .topdecor {
+      .left {
+        width: 75%;
+        height: 50vh;
+        h2 {
+          margin-left: 10rem;
+          margin-right: 10rem;
+          margin-top: 0rem;
+          font-size: 2rem;
+        }
+      }
+      .pass-decor {
+        margin-left: 40rem;
+      }
+      .right {
+        .best {
+          height: 50vh;
+          .container {
+            .best-content {
+              p {
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-top: 3rem;
+              }
+            }
+          }
+        }
+        .decor {
+          height: 50vh;
+        }
+      }
+    }
+  }
+  // .best {
+  //   margin-top: 8rem;
+  //   background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
+  //   background-position: center center;
+  //   background-size: cover;
+  //   background-blend-mode: overlay;
+  //   background-attachment: fixed;
+  //   .container {
+  //     padding: 2.5rem 0 4rem;
+
+  //     .best-content {
+  //       // max-width: 32.69rem;
+
+  //       h1 {
+  //         @extend .h2;
+  //         color: #fff;
+  //         margin-bottom: 1.69rem;
+  //         text-align: center;
+  //       }
+  //       p {
+  //         font-weight: normal;
+  //         font-size: 1.13rem;
+  //         line-height: 1.75rem;
+  //         color: #fff;
+  //         margin-bottom: 1.2rem;
+  //         // max-width: 28.19rem;
+  //         text-align: center;
+  //       }
+  //       .button {
+  //         display: grid;
+  //         place-content: center;
+  //         a {
+  //           @extend .text;
+  //           color: #fff;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // @include responsive($md) {
+  //   .best {
+  //     .container {
+  //       .best-content {
+  //         margin-left: 5rem;
+  //         margin-right: 5rem;
+  //       }
+  //     }
+  //   }
+  // }
+  // @include responsive($lg) {
+  //   .best {
+  //     margin: 7rem 0;
+  //     background-attachment: none;
+  //   }
+  // }
+  // @include responsive($xl) {
+  //   .best {
+  //     margin-top: 10rem;
+  //     .container {
+  //       .best-content {
+  //         margin-left: 15rem;
+  //         margin-right: 15rem;
+  //         h1 {
+  //           margin-top: 3rem;
+  //         }
+  //         p {
+  //           margin-top: 3rem;
+  //           font-size: 1.13rem;
+  //           margin-bottom: 4rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   .counter {
     margin-top: 8rem;
@@ -1319,7 +1791,7 @@ export default {
           // border: solid 2px;
           // border-radius: 1rem;
           .title {
-            color: $A-darkerblue;
+            color: $A-lightblue;
             font-size: 1rem;
             font-weight: 600;
           }
@@ -1424,7 +1896,7 @@ export default {
 
   @include responsive($xl) {
     .counter {
-      margin-top: 15rem;
+      margin-top: 10rem;
 
       .container {
         .decor1 {
@@ -1555,7 +2027,7 @@ export default {
   }
   @include responsive($xl) {
     .practice {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .practice-card {
         overflow: hidden;
         position: relative;
@@ -1578,6 +2050,24 @@ export default {
     margin-top: 8rem;
     .container {
       .team-wrapper {
+        .team-img {
+          .edgepic {
+            position: absolute;
+            z-index: 999;
+            width: 5rem;
+          }
+          .team-pic {
+            position: relative;
+            object-fit: cover;
+          }
+          .edgepic2 {
+            position: absolute;
+            z-index: 999;
+            width: 3rem;
+            bottom: -0.1rem;
+            right: -0.1rem;
+          }
+        }
         .team-desc {
           margin-top: 2rem;
           h4 {
@@ -1591,7 +2081,8 @@ export default {
             margin-top: 0.94rem;
             text-align: left;
             color: $A-grey;
-            line-height: 1.3rem;
+
+            line-height: 1.5rem;
           }
           .button {
             margin-top: 1.88rem;
@@ -1607,15 +2098,29 @@ export default {
     .team {
       .container {
         .team-wrapper {
-          display: flex;
+          // display: flex;
+          margin-left: 5rem;
+          margin-right: 5rem;
           gap: 1rem;
-
-          img {
-            width: 20rem;
-            object-fit: cover;
+          .team-img {
+            .edgepic {
+              position: absolute;
+              z-index: 999;
+              width: 5rem;
+            }
+            .team-pic {
+              width: 50rem;
+            }
+            .edgepic2 {
+              position: absolute;
+              z-index: 999;
+              width: 5rem;
+              bottom: 0;
+              right: -0.1rem;
+            }
           }
           .team-desc {
-            margin-top: 0rem;
+            margin-top: 4rem;
             h4 {
               margin-top: 0rem;
             }
@@ -1623,7 +2128,7 @@ export default {
               margin-top: 1.88rem;
             }
             .button {
-              margin-top: 1.88rem;
+              margin-top: 1rem;
             }
           }
         }
@@ -1634,8 +2139,23 @@ export default {
     .team {
       .container {
         .team-wrapper {
-          img {
-            width: 30rem;
+          display: flex;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          .team-img {
+            .team-pic {
+              width: 300rem;
+              height: 30vh;
+            }
+          }
+          .team-desc {
+            margin-top: 0rem;
+            p {
+              margin-top: 2rem;
+              margin-bottom: 3rem;
+              font-size: 1rem;
+              font-weight: 2rem;
+            }
           }
         }
       }
@@ -1643,11 +2163,14 @@ export default {
   }
   @include responsive($xl) {
     .team {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .team-wrapper {
-          img {
-            width: 40rem;
+          .team-img {
+            .team-pic {
+              width: 40rem;
+              height: auto;
+            }
           }
           .team-desc {
             width: 45%;
@@ -1657,7 +2180,7 @@ export default {
             p {
               margin-top: 4rem;
               margin-bottom: 5rem;
-              font-size: 1.3rem;
+
               font-weight: 2rem;
             }
           }
@@ -1673,11 +2196,21 @@ export default {
         .contact-form {
           background: $A-darkerblue;
           padding: 1rem;
+          padding-right: 3rem;
           margin-top: 5rem;
+          position: relative;
+          .contact-decor {
+            position: absolute;
+            right: 0.5rem;
+            top: 0;
+            width: 2rem;
+            height: 70vh;
+          }
           h2 {
             @extend .title;
             margin-top: 0.94rem;
             text-align: center;
+            line-height: 1.3rem;
             color: #fff;
           }
           p {
@@ -1747,6 +2280,7 @@ export default {
             margin-top: 0.94rem;
             text-align: left;
             color: #fff;
+            line-height: 2rem;
           }
           .desc-p {
             @extend .text;
@@ -1798,8 +2332,12 @@ export default {
           .contact-form {
             background: $A-darkerblue;
             padding: 1rem;
+            padding-right: 4rem;
             // height: 60vh;
-            margin-top: 0;
+
+            .contact-decor {
+              width: 2.3rem;
+            }
             h2 {
               margin-top: 0.94rem;
               text-align: center;
@@ -1869,12 +2407,15 @@ export default {
         .contact-box {
           display: flex;
           .contact-form {
-            background: $A-darkerblue;
             padding: 1rem;
             // height: 60vh;
-            margin-top: 0;
+            margin-top: 0rem;
+            padding-right: 5rem;
+            .contact-decor {
+              margin-top: 1rem;
+            }
             h2 {
-              margin-top: 0.94rem;
+              margin-top: 2.5rem;
               text-align: center;
               color: #fff;
             }
@@ -1939,7 +2480,7 @@ export default {
   }
   @include responsive($xl) {
     .contact {
-      margin-top: 15rem;
+      margin-top: 10rem;
     }
   }
   .testimonial {
@@ -1952,10 +2493,12 @@ export default {
       }
       .wrapper {
         .testmonial-card {
-          margin-top: 4rem;
+          margin-top: 3rem;
           background: $A-darkerblue;
           padding: 2rem;
           border-radius: 40px;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
           p {
             margin-top: 0.94rem;
             text-align: left;
@@ -1977,10 +2520,12 @@ export default {
           }
         }
         .testmonial-card1 {
-          margin-top: 4rem;
-          background: #a7bfda;
+          margin-top: 3rem;
+          background: #fff;
           padding: 2rem;
           border-radius: 40px;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
           p {
             margin-top: 0.94rem;
             text-align: left;
@@ -2022,7 +2567,7 @@ export default {
   }
   @include responsive($xl) {
     .testimonial {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .wrapper {
           display: flex;
@@ -2056,7 +2601,7 @@ export default {
       .news {
         margin-top: 7rem;
         .title {
-          background: $A-blue;
+          background: $A-lightblue;
           padding: 1rem;
           margin-top: 4rem;
           h2 {
@@ -2096,7 +2641,7 @@ export default {
       }
       .blog-post {
         margin-top: 4rem;
-        background: $A-blue;
+        background: $A-lightblue;
         padding: 2rem;
         h2 {
           @extend .title;
@@ -2151,7 +2696,7 @@ export default {
   }
   @include responsive($xl) {
     .blog {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .sub-title {
           margin-top: 1.5rem;
@@ -2382,7 +2927,7 @@ export default {
   }
   @include responsive($xl) {
     .footer {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .footer-wrapper {
           display: flex;

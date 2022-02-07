@@ -1,12 +1,12 @@
 <template>
   <div class="body-main">
-    <header>
-      <nav>
-        <div class="container">
+    <header id="app" class="header">
+      <nav class="nav" id="nav">
+        <div class="container banner">
           <div class="logo">
             <img src="../assets/Icons/Logo.svg" alt="" />
           </div>
-          <div class="menu-bar">
+          <div class="menu-bar menu">
             <hr />
             <hr />
             <hr />
@@ -59,39 +59,63 @@
                 <ul class="sublinks">
                   <div class="corp-link">
                     <li>
-                      <a href=""> CORPORATE AND COMMERCIAL</a>
+                      <a href="coporate"> Coporate and Commercial</a>
                     </li>
-                    <li><a href="">BANKING & FINANCE</a></li>
-                    <li><a href=""> POWER AND ENERGY</a></li>
-                    <li><a href="">ICT & TELECOM</a></li>
+                    <li><a href="coporate">Banking & Finance</a></li>
+                    <li><a href="coporate"> Power and Energy</a></li>
+                    <li><a href="coporate">ICT & Telecom</a></li>
 
                     <li>
-                      <a href="">CHARITIES AND NONPROFIT ORGANIZATIONS</a>
+                      <a href="coporate">Charities & Nonprofit Organizations</a>
                     </li>
                     <li>
-                      <a href="">EMPLOYMENT AND IMMIGRATION</a>
+                      <a href="coporate">Employement and Immigration</a>
                     </li>
-                    <li><a href=""> TAXATION</a></li>
+                    <li><a href="coporate"> Taxation</a></li>
                   </div>
                 </ul>
               </li>
-              <li><a href="" class="scroll-link">Insights</a></li>
+
               <li>
-                <a href="" class="scroll-link">Teams</a>
+                <a href="team" class="scroll-link">Teams</a>
+              </li>
+              <li class="drop-down2">
+                <a href="publication" class="scroll-link drop-down-link2"
+                  >Insights</a
+                >
+                <ul class="sublinks2">
+                  <div class="corp-link2">
+                    <li>
+                      <a href=""> Journal</a>
+                    </li>
+                    <li><a href="">Publication</a></li>
+                    <li><a href=""> Blog</a></li>
+                    <li><a href="">News</a></li>
+                  </div>
+                </ul>
               </li>
               <li>
-                <a href="" class="scroll-link">About Us</a>
+                <a href="about" class="scroll-link">About Us</a>
               </li>
-              <li><a href="" class="scroll-link">Contact Us</a></li>
+              <li><a href="contact" class="scroll-link">Contact Us</a></li>
             </ul>
           </div>
         </div>
-        <div class="mid-title">
-          <div class="wrapper">
-            <p>Practice area</p>
-          </div>
-        </div>
       </nav>
+      <div class="mid-title">
+        <div
+          class="wrapper"
+          data-aos="slide-left"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <p>PRACTICE AREA</p>
+        </div>
+      </div>
     </header>
     <section class="description">
       <div class="container">
@@ -103,16 +127,30 @@
         </div>
         <div class="link">
           <a href="#">
-            <img src="../assets/Icons/nav-arrow.svg" alt="" />
+            <img
+              src="../assets/Icons/nav-arrow.svg"
+              class="right-arrow"
+              alt=""
+            />
           </a>
           <p>Learn More About 5A</p>
         </div>
+        <div class="hover"></div>
       </div>
     </section>
     <section class="area-sample">
+      <img class="dot-decor" src="../assets/Icons/dotdecor.svg" alt="" />
       <div class="container">
         <div class="wrapper">
-          <div class="area-all">
+          <div
+            class="area-all"
+            data-aos="slide-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="sample-title">
               <img src="../assets/Icons/coporate.svg" alt="" />
               <p>CORPORATE AND COMMERCIAL</p>
@@ -136,11 +174,25 @@
               </div>
             </div>
           </div>
-          <img
-            class="practice-img"
-            src="../assets/Image/practice2.jpg"
-            alt=""
-          />
+          <div
+            data-aos="slide-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              class="practice-img"
+              src="../assets/Image/practice2.jpg"
+              alt=""
+            />
+            <img
+              class="line-decor"
+              src="../assets/Icons/linedecor.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -148,7 +200,7 @@
     <section class="practice-area">
       <div class="container">
         <div class="wrapper">
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -201,7 +253,7 @@
               acquisitions, and joint ventures
             </p>
           </div>
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -253,7 +305,7 @@
               adipiscing elit, sed do eiusmod tempor incididun
             </p>
           </div>
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -305,7 +357,7 @@
               often drive business strategy, structure, and deal consummation.
             </p>
           </div>
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -358,7 +410,7 @@
               power.
             </p>
           </div>
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -410,7 +462,7 @@
               winding up actions.
             </p>
           </div>
-          <div class="practice-card">
+          <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -515,13 +567,17 @@
           </div>
 
           <div class="contact-form">
-            <!-- <img src="../assets/Icons/decor2.svg" alt="" /> -->
             <h2>CONTACT US</h2>
             <p>
               This is the contact form; Please make sure to fill it in order for
               you to reach us
             </p>
             <form action="" class="myform">
+              <img
+                class="contact-decor"
+                src="../assets/Icons/decor2.svg"
+                alt=""
+              />
               <div class="input-box">
                 <input
                   type="text"
@@ -654,11 +710,124 @@ Message
 </template>
 
 <script>
-export default {};
+import AOS from "aos";
+import "aos/dist/aos.css";
+export default {
+  mounted() {
+    AOS.init({
+      duration: 900,
+      offset: 120,
+      easing: "ease",
+      once: false,
+      anchorPlacement: "top-bottom",
+    });
+    const dropDown = document.querySelector(".drop-down-link");
+    const dropDownFull = document.querySelector(".nav-links");
+    const sublinks = document.querySelector(".sublinks");
+    console.log(sublinks);
+    dropDown.addEventListener("mouseover", (e) => {
+      const text = e.currentTarget.textContent;
+      const tempBtn = e.currentTarget.getBoundingClientRect();
+      const center = tempBtn.width / 2;
+      sublinks.classList.add("show-links");
+      // sublinks.style.left = `-${center + 5}px`
+      console.log(center);
+    });
+
+    dropDownFull.addEventListener("mouseleave", () => {
+      sublinks.classList.remove("show-links");
+    });
+    const dropDown2 = document.querySelector(".drop-down-link2");
+    const dropDownFull2 = document.querySelector(".nav-links");
+    const sublinks2 = document.querySelector(".sublinks2");
+    console.log(sublinks2);
+    dropDown2.addEventListener("mouseover", (e) => {
+      const text = e.currentTarget.textContent;
+      const tempBtn = e.currentTarget.getBoundingClientRect();
+      const center = tempBtn.width / 2;
+      sublinks2.classList.add("show-links2");
+      // sublinks.style.left = `-${center + 5}px`
+      console.log(center);
+    });
+
+    dropDownFull2.addEventListener("mouseleave", () => {
+      sublinks2.classList.remove("show-links2");
+    });
+
+    const menu = document.querySelector(".menu");
+    const sidebar = document.querySelector(".links-container");
+    const close = document.querySelector(".close-btn");
+    const banner = document.querySelector(".banner");
+    menu.addEventListener("click", () => {
+      sidebar.style.right = "0";
+    });
+    close.addEventListener("click", () => {
+      sidebar.style.right = "-70vw";
+    });
+    const scrollLink = document.querySelectorAll(".scroll-link");
+    window.addEventListener("load", () => {
+      scrollLink.forEach((link) => {
+        if (link.href === path) {
+          link.style.color = "#71deb5";
+          link.style.fontWeight = "bold";
+        }
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".nav");
+      const menu = document.querySelector(".menu");
+      const logo = document.querySelector(".logo a");
+      const navHeight = nav.getBoundingClientRect().height;
+      const scrollHeight = window.pageYOffset;
+
+      if (navHeight < scrollHeight) {
+        nav.classList.add("fixed");
+        logo.innerHTML = `<picture>
+    <source media="(min-width:650px)" srcset=" ">
+    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
+  </picture>`;
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.add("black");
+            if (link.href === path) {
+              link.classList.remove("black");
+              link.style.color = "#71deb5";
+            }
+          });
+        }
+      } else {
+        nav.classList.remove("fixed");
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.remove("black");
+          });
+        }
+      }
+    });
+  },
+  created() {},
+};
 </script>
 
 <style lang="scss" scoped>
 .body-main {
+  .show-links,
+  .show-links2 {
+    display: flex !important;
+  }
+  .fixed {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background: $A-darkerblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+  }
+
   header {
     background: url("../assets/Image/practicearea.jpg") rgba(3, 42, 86, 0.3)
       no-repeat;
@@ -695,34 +864,43 @@ export default {};
           right: -70vw;
           height: 100vh;
           width: 70vw;
-          background: $A-white;
+          background: $A-darkerblue;
           z-index: 9999999999;
           transition: $trans;
+          .upper-nav {
+            display: none;
+          }
           .close-btn {
             padding: 1rem;
-            width: 3rem;
-            // position: absolute;
-            top: 2.5rem;
-            right: 2.5rem;
+            width: 5rem;
+            position: absolute;
+            top: 0rem;
+            right: 0rem;
           }
           .nav-links {
             height: 50%;
-            padding-top: 20rem;
+            padding-top: 25rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding-left: 2rem;
+            .drop-down2 {
+              a {
+                color: #fff;
+              }
+            }
             li {
               margin-bottom: 1rem;
               .scroll-link {
                 @extend .text-medium;
                 font-size: 1rem;
-                color: $A-darkerblue;
+                color: #fff;
               }
-              .sublinks {
+              .sublinks,
+              .sublinks2 {
                 margin: 1rem 0;
 
-                color: #fff;
+                color: $A-white;
                 h3 {
                   font-family: "medium bt";
                   font-weight: 500;
@@ -741,7 +919,7 @@ export default {};
                     font-size: 0.88rem;
                     display: flex;
                     gap: 0.5rem;
-                    color: #fff;
+                    color: $A-white;
                     transition: color 0.2s linear;
                     img {
                       width: 0.5rem;
@@ -753,18 +931,18 @@ export default {};
           }
         }
       }
-      .mid-title {
-        display: grid;
-        place-content: center;
-        .wrapper {
-          margin-top: 15rem;
-          p {
-            margin-top: 0.94rem;
-            font-size: 2rem;
-            color: $A-white;
-            font-weight: 700;
-            text-transform: uppercase;
-          }
+    }
+    .mid-title {
+      display: grid;
+      place-content: center;
+      .wrapper {
+        margin-top: 15rem;
+        p {
+          margin-top: 0.94rem;
+          font-size: 2rem;
+          color: $A-white;
+          font-weight: 700;
+          text-transform: uppercase;
         }
       }
     }
@@ -772,12 +950,23 @@ export default {};
   @include responsive($md) {
     header {
       nav {
-        .mid-title {
-          .wrapper {
-            margin-top: 15rem;
-            p {
-              font-size: 2.3rem;
+        .container {
+          .links-container {
+            width: 30vh;
+            .close-btn {
+              width: 6rem;
             }
+            .nav-links {
+              padding-top: 15rem;
+            }
+          }
+        }
+      }
+      .mid-title {
+        .wrapper {
+          margin-top: 15rem;
+          p {
+            font-size: 2.3rem;
           }
         }
       }
@@ -786,10 +975,21 @@ export default {};
   @include responsive($lg) {
     header {
       nav {
-        .mid-title {
-          .wrapper {
-            margin-top: 20rem;
+        .container {
+          .links-container {
+            width: 30vh;
+            .close-btn {
+              width: 6rem;
+            }
+            .nav-links {
+              padding-top: 15rem;
+            }
           }
+        }
+      }
+      .mid-title {
+        .wrapper {
+          margin-top: 20rem;
         }
       }
     }
@@ -821,7 +1021,7 @@ export default {};
             .upper-nav {
               display: flex;
               justify-content: space-between;
-              margin-top: 3rem;
+              margin-top: 1.5rem;
               padding-left: 2rem;
               gap: 3rem;
               p {
@@ -839,7 +1039,7 @@ export default {};
               padding-top: 0%;
               flex-direction: row;
               gap: 3rem;
-              margin-top: 2rem;
+              margin-top: 1rem;
               padding-left: 2rem;
               position: relative;
               li {
@@ -848,9 +1048,10 @@ export default {};
                 }
                 a {
                   font-size: 1rem;
-                  color: #fff;
+
                   &:hover {
-                    color: $A-darkerblue;
+                    color: $A-lightblue;
+                    font-size: 1.13rem;
                     font-weight: 600;
                   }
                 }
@@ -860,9 +1061,9 @@ export default {};
                   position: absolute;
                   width: auto;
                   display: flex;
-                  background: $A-white;
+                  background: $A-darkerblue;
                   padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 0.5rem;
+                  border-radius: 1rem;
                   display: none;
                   h3 {
                     font-size: 1.13rem;
@@ -871,8 +1072,31 @@ export default {};
                   li {
                     margin-bottom: 1rem;
                     a {
-                      color: #fff;
-                      font-size: 1.13rem;
+                      color: $A-white;
+                      font-size: 1rem;
+                    }
+                  }
+                }
+              }
+              .drop-down2 {
+                .sublinks2 {
+                  position: absolute;
+                  width: auto;
+                  display: flex;
+                  background: $A-darkerblue;
+                  padding: 1.2rem 1rem 1rem 0.5rem;
+                  border-radius: 1rem;
+                  display: none;
+                  h3 {
+                    font-size: 1.13rem;
+                    margin-bottom: 1.2rem;
+                  }
+                  li {
+                    margin-bottom: 1rem;
+
+                    a {
+                      color: $A-white;
+                      font-size: 0.9rem;
                     }
                   }
                 }
@@ -880,12 +1104,12 @@ export default {};
             }
           }
         }
-        .mid-title {
-          .wrapper {
-            margin-top: 15rem;
-            p {
-              font-size: 3rem;
-            }
+      }
+      .mid-title {
+        .wrapper {
+          margin-top: 15rem;
+          p {
+            font-size: 3rem;
           }
         }
       }
@@ -894,7 +1118,7 @@ export default {};
   .description {
     background: #fff;
     margin-top: -2rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     .container {
       padding: 1rem;
       width: 100%;
@@ -931,6 +1155,16 @@ export default {};
       margin-left: 10rem;
       .container {
         padding: 1.5rem;
+        .desc {
+          p {
+            font-size: 1rem;
+          }
+        }
+        .link {
+          p {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
@@ -944,25 +1178,54 @@ export default {};
   }
   @include responsive($xl) {
     .description {
-      margin-left: 20rem;
+      margin-left: 10rem;
       .container {
+        position: relative;
         .desc {
           p {
-            font-size: 1.13rem;
+            font-size: 1rem;
           }
         }
         .link {
           margin-top: 2rem;
           p {
-            font-size: 1.13rem;
+            font-size: 1rem;
           }
+        }
+        .hover {
+          margin-top: 10rem;
+          margin-left: 2rem;
+          position: absolute;
+          bottom: 0.2rem;
+          left: 0.2rem;
+          content: "";
+          display: block;
+          width: 90%;
+          height: 60%;
+          background: $A-green;
+          z-index: -1;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover .hover {
+          transform: translateY(1rem) rotate(-1.54deg);
+        }
+        &:hover .right-arrow {
+          transform: translateX(0.2rem);
         }
       }
     }
   }
   .area-sample {
     margin-top: 8rem;
-
+    position: relative;
+    .dot-decor {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.8;
+      z-index: -1;
+      width: 20rem;
+    }
     .container {
       .wrapper {
         .area-all {
@@ -1002,8 +1265,18 @@ export default {};
             }
           }
         }
-        .practice-img {
-          margin-top: 1.88rem;
+        div {
+          .practice-img {
+            margin-top: 1.88rem;
+            position: relative;
+          }
+          .line-decor {
+            position: absolute;
+            width: 11.5rem;
+            top: 0;
+            opacity: .5;
+            right: 0;
+          }
         }
       }
     }
@@ -1014,12 +1287,14 @@ export default {};
         .wrapper {
           display: flex;
           gap: 1rem;
-
-          .practice-img {
+div{
+ .practice-img {
             margin-top: 0rem;
-            width: 20rem;
+            width: 220rem;
             object-fit: cover;
           }
+}
+         
         }
       }
     }
@@ -1029,10 +1304,16 @@ export default {};
       margin-top: 10rem;
       .container {
         .wrapper {
-          .practice-img {
-            margin-top: 0rem;
-            width: 25rem;
-            object-fit: cover;
+          div{
+
+            .practice-img {
+              margin-top: 0rem;
+              width: 220rem;
+              object-fit: cover;
+            }
+            .line-decor{
+              width: 15rem;
+            }
           }
         }
       }
@@ -1040,7 +1321,7 @@ export default {};
   }
   @include responsive($xl) {
     .area-sample {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .wrapper {
           gap: 2rem;
@@ -1063,8 +1344,11 @@ export default {};
               }
             }
           }
-          .practice-img {
-            width: 35rem;
+          div{
+
+            .practice-img {
+              width: 35rem;
+            }
           }
         }
       }
@@ -1155,7 +1439,7 @@ export default {};
   }
   @include responsive($xl) {
     .practice-area {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .wrapper {
           display: grid;
@@ -1178,11 +1462,21 @@ export default {};
         .contact-form {
           background: $A-darkerblue;
           padding: 1rem;
+          padding-right: 3rem;
           margin-top: 5rem;
+          position: relative;
+          .contact-decor {
+            position: absolute;
+            right: 0.5rem;
+            top: 0;
+            width: 2rem;
+            height: 70vh;
+          }
           h2 {
             @extend .title;
             margin-top: 0.94rem;
             text-align: center;
+            line-height: 1.3rem;
             color: #fff;
           }
           p {
@@ -1252,6 +1546,7 @@ export default {};
             margin-top: 0.94rem;
             text-align: left;
             color: #fff;
+            line-height: 2rem;
           }
           .desc-p {
             @extend .text;
@@ -1303,8 +1598,12 @@ export default {};
           .contact-form {
             background: $A-darkerblue;
             padding: 1rem;
+            padding-right: 4rem;
             // height: 60vh;
-            margin-top: 0;
+
+            .contact-decor {
+              width: 2.3rem;
+            }
             h2 {
               margin-top: 0.94rem;
               text-align: center;
@@ -1370,17 +1669,19 @@ export default {};
   }
   @include responsive($lg) {
     .contact {
-      margin-top: 10rem;
       .container {
         .contact-box {
           display: flex;
           .contact-form {
-            background: $A-darkerblue;
             padding: 1rem;
             // height: 60vh;
-            margin-top: 0;
+            margin-top: 0rem;
+            padding-right: 5rem;
+            .contact-decor {
+              margin-top: 1rem;
+            }
             h2 {
-              margin-top: 0.94rem;
+              margin-top: 2.5rem;
               text-align: center;
               color: #fff;
             }
@@ -1445,7 +1746,7 @@ export default {};
   }
   @include responsive($xl) {
     .contact {
-      margin-top: 15rem;
+      margin-top: 10rem;
     }
   }
   .footer {
@@ -1659,7 +1960,7 @@ export default {};
   }
   @include responsive($xl) {
     .footer {
-      margin-top: 15rem;
+      margin-top: 10rem;
       .container {
         .footer-wrapper {
           display: flex;

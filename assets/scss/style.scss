@@ -461,7 +461,6 @@ body {
   }
 }
 .caps {
-  font-family: "Neue Helvetica Bold";
   text-transform: uppercase;
   font-size: 1.13rem;
   font-weight: 800;
@@ -478,39 +477,33 @@ body {
   text-align: center;
 }
 .text-medium {
-  font-family: "medium bt";
   font-size: 1.13rem;
   line-height: 1.75rem;
 }
 .h4 {
-  font-family: "medium bt";
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
   text-transform: uppercase;
 }
 .h3 {
-  font-family: "medium bt";
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.8rem;
 }
 .h2 {
-  font-family: "medium bt";
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.88rem;
 }
 @include responsive($xl) {
   .h2 {
-    font-family: "Futura", "Poppins";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     line-height: 3.98rem;
   }
 }
 .text-small {
-  font-family: "light bt";
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
