@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tax", {data:[{}],fetch:{},mutations:void 0});

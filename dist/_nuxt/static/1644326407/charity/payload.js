@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/charity", {data:[{}],fetch:{},mutations:void 0});

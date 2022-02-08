@@ -15,7 +15,7 @@
           <div class="links-container">
             <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
             <div class="upper-nav">
-              <p>Contact@5alawoffice.com | +25116504949|</p>
+              <p>Contact@5alawoffice.com | +25116504949 </p>
               <ul>
                 <li>
                   <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
@@ -61,17 +61,17 @@
                     <li>
                       <a href="coporate"> Coporate and Commercial</a>
                     </li>
-                    <li><a href="coporate">Banking & Finance</a></li>
-                    <li><a href="coporate"> Power and Energy</a></li>
-                    <li><a href="coporate">ICT & Telecom</a></li>
+                   
+                    <li><a href="power"> Power and Energy</a></li>
+                    <li><a href="telecom">ICT & Telecom</a></li>
 
                     <li>
-                      <a href="coporate">Charities & Nonprofit Organizations</a>
+                      <a href="charity">Charities & Nonprofit Organizations</a>
                     </li>
                     <li>
-                      <a href="coporate">Employement and Immigration</a>
+                      <a href="employee">Employement and Immigration</a>
                     </li>
-                    <li><a href="coporate"> Taxation</a></li>
+                    <li><a href="tax"> Taxation</a></li>
                   </div>
                 </ul>
               </li>
@@ -842,10 +842,10 @@ Message
                       mollit minim deserunt.
                     </p>
                     <div class="icon-container">
-                      <img src="../assets/Icons/phone.svg" alt="" />
-                      <img src="../assets/Icons/facebook.svg" alt="" />
-                      <img src="../assets/Icons/linkedin.svg" alt="" />
-                      <img src="../assets/Icons/mail.svg" alt="" />
+                     <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
+                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
+                     <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
+              <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
                     </div>
                   </div>
                 </ul>
