@@ -1757,7 +1757,7 @@ export default {
                     margin-top: 0.98rem;
                     .footer-link {
                       a {
-                        font-size: 1rem;
+                      font-size: 0.8rem;
                         text-align: left;
                       }
                     }

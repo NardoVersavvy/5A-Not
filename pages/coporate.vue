@@ -345,7 +345,7 @@ Message
                   <div class="links">
                     <li class="footer-link"><a href="#">Home</a></li>
                     <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link"><a href="#">Practice </a></li>
+                    <li class="footer-link"><a href="#">Practice Areas</a></li>
                     <li class="footer-link"><a href="#">Publication</a></li>
                     <li class="footer-link"><a href="#">News</a></li>
                     <li class="footer-link"><a href="#">Contact Us</a></li>
@@ -1459,7 +1459,7 @@ export default {
                     margin-top: 0.98rem;
                     .footer-link {
                       a {
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                         text-align: left;
                       }
                     }
