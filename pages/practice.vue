@@ -1215,6 +1215,10 @@ export default {
       }
     }
   }
+   @include responsive($xxl) {
+    .description {
+      margin-left: 40rem;}
+   }
   .area-sample {
     margin-top: 8rem;
     position: relative;

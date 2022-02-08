@@ -1373,7 +1373,7 @@ export default {
   }
   @include responsive($xl) {
     .description {
-      margin-left: 10rem;
+      margin-left: 20rem;
       .container {
         position: relative;
         .desc {
@@ -1410,6 +1410,10 @@ export default {
       }
     }
   }
+   @include responsive($xxl) {
+    .description {
+      margin-left: 40rem;}
+   }
   .awards {
     margin-top: 8rem;
     .container {
