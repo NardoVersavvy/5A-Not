@@ -238,8 +238,7 @@
               <h4>Amare Ashenafi</h4>
               <p>
                 Amare earned his law degree (LLB) from Bahir Dar University, his
-                LLM from Mekelle University in Tax and Investment Law, and two
-                years...
+                LLM from Mekelle University in Tax and ...
               </p>
             </div>
           </div>
@@ -262,8 +261,7 @@
               <h4>Alemu Korme</h4>
               <p>
                 Alemu earned his law degree (LLB) from Addis Ababa University,
-                his MBA from Lead Star University in collaboration with Ashland
-                University
+                his MBA from Lead Star University in...
               </p>
             </div>
           </div>
@@ -286,7 +284,7 @@
               <h4>Almaw Wolie</h4>
               <p>
                 Almaw has received his Bachelor of Laws /LL. B/ from Addis Ababa
-                University in July 2000 and his Master of Laws /LL.M/...
+                University in July 2000 and his Master...
               </p>
             </div>
           </div>
@@ -313,8 +311,7 @@
               <h4>Ashenafi Yirga</h4>
               <p>
                 A graduate of the Law School of Bahir Dar University as an
-                outstanding student, Ashenafi heads the Litigation Section in
-                5A.
+                outstanding student, Ashenafi heads the...
               </p>
             </div>
           </div>
@@ -335,10 +332,10 @@
               <div class="bottom-decor"></div>
             </div>
             <div class="name">
-              <h4>DR. Mesnbet Assefa</h4>
+              <h4>Dr. Mesnbet Assefa</h4>
               <p>
                 Mesenbet earned his LL.B from Bahir Dar University in 2006 and
-                graduated with distinction. He further pursued his graduate...
+                graduated with distinction. He further...
               </p>
             </div>
           </div>
@@ -362,7 +359,7 @@
               <h4>Hanna Yohannas</h4>
               <p>
                 Hanna Yohannes is an assistant lawyer and office manager at 5A
-                Jurists Consultancy Group. First, Appointed
+                Jurists Consultancy Group. First, Appointed...
               </p>
             </div>
           </div>
@@ -519,14 +516,14 @@ Message
               </div>
               <div class="desti">
                 <h3 class="desti-title">Quick links</h3>
-                <ul class="desti-list">
+                 <ul class="desti-list">
                   <div class="links">
                     <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="#">About Us</a></li>
-                    <li class="footer-link"><a href="#">Blog & News</a></li>
-                    <li class="footer-link"><a href="#">Publication</a></li>
-                    <li class="footer-link"><a href="#">Contact Us</a></li>
+                    <li class="footer-link"><a href="about">About Us</a></li>
                     <li class="footer-link"><a href="#">Practice Areas</a></li>
+                    <li class="footer-link"><a href="#">Publication</a></li>
+                    <li class="footer-link"><a href="#">News</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
                   </div>
                 </ul>
               </div>
@@ -1292,7 +1289,7 @@ export default {
       .inner {
         width: 30rem;
 
-        padding: 3rem;
+        padding: 2rem;
 
         .bio {
           .decor {
@@ -1477,15 +1474,26 @@ export default {
         .card {
           margin-top: 5rem;
           width: 16rem;
+          cursor: pointer;
+
+ &:hover{
+   
+          opacity: .7;
+        }
           .indiv-pic {
             .indiv-img {
             }
             .bottom-decor {
               width: 13rem;
               height: 1rem;
-              background: $A-blue;
+              background: $A-lightblue;
+     
             }
           }
+                    &:hover .bottom-decor{
+                  transform: translateX(3rem);
+  
+        }
           .name {
             h4 {
               @extend .title;
@@ -1503,6 +1511,7 @@ export default {
             }
           }
         }
+       
       }
     }
   }
@@ -1938,7 +1947,7 @@ export default {
         }
       }
       hr {
-        margin-top: 4.37rem;
+        margin-top: 1.37rem;
         color: #fff;
       }
       .lower {

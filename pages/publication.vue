@@ -444,20 +444,14 @@ Message
               </div>
               <div class="desti">
                 <h3 class="desti-title">Quick links</h3>
-                <ul class="desti-list">
+                  <ul class="desti-list">
                   <div class="links">
-                    <li class="footer-link"><a href="index">Home</a></li>
+                    <li class="footer-link"><a href="#">Home</a></li>
                     <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link">
-                      <a href="publication">Blog & News</a>
-                    </li>
+                    <li class="footer-link"><a href="#">Practice Areas</a></li>
                     <li class="footer-link"><a href="#">Publication</a></li>
-                    <li class="footer-link">
-                      <a href="contact">Contact Us</a>
-                    </li>
-                    <li class="footer-link">
-                      <a href="practice">Practice Areas</a>
-                    </li>
+                    <li class="footer-link"><a href="#">News</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
                   </div>
                 </ul>
               </div>
@@ -1701,7 +1695,7 @@ export default {
         }
       }
       hr {
-        margin-top: 4.37rem;
+        margin-top: 1.37rem;
         color: #fff;
       }
       .lower {

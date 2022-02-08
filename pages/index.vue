@@ -808,11 +808,11 @@ Message
                 <ul class="desti-list">
                   <div class="links">
                     <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="#">About Us</a></li>
-                    <li class="footer-link"><a href="#">Blog & News</a></li>
-                    <li class="footer-link"><a href="#">Publication</a></li>
-                    <li class="footer-link"><a href="#">Contact Us</a></li>
+                    <li class="footer-link"><a href="about">About Us</a></li>
                     <li class="footer-link"><a href="#">Practice Areas</a></li>
+                    <li class="footer-link"><a href="#">Publication</a></li>
+                    <li class="footer-link"><a href="#">News</a></li>
+                    <li class="footer-link"><a href="#">Contact Us</a></li>
                   </div>
                 </ul>
               </div>
@@ -1421,6 +1421,17 @@ export default {
         border-color: $A-green;
         img {
           width: 4rem;
+            filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  &:hover{
+      filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  }
         }
       }
     }
@@ -2797,7 +2808,7 @@ export default {
         }
       }
       hr {
-        margin-top: 4.37rem;
+        margin-top: 1.37rem;
         color: #fff;
       }
       .lower {
@@ -2858,17 +2869,18 @@ export default {
                 }
                 .desti-list {
                   text-align: left;
-                  margin-top: 0.98rem;
+                  margin-top: 1rem;
                   margin-bottom: 0.98rem;
 
                   div {
                     display: grid;
                     grid-template-columns: 1fr;
                     gap: 1.3rem;
-                    margin-top: 0.98rem;
+                    margin-top: 1rem;
                     .footer-link {
                       a {
-                        font-size: 1rem;
+                       
+                        font-size: .8rem;
                         text-align: left;
                       }
                     }
