@@ -632,7 +632,7 @@ export default {
   methods: {
     async search(){
       try {
-        await axios.post("/api/5A/", {
+        await axios.post("https://versavvymedia.com/5Aback/", {
           action: "search",
           term: this.searchTerm
         }, config).then(res => {
@@ -649,7 +649,7 @@ export default {
       try {
         await axios
           .post(
-            "/api/5A/",
+            "https://versavvymedia.com/5Aback/",
             {
               action: "fetchAll",
             },
