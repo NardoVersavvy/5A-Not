@@ -1492,6 +1492,7 @@ export default {
           }
                     &:hover .bottom-decor{
                   transform: translateX(3rem);
+                   
   
         }
           .name {

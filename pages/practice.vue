@@ -1178,7 +1178,7 @@ export default {
   }
   @include responsive($xl) {
     .description {
-      margin-left: 10rem;
+      margin-left: 20rem;
       .container {
         position: relative;
         .desc {
