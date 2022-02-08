@@ -86,11 +86,11 @@
                 <ul class="sublinks2">
                   <div class="corp-link2">
                     <li>
-                      <a href=""> Journal</a>
+                      <a href="publication"> Journal</a>
                     </li>
-                    <li><a href="">Publication</a></li>
-                    <li><a href=""> Blog</a></li>
-                    <li><a href="">News</a></li>
+                    <li><a href="publication">Publication</a></li>
+                    <li><a href="publication"> Blog</a></li>
+                    <li><a href="publication">News</a></li>
                   </div>
                 </ul>
               </li>
