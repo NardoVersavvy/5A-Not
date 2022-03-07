@@ -48,13 +48,13 @@ export default {
   },
 
   axios: {
-    baseURL: 'https://versavvymedia.com/5Aback/', // Used as fallback if no runtime config is provided
+    baseURL: 'https://versavvymedia.com/5Aback/', //'http://localhost:8080/5A/' Used as fallback if no runtime config is provided
     proxy: true // Can be also an object with default options
   },
 
   proxy: {
     '/api/': { target: 'https://versavvymedia.com/5Aback/', pathRewrite: {'^/api/': ''} }
-
+//http://localhost:8080/5A/'
   },
   publicRuntimeConfig: {
     axios: {

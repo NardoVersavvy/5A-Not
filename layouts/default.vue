@@ -8,6 +8,7 @@
 <style lang="scss" >
 body {
   background: $A-white;
-  // overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+
 }
 </style>

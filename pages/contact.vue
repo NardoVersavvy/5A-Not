@@ -1,107 +1,7 @@
 <template>
   <div class="body-main">
     <header id="app" class="header">
-      <nav class="nav" id="nav">
-        <div class="container banner">
-          <div class="logo">
-            <img src="../assets/Icons/Logo.svg" alt="" />
-          </div>
-          <div class="menu-bar menu">
-            <hr />
-            <hr />
-            <hr />
-          </div>
-
-          <div class="links-container">
-            <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
-            <div class="upper-nav">
-              <p>Contact@5alawoffice.com | +25116504949</p>
-              <ul>
-                <li>
-                  <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/twitter.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/google.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/youtube.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-              <div class="social"></div>
-            </div>
-            <ul class="nav-links">
-              <li><a href="" class="scroll-link"> Home</a></li>
-
-              <li class="drop-down">
-                <a href="practice" class="scroll-link drop-down-link"
-                  >Practice Area</a
-                >
-
-                  <ul class="sublinks">
-                  <div class="corp-link">
-                    <li>
-                      <a href="coporate"> Coporate and Commercial</a>
-                    </li>
-                   
-                    <li><a href="power"> Power and Energy</a></li>
-                    <li><a href="telecom">ICT & Telecom</a></li>
-
-                    <li>
-                      <a href="charity">Charities & Nonprofit Organizations</a>
-                    </li>
-                    <li>
-                      <a href="employee">Employement and Immigration</a>
-                    </li>
-                    <li><a href="tax"> Taxation</a></li>
-                  </div>
-                </ul>
-              </li>
-
-              <li>
-                <a href="team" class="scroll-link">Teams</a>
-              </li>
-              <li class="drop-down2">
-                <a href="publication" class="scroll-link drop-down-link2"
-                  >Insights</a
-                >
-                <ul class="sublinks2">
-                  <div class="corp-link2">
-                    <li>
-                      <a href="publication"> Journal</a>
-                    </li>
-                    <li><a href="publication">Publication</a></li>
-                    <li><a href="publication"> Blog</a></li>
-                    <li><a href="publication">News</a></li>
-                  </div>
-                </ul>
-              </li>
-              <li>
-                <a href="about" class="scroll-link">About Us</a>
-              </li>
-              <li><a href="contact" class="scroll-link">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <NavApp />
       <div class="mid-title">
         <div
           class="wrapper"
@@ -118,121 +18,7 @@
       </div>
     </header>
 
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-hours">
-            <h2>HOURS FOR CONTACT</h2>
-            <p class="desc-p">
-              This is the contact hours; please make sure your time is in sync
-              with ours.
-            </p>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Monday-Thursday 6:00-19:00 GMT</p>
-            </div>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Firday-Staurday 7:00-18:00 GMT</p>
-            </div>
-
-            <div class="socials">
-              <img src="../assets/Icons/decor.svg" alt="" />
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/mail.svg" alt="" />
-                    <p>Contact@5alawoffice.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                    <p>5Alawoffice@linkedin.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                    <p>5Alawoffice@facebook.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/phone.svg" alt="" />
-                    <p>0116504949, Fax – 0116505758</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h2>CONTACT US</h2>
-            <p>
-              This is the contact form; Please make sure to fill it in order for
-              you to reach us
-            </p>
-            <form action="" class="myform">
-              <img
-                class="contact-decor"
-                src="../assets/Icons/decor2.svg"
-                alt=""
-              />
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Frist Name"
-                />
-                <input
-                  type="email"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Email"
-                />
-
-                <input
-                  class="line right-margin"
-                  type="text"
-                  name="area"
-                  placeholder="Select Area"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  class="line right-margin"
-                  placeholder="Attachement"
-                />
-              </div>
-              <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message
-            </textarea
-              >
-              <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
-              </div> -->
-              <div class="submit-buttons">
-                <a class="btn btn-white" href="#">SEND MESSAGE</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+   <ContactApp />
     <!-- <section class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.7913028528865!2d38.78135341478628!3d8.991342293546982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f52615ebdf%3A0x6a0949274cd951c7!2sTropical%20Mall!5e0!3m2!1sen!2sus!4v1643637951202!5m2!1sen!2sus"
@@ -256,80 +42,7 @@ Message
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="map">
-                <a href="">
-                  <img src="../assets/Image/map.jpg" alt="" />
-                </a>
-              </div>
-              <div class="desti">
-                <h3 class="desti-title">Quick links</h3>
-                  <ul class="desti-list">
-                  <div class="links">
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link"><a href="#">Practice Areas</a></li>
-                    <li class="footer-link"><a href="#">Publication</a></li>
-                    <li class="footer-link"><a href="#">News</a></li>
-                    <li class="footer-link"><a href="#">Contact Us</a></li>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">About us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Contact Us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                       <div class="icon-container">
-                     <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
-                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
-                     <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
-              <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/Icons/Logo.svg" alt="" />
-          <p>EXPERTISE. EXPERIENCE. EXCELLENCE.</p>
-        </div>
-        <div class="copyright">
-          <p>
-            All Rights Reserved.&copy; 2022 Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    <FooterApp />
   </div>
 </template>
 
@@ -345,92 +58,17 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-    const dropDown = document.querySelector(".drop-down-link");
-    const dropDownFull = document.querySelector(".nav-links");
-    const sublinks = document.querySelector(".sublinks");
-    console.log(sublinks);
-    dropDown.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks.classList.add("show-links");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
+       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62220908a34c245641296e76/1ftaf6j28';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 
-    dropDownFull.addEventListener("mouseleave", () => {
-      sublinks.classList.remove("show-links");
-    });
-    const dropDown2 = document.querySelector(".drop-down-link2");
-    const dropDownFull2 = document.querySelector(".nav-links");
-    const sublinks2 = document.querySelector(".sublinks2");
-    console.log(sublinks2);
-    dropDown2.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks2.classList.add("show-links2");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
-
-    dropDownFull2.addEventListener("mouseleave", () => {
-      sublinks2.classList.remove("show-links2");
-    });
-
-    const menu = document.querySelector(".menu");
-    const sidebar = document.querySelector(".links-container");
-    const close = document.querySelector(".close-btn");
-    const banner = document.querySelector(".banner");
-    menu.addEventListener("click", () => {
-      sidebar.style.right = "0";
-    });
-    close.addEventListener("click", () => {
-      sidebar.style.right = "-70vw";
-    });
-    const scrollLink = document.querySelectorAll(".scroll-link");
-    window.addEventListener("load", () => {
-      scrollLink.forEach((link) => {
-        if (link.href === path) {
-          link.style.color = "#71deb5";
-          link.style.fontWeight = "bold";
-        }
-      });
-    });
-
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector(".nav");
-      const menu = document.querySelector(".menu");
-      const logo = document.querySelector(".logo a");
-      const navHeight = nav.getBoundingClientRect().height;
-      const scrollHeight = window.pageYOffset;
-
-      if (navHeight < scrollHeight) {
-        nav.classList.add("fixed");
-        logo.innerHTML = `<picture>
-    <source media="(min-width:650px)" srcset=" ">
-    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
-  </picture>`;
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.add("black");
-            if (link.href === path) {
-              link.classList.remove("black");
-              link.style.color = "#71deb5";
-            }
-          });
-        }
-      } else {
-        nav.classList.remove("fixed");
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.remove("black");
-          });
-        }
-      }
-    });
+ 
   },
   created() {},
 };
@@ -460,101 +98,6 @@ export default {
     height: 70vh;
     width: 100%;
 
-    nav {
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-          margin-top: 1rem;
-          img {
-            width: 11rem;
-          }
-        }
-        .menu-bar {
-          margin-top: 1rem;
-          hr {
-            margin: auto;
-            margin-top: 0.5rem;
-            color: $A-white;
-            border-style: solid;
-            width: 2.35rem;
-          }
-        }
-        .links-container {
-          position: fixed;
-          top: 0;
-          right: -70vw;
-          height: 100vh;
-          width: 70vw;
-          background: $A-darkerblue;
-          z-index: 9999999999;
-          transition: $trans;
-          .upper-nav {
-            display: none;
-          }
-          .close-btn {
-            padding: 1rem;
-            width: 5rem;
-            position: absolute;
-            top: 0rem;
-            right: 0rem;
-          }
-          .nav-links {
-            height: 50%;
-            padding-top: 25rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 2rem;
-            .drop-down2 {
-              a {
-                color: #fff;
-              }
-            }
-            li {
-              margin-bottom: 1rem;
-              .scroll-link {
-                @extend .text-medium;
-                font-size: 1rem;
-                color: #fff;
-              }
-              .sublinks,
-              .sublinks2 {
-                margin: 1rem 0;
-
-                color: $A-white;
-                h3 {
-                  font-family: "medium bt";
-                  font-weight: 500;
-                  font-size: 1rem;
-                  line-height: 1.5rem;
-                  margin-bottom: 1rem;
-                }
-                img {
-                  width: 1.2rem;
-                }
-                li {
-                  margin-bottom: 0.5rem;
-                  margin-left: 1rem;
-                  a {
-                    font-family: "light bt";
-                    font-size: 0.88rem;
-                    display: flex;
-                    gap: 0.5rem;
-                    color: $A-white;
-                    transition: color 0.2s linear;
-                    img {
-                      width: 0.5rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
     .mid-title {
       display: grid;
       place-content: center;
@@ -572,19 +115,7 @@ export default {
   }
   @include responsive($md) {
     header {
-      nav {
-        .container {
-          .links-container {
-            width: 30vh;
-            .close-btn {
-              width: 6rem;
-            }
-            .nav-links {
-              padding-top: 15rem;
-            }
-          }
-        }
-      }
+     
       .mid-title {
         .wrapper {
           margin-top: 15rem;
@@ -597,19 +128,7 @@ export default {
   }
   @include responsive($lg) {
     header {
-      nav {
-        .container {
-          .links-container {
-            width: 30vh;
-            .close-btn {
-              width: 6rem;
-            }
-            .nav-links {
-              padding-top: 15rem;
-            }
-          }
-        }
-      }
+     
       .mid-title {
         .wrapper {
           margin-top: 20rem;
@@ -619,115 +138,7 @@ export default {
   }
   @include responsive($xl) {
     header {
-      nav {
-        .container {
-          .logo {
-            img {
-              width: 15rem;
-            }
-          }
-          .menu-bar {
-            display: none;
-          }
-          .links-container {
-            display: block;
-            position: static;
-            // width: 50%;
-            height: auto;
-            z-index: 9999999999;
-            transition: $trans;
-            background: none;
-            width: auto;
-            .close-btn {
-              display: none;
-            }
-            .upper-nav {
-              display: flex;
-              justify-content: space-between;
-              margin-top: 1.5rem;
-              padding-left: 2rem;
-              gap: 3rem;
-              p {
-                color: #fff;
-                font-size: 1rem;
-              }
-              ul {
-                display: flex;
-                gap: 1rem;
-              }
-            }
-            .nav-links {
-              height: auto;
-              display: flex;
-              padding-top: 0%;
-              flex-direction: row;
-              gap: 3rem;
-              margin-top: 1rem;
-              padding-left: 2rem;
-              position: relative;
-              li {
-                .scroll-link {
-                  color: #fff;
-                }
-                a {
-                  font-size: 1rem;
-
-                  &:hover {
-                    color: $A-lightblue;
-                    font-size: 1.13rem;
-                    font-weight: 600;
-                  }
-                }
-              }
-              .drop-down {
-                .sublinks {
-                  position: absolute;
-                  width: auto;
-                  display: flex;
-                  background: $A-darkerblue;
-                  padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 1rem;
-                  display: none;
-                  h3 {
-                    font-size: 1.13rem;
-                    margin-bottom: 1.2rem;
-                  }
-                  li {
-                    margin-bottom: 1rem;
-                    a {
-                      color: $A-white;
-                      font-size: 1rem;
-                    }
-                  }
-                }
-              }
-              .drop-down2 {
-                .sublinks2 {
-                  position: absolute;
-                  width: auto;
-                  display: flex;
-                  background: $A-darkerblue;
-                  padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 1rem;
-                  display: none;
-                  h3 {
-                    font-size: 1.13rem;
-                    margin-bottom: 1.2rem;
-                  }
-                  li {
-                    margin-bottom: 1rem;
-
-                    a {
-                      color: $A-white;
-                      font-size: 0.9rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+    
       .mid-title {
         .wrapper {
           margin-top: 15rem;

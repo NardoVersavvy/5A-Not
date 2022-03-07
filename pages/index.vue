@@ -1,131 +1,6 @@
 <template>
   <div class="body-main">
-    <header id="app" class="header">
-      <nav class="nav" id="nav">
-        <div class="container banner">
-          <div class="logo">
-            <img src="../assets/Icons/Logo.svg" alt="" />
-          </div>
-          <div class="menu-bar menu">
-            <hr />
-            <hr />
-            <hr />
-          </div>
-
-          <div class="links-container">
-            <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
-            <div class="upper-nav">
-              <p>Contact@5alawoffice.com | +25116504949 </p>
-              <ul>
-                <li>
-                  <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/twitter.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/google.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/youtube.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-              <div class="social"></div>
-            </div>
-            <ul class="nav-links">
-              <li><a href="" class="scroll-link"> Home</a></li>
-
-              <li class="drop-down">
-                <a href="practice" class="scroll-link drop-down-link"
-                  >Practice Area</a
-                >
-
-                <ul class="sublinks">
-                  <div class="corp-link">
-                    <li>
-                      <a href="coporate"> Coporate and Commercial</a>
-                    </li>
-                   
-                    <li><a href="power"> Power and Energy</a></li>
-                    <li><a href="telecom">ICT & Telecom</a></li>
-
-                    <li>
-                      <a href="charity">Charities & Nonprofit Organizations</a>
-                    </li>
-                    <li>
-                      <a href="employee">Employement and Immigration</a>
-                    </li>
-                    <li><a href="tax"> Taxation</a></li>
-                  </div>
-                </ul>
-              </li>
-
-              <li>
-                <a href="team" class="scroll-link">Teams</a>
-              </li>
-              <li class="drop-down2">
-                <a href="publication" class="scroll-link drop-down-link2"
-                  >Insights</a
-                >
-                <ul class="sublinks2">
-                  <div class="corp-link2">
-                    <li>
-                      <a href="publication"> Journal</a>
-                    </li>
-                    <li><a href="publication">Publication</a></li>
-                    <li><a href="publication"> Blog</a></li>
-                    <li><a href="publication">News</a></li>
-                  </div>
-                </ul>
-              </li>
-              <li>
-                <a href="about" class="scroll-link">About Us</a>
-              </li>
-              <li><a href="contact" class="scroll-link">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="mid-moto">
-        <div class="container">
-          <div
-            class="moto-wrapper"
-            data-aos="fade-left"
-            data-aos-offset="20"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
-          >
-            <div class="rectangle">
-              <img src="../assets/Icons/Rectangle.svg" alt="" />
-            </div>
-            <div class="moto">
-              <p>EXPERTISE.</p>
-              <p>EXPERIENCE.</p>
-              <p>EXCELLENCE.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+ <HeaderApp />
     <section class="description">
       <div class="container">
         <div class="desc">
@@ -142,7 +17,7 @@
               alt=""
             />
           </a>
-          <p>Learn More About 5A</p>
+          <p><a href="about"> Learn More About 5A</a></p>
         </div>
         <div class="hover"></div>
       </div>
@@ -159,7 +34,11 @@
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
         >
+          <img src="../assets/Image/A2.svg" alt="" />
+          <img src="../assets/Image/A1.svg" alt="" />
+
           <img src="../assets/Image/award.svg" alt="" />
+          <!-- <img src="../assets/Image/award2.svg" alt="" /> -->
           <img src="../assets/Image/award2.svg" alt="" />
           <img src="../assets/Image/award3.svg" alt="" />
           <img src="../assets/Image/award4.svg" alt="" />
@@ -344,158 +223,174 @@
       </div>
     </section>
     <section class="practice">
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>CORPORATE AND COMMERCIAL</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
+      <a href="coporate">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>CORPORATE AND COMMERCIAL</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice2.jpg" alt="" />
+          <div class="hover">
+            <p>
+              5A Jurists Consultancy Group regularly works with domestic and
+              international clients on business formation and financing as well
+              as myriad corporate transactions, contracts, securities, mergers,
+              acquisitions, and joint ventures. Our clients have come to rely on
+              our practical problem-solving skills and our know-how to optimize
+              opportunities when they arise.
+            </p>
+          </div>
         </div>
-        <img class="prac-img" src="../assets/Image/practice2.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
+      </a>
+      <a href="mining">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>CONSTRUCTION, SURETY & DESIGN PROFESSIONALS</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice3.jpg" alt="" />
+          <div class="hover">
+            <p>
+              5A Jurist’s Consultancy Groups construction attorneys routinely
+              deal with issues in the construction industry from contracts to
+              complex litigation and provide legal advice to local and
+              international companies in the industry. We represent project
+              owners, general contractors, subcontractors, engineers,
+              architects, design professionals
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>CONSTRUCTION, SURETY & DESIGN PROFESSIONALS</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
+      </a>
+      <a href="telecom">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>ICT & TELECOM</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice4.jpg" alt="" />
+          <div class="hover">
+            <p>
+              5A Jurists Consultancy Group strongly believes the ICT and Telecom
+              industry is a huge sector with significant benefits and potential
+              for a country like Ethiopia with a bright future. We guide
+              technology companies through mergers and acquisitions, joint
+              ventures, financings, and diverse agreements and contracts.
+            </p>
+          </div>
         </div>
-        <img class="prac-img" src="../assets/Image/practice3.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
+      </a>
+      <a href="power">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>POWER AND ENERGY</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice1.jpg" alt="" />
+          <div class="hover">
+            <p>
+              5A Jurists Consultancy Group’s other key area of focus is the
+              power & energy sector. Ethiopia is a country that is power-thirsty
+              thus, with huge potential and opportunity for companies engaged in
+              the generation of power such as hydro, wind, geothermal, and solar
+              power.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>ICT & TELECOM</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
+      </a>
+      <a href="charity">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>CHARITIES AND NONPROFIT ORGANIZATIONS</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice5.jpg" alt="" />
+          <div class="hover">
+            <p>
+              From daily operational issues through investigations and
+              litigation, Triple-A law office clients include social welfare and
+              philanthropic organizations, certification and accreditation
+              agencies, and scientific and educational societies.
+            </p>
+          </div>
         </div>
-        <img class="prac-img" src="../assets/Image/practice4.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
+      </a>
+      <a href="tax">
+        <div
+          class="practice-card"
+          data-aos="slide-up"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <h4>TAXATION</h4>
+          <div class="more-arrow">
+            <img src="../assets/Icons/seemorearrow.svg" alt="" />
+          </div>
+          <img class="prac-img" src="../assets/Image/practice6.jpg" alt="" />
+          <div class="hover">
+            <p>
+              5A provides innovative tax solutions that meet the challenges and
+              objectives of clients’ most sophisticated business dealings in
+              Ethiopia, from corporate transactions and restructurings to
+              financial transactions and fund formation and investing.
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>POWER AND ENERGY</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice1.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group’s other key area of focus is the power
-            & energy sector. Ethiopia is a country that is power-thirsty thus,
-            with huge potential and opportunity for companies engaged in the
-            generation of power such as hydro, wind, geothermal, and solar
-            power.
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>MANUFACTURING & INDUSTRIES</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice5.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>BANKING & FINANCE</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice6.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
+      </a>
     </section>
     <section class="team">
       <div class="container">
@@ -528,19 +423,10 @@
           >
             <h4>Meet the Team</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun consectetur adipiscing elit, sed do
-              eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididun consectetur
-              adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididun consectetur adipiscing elit, sed do eiusmod tempor
-              incididun.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididun consectetur adipiscing elit, sed
-              do eiusmod tempor incididun.
+              Conceived and formally established by Ali, Almaw, Alemu, Amare & Ashenafi (5A Jurists Consultancy Group PLC) is an aspiring full-service consultancy office in Ethiopia. With prominent lawyers and legal team that has over and above 30 years of experience in consulting and representing clients on a wide range of legal issues concerning business and investment in the country, our consultancy firm has begun to make its early influence felt on the Ethiopian legal system.
             </p>
             <div class="button">
-              <a class="btn btn-rounded-lightblue" href=""
+              <a class="btn btn-rounded-lightblue" href="team"
                 >Meet the Team
                 <!-- <img src="../assets/Icons/seemorearrow.svg" alt="" /> -->
               </a>
@@ -549,121 +435,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-hours">
-            <h2>HOURS FOR CONTACT</h2>
-            <p class="desc-p">
-              This is the contact hours; please make sure your time is in sync
-              with ours.
-            </p>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Monday-Thursday 6:00-19:00 GMT</p>
-            </div>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Firday-Staurday 7:00-18:00 GMT</p>
-            </div>
-
-            <div class="socials">
-              <img src="../assets/Icons/decor.svg" alt="" />
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/mail.svg" alt="" />
-                    <p>Contact@5alawoffice.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                    <p>5Alawoffice@linkedin.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                    <p>5Alawoffice@facebook.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/phone.svg" alt="" />
-                    <p>0116504949, Fax – 0116505758</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h2>CONTACT US</h2>
-            <p>
-              This is the contact form; Please make sure to fill it in order for
-              you to reach us
-            </p>
-            <form action="" class="myform">
-              <img
-                class="contact-decor"
-                src="../assets/Icons/decor2.svg"
-                alt=""
-              />
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Frist Name"
-                />
-                <input
-                  type="email"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Email"
-                />
-
-                <input
-                  class="line right-margin"
-                  type="text"
-                  name="area"
-                  placeholder="Select Area"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  class="line right-margin"
-                  placeholder="Attachement"
-                />
-              </div>
-              <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message
-            </textarea
-              >
-              <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
-              </div> -->
-              <div class="submit-buttons">
-                <a class="btn btn-white" href="#">SEND MESSAGE</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ContactApp />
     <section class="testimonial">
       <div class="container">
         <h2>Testmonials</h2>
@@ -682,28 +454,43 @@ Message
           </div>
           <div class="testmonial-card">
             <p>
-              5A Jurists were responsive and quick to take appropriate action.
-              They provided us with wise counsel and also good guidance. We are
-              extremely pleased with the level of professionalism & expertise
-              they have.
+              Professional, efficient, and also personable. The team at 5A
+              Jurists executed my case expeditiously and fairly. Highly
+              recommend their services.
             </p>
             <span class="name"
               ><hr />
-              FRI EL Ethiopia
+              TCT
             </span>
           </div>
           <div class="testmonial-card1">
             <p>
-              5A Jurists were responsive and quick to take appropriate action.
-              They provided us with wise counsel and also good guidance. We are
-              extremely pleased with the level of professionalism & expertise
-              they have.
+              Everyone at 5A Jurists is professional, knowledgeable, & kind. I
+              highly recommend this firm.
             </p>
             <span class="name"
               ><hr />
-              FRI EL Ethiopia
+              Mr. Eyob Belihu
             </span>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="awards2">
+      <div class="container">
+        <div
+          class="circle-bg"
+          data-aos="fade-zoom-in"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <img src="../assets/Image/FRI-EL ETHIOPIA1.svg" alt="" />
+          <img src="../assets/Image/TCT.svg" alt="" />
+          <img src="../assets/Image/client2.svg" alt="" />
         </div>
       </div>
     </section>
@@ -711,8 +498,7 @@ Message
       <div class="container">
         <h2>News & Blog</h2>
         <p class="sub-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod Lorem ipsum dolor sit amet
+        This is a preview of the blog, news, and journal. To explore more, please follow this link.
         </p>
         <div class="wrapper">
           <div
@@ -772,7 +558,7 @@ Message
             data-aos-delay="100"
             data-aos-anchor-placement="top-center"
           >
-            <h2>Blog</h2>
+            <h2>Journal</h2>
             <p>
               5A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididun consectetur adipiscing elit, sed do
@@ -793,87 +579,20 @@ Message
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="map">
-                <a href="">
-                  <img src="../assets/Image/map.jpg" alt="" />
-                </a>
-              </div>
-              <div class="desti">
-                <h3 class="desti-title">Quick links</h3>
-                <ul class="desti-list">
-                  <div class="links">
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link"><a href="practice">Practice </a></li>
-                    <li class="footer-link"><a href="publication">Publication</a></li>
-                    <li class="footer-link"><a href="publication">News</a></li>
-                    <li class="footer-link"><a href="contact">Contact Us</a></li>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">About us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Contact Us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                    <div class="icon-container">
-                     <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
-                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
-                     <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
-              <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/Icons/Logo.svg" alt="" />
-          <p>EXPERTISE. EXPERIENCE. EXCELLENCE.</p>
-        </div>
-        <div class="copyright">
-          <p>
-            All Rights Reserved.&copy; 2022 Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    <FooterApp />
   </div>
 </template>
 
-<script >
+<script>
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default {
+  data() {
+    return {
+      allData: [],
+      searchTerm: "",
+    };
+  },
   mounted() {
     AOS.init({
       duration: 900,
@@ -882,38 +601,17 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-    const dropDown = document.querySelector(".drop-down-link");
-    const dropDownFull = document.querySelector(".nav-links");
-    const sublinks = document.querySelector(".sublinks");
-    console.log(sublinks);
-    dropDown.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks.classList.add("show-links");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
-
-    dropDownFull.addEventListener("mouseleave", () => {
-      sublinks.classList.remove("show-links");
-    });
-    const dropDown2 = document.querySelector(".drop-down-link2");
-    const dropDownFull2 = document.querySelector(".nav-links");
-    const sublinks2 = document.querySelector(".sublinks2");
-    console.log(sublinks2);
-    dropDown2.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks2.classList.add("show-links2");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
-
-    dropDownFull2.addEventListener("mouseleave", () => {
-      sublinks2.classList.remove("show-links2");
-    });
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/62220908a34c245641296e76/1ftaf6j28";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
 
     const menu = document.querySelector(".menu");
     const sidebar = document.querySelector(".links-container");
@@ -969,6 +667,45 @@ export default {
       }
     });
   },
+  methods: {
+    async search() {
+      try {
+        await axios
+          .post(
+            "https://versavvymedia.com/5Aback/",
+            {
+              action: "search",
+              term: this.searchTerm,
+            },
+            config
+          )
+          .then((res) => {
+            console.log(res.data);
+            this.allData = res.data;
+          });
+      } catch (err) {
+        console.log(err.message);
+      }
+    },
+    async fetchData() {
+      try {
+        await axios
+          .post(
+            "https://versavvymedia.com/5Aback/",
+            {
+              action: "fetchAll",
+            },
+            config
+          )
+          .then((res) => {
+            console.log("response", res.data);
+            this.allData = res.data;
+          });
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  },
   created() {},
 };
 </script>
@@ -987,329 +724,7 @@ export default {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 999999;
   }
-  header {
-    background: url("../assets/Image/home.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 100vh;
 
-    nav {
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-          margin-top: 1rem;
-          img {
-            width: 11rem;
-          }
-        }
-        .menu-bar {
-          margin-top: 1rem;
-          hr {
-            margin: auto;
-            margin-top: 0.5rem;
-            color: $A-white;
-            border-style: solid;
-            width: 2.35rem;
-          }
-        }
-        .links-container {
-          position: fixed;
-          top: 0;
-          right: -70vw;
-          height: 100vh;
-          width: 70vw;
-          background: $A-darkerblue;
-          z-index: 9999999999;
-          transition: $trans;
-          .upper-nav {
-            display: none;
-          }
-          .close-btn {
-            padding: 1rem;
-            width: 5rem;
-            position: absolute;
-            top: 0rem;
-            right: 0rem;
-          }
-          .nav-links {
-            height: 50%;
-            padding-top: 25rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 2rem;
-            .drop-down2 {
-              a {
-                color: #fff;
-              }
-            }
-            li {
-              margin-bottom: 1rem;
-              .scroll-link {
-                @extend .text-medium;
-                font-size: 1rem;
-                color: #fff;
-              }
-              .sublinks,
-              .sublinks2 {
-                margin: 1rem 0;
-
-                color: $A-white;
-                h3 {
-                  font-family: "medium bt";
-                  font-weight: 500;
-                  font-size: 1rem;
-                  line-height: 1.5rem;
-                  margin-bottom: 1rem;
-                }
-                img {
-                  width: 1.2rem;
-                }
-                li {
-                  margin-bottom: 0.5rem;
-                  margin-left: 1rem;
-                  a {
-                    font-family: "light bt";
-                    font-size: 0.88rem;
-                    display: flex;
-                    gap: 0.5rem;
-                    color: $A-white;
-                    transition: color 0.2s linear;
-                    img {
-                      width: 0.5rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .mid-moto {
-      .container {
-        .moto-wrapper {
-          display: grid;
-          place-items: center;
-          .rectangle {
-            img {
-              margin-top: 10rem;
-              width: 15rem;
-            }
-          }
-          .moto {
-            margin-top: -2rem;
-            p {
-              margin-top: 0rem;
-              font-size: 2rem;
-              color: $A-white;
-              font-weight: 700;
-              text-transform: uppercase;
-              text-align: left;
-              margin-left: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    header {
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 5rem;
-            .rectangle {
-              img {
-                width: 18rem;
-              }
-            }
-            .moto {
-              margin-top: 10rem;
-              p {
-                font-size: 3rem;
-                margin-top: 1rem;
-                margin-left: -2rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    header {
-      nav {
-        .container {
-          .links-container {
-            width: 30vh;
-            .close-btn {
-              width: 6rem;
-            }
-            .nav-links {
-              padding-top: 15rem;
-            }
-          }
-        }
-      }
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            margin-top: 10rem;
-
-            .moto {
-              margin-top: 10rem;
-              p {
-                margin-top: 0.5rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    header {
-      nav {
-        .container {
-          .logo {
-            img {
-              width: 15rem;
-            }
-          }
-          .menu-bar {
-            display: none;
-          }
-          .links-container {
-            display: block;
-            position: static;
-            // width: 50%;
-            height: auto;
-            z-index: 9999999999;
-            transition: $trans;
-            background: none;
-            width: auto;
-            .close-btn {
-              display: none;
-            }
-            .upper-nav {
-              display: flex;
-              justify-content: space-between;
-              margin-top: 1.5rem;
-              padding-left: 2rem;
-              gap: 3rem;
-              p {
-                color: #fff;
-                font-size: 1rem;
-              }
-              ul {
-                display: flex;
-                gap: 1rem;
-              }
-            }
-            .nav-links {
-              height: auto;
-              display: flex;
-              padding-top: 0%;
-              flex-direction: row;
-              gap: 3rem;
-              margin-top: 1rem;
-              padding-left: 2rem;
-              position: relative;
-              li {
-                .scroll-link {
-                  color: #fff;
-                }
-                a {
-                  font-size: 1rem;
-
-                  &:hover {
-                    color: $A-lightblue;
-                    font-size: 1.13rem;
-                    font-weight: 600;
-                  }
-                }
-              }
-              .drop-down {
-                .sublinks {
-                  position: absolute;
-                  width: auto;
-                  display: flex;
-                  background: $A-darkerblue;
-                  padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 1rem;
-                  display: none;
-                  h3 {
-                    font-size: 1.13rem;
-                    margin-bottom: 1.2rem;
-                  }
-                  li {
-                    margin-bottom: 1rem;
-                    a {
-                      color: $A-white;
-                      font-size: 1rem;
-                    }
-                  }
-                }
-              }
-              .drop-down2 {
-                .sublinks2 {
-                  position: absolute;
-                  width: auto;
-                  display: flex;
-                  background: $A-darkerblue;
-                  padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 1rem;
-                  display: none;
-                  h3 {
-                    font-size: 1.13rem;
-                    margin-bottom: 1.2rem;
-                  }
-                  li {
-                    margin-bottom: 1rem;
-
-                    a {
-                      color: $A-white;
-                      font-size: 0.9rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            justify-content: left;
-            margin-top: 5rem;
-            .rectangle {
-              img {
-                width: 20rem;
-              }
-            }
-
-            .moto {
-              margin-top: 15rem;
-              p {
-                font-size: 3.5rem;
-                margin-top: 1.5rem;
-                line-height: 2rem;
-                margin-left: -2rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .description {
     background: #fff;
     margin-top: -2rem;
@@ -1336,11 +751,13 @@ export default {
         //   }
         // }
         p {
-          @extend .text;
+          a {
+            @extend .text;
 
-          font-size: 0.8rem;
-          color: $A-green;
-          font-weight: 400;
+            font-size: 0.8rem;
+            color: $A-green;
+            font-weight: 400;
+          }
         }
       }
     }
@@ -1410,32 +827,35 @@ export default {
       }
     }
   }
-   @include responsive($xxl) {
+  @include responsive($xxl) {
     .description {
-      margin-left: 40rem;}
-   }
+      margin-left: 40rem;
+    }
+  }
   .awards {
     margin-top: 8rem;
     .container {
       .circle-bg {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
         border-radius: 10px;
         border-color: $A-green;
         img {
-          width: 4rem;
-            filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  &:hover{
-      filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  }
+          width: 7rem;
+          object-fit: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+          }
         }
       }
     }
@@ -1445,6 +865,7 @@ export default {
     .awards {
       .container {
         .circle-bg {
+          grid-template-columns: 1fr 1fr 1fr;
           img {
             width: 7rem;
           }
@@ -1470,6 +891,77 @@ export default {
       margin-top: 10rem;
       .container {
         .circle-bg {
+          display: flex;
+          justify-content: center;
+          gap: 3.5rem;
+          img {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+  .awards2 {
+    margin-top: 8rem;
+    .container {
+      .circle-bg {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        border-radius: 10px;
+        border-color: $A-green;
+        img {
+          width: 20rem;
+          object-fit: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive($md) {
+    .awards2 {
+      .container {
+        .circle-bg {
+          grid-template-columns: 1fr 1fr 1fr;
+          img {
+            width: 7rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .awards2 {
+      margin-top: 10rem;
+      .container {
+        .circle-bg {
+          gap: 8rem;
+          img {
+            width: 7rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .awards2 {
+      margin-top: 10rem;
+      .container {
+        .circle-bg {
+          display: flex;
+          justify-content: center;
           gap: 8rem;
           img {
             width: 10rem;
@@ -1792,6 +1284,7 @@ export default {
       }
       .counter-number {
         display: flex;
+        align-items: center;
         .numbers {
           font-size: 1.6rem;
           line-height: 1em;
@@ -1799,7 +1292,7 @@ export default {
           margin: 30px auto;
           overflow: hidden;
           color: $A-lightblue;
-
+          font-weight: 600;
           padding-bottom: 0.5rem;
           padding-top: 0.5rem;
 
@@ -1835,7 +1328,7 @@ export default {
           padding: 0 0.52em 0 0;
           margin: 0 auto;
           overflow: inherit;
-          animation: counting 0.4s steps(10) forwards infinite;
+          animation: counting 1.5s steps(10) forwards infinite;
         }
         .numbers__window__digit::before {
           content: attr(data-fake);
@@ -1891,7 +1384,6 @@ export default {
             place-items: center;
             // border: solid 2px;
             // border-radius: 1rem;
-            width: 6rem;
 
             img {
               margin-left: 0.5rem;
@@ -1932,8 +1424,8 @@ export default {
         }
         .counter-number {
           .numbers {
-            width: 7rem;
-            font-size: 1.6rem;
+            font-size: 3.5rem;
+            font-weight: 600;
             display: grid;
             place-items: center;
             img {
@@ -1945,7 +1437,7 @@ export default {
             }
             .title {
               margin-top: 1rem;
-              font-size: 1.3rem;
+              font-size: 2rem;
             }
           }
         }
@@ -1956,6 +1448,7 @@ export default {
     margin-top: 8rem;
     .practice-card {
       position: relative;
+
       &:hover .hover {
         visibility: visible;
       }
@@ -2508,6 +2001,7 @@ export default {
       }
       .wrapper {
         .testmonial-card {
+          width: 20rem;
           margin-top: 3rem;
           background: $A-darkerblue;
           padding: 2rem;
@@ -2524,7 +2018,7 @@ export default {
           .name {
             display: flex;
             justify-content: right;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-size: 0.8rem;
             line-height: 1.3rem;
             color: #e1e9f2;
@@ -2535,6 +2029,7 @@ export default {
           }
         }
         .testmonial-card1 {
+          width: 20rem;
           margin-top: 3rem;
           background: #fff;
           padding: 2rem;
@@ -2551,7 +2046,7 @@ export default {
           .name {
             display: flex;
             justify-content: right;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-size: 0.8rem;
             line-height: 1.3rem;
             color: $A-darkerblue;
@@ -2569,9 +2064,12 @@ export default {
       .container {
         .wrapper {
           display: flex;
+          justify-content: center;
           gap: 1rem;
           .testmonial-card,
           .testmonial-card1 {
+            width: 25rem;
+
             p {
               font-size: 0.9rem;
             }
@@ -2599,6 +2097,7 @@ export default {
   }
   .blog {
     margin-top: 8rem;
+    margin-bottom: 8rem;
     .container {
       h2 {
         @extend .title;
@@ -2726,251 +2225,6 @@ export default {
           }
           .link {
             margin-top: 10rem;
-          }
-        }
-      }
-    }
-  }
-  .footer {
-    background: $A-darkerblue;
-    margin-top: 6.25rem;
-
-    .container {
-      // width: 100%;
-      .footer-wrapper {
-        .footer-link-container {
-          .upper {
-            display: grid;
-            // grid-template-columns: 1fr 1fr;
-            place-items: center;
-            .map {
-              display: flex;
-              justify-content: center;
-              img {
-                margin-top: 1rem;
-              }
-            }
-            .desti {
-              .desti-title {
-                color: #fff;
-                @extend .title;
-                margin-top: 4.37rem;
-                text-align: center;
-                font-size: 1.13rem;
-                font-weight: 500;
-                text-transform: uppercase;
-              }
-              .desti-list {
-                text-align: center;
-                margin-top: 1.88rem;
-                margin-bottom: 1.88rem;
-                // margin-left: 2rem;
-                // gap: 3.31rem;
-                .links {
-                  display: grid;
-
-                  grid-template-columns: 1fr 1fr;
-                  place-items: left;
-                  gap: 1.88rem;
-
-                  li {
-                    a {
-                      font-size: 0.8rem;
-                    }
-                  }
-                }
-                div {
-                  // display: grid;
-                  // place-items: left;
-                  gap: 1rem;
-                  margin-top: 0.8rem;
-
-                  .footer-link {
-                    a {
-                      color: #fff;
-                      font-size: 0.8rem;
-                    }
-                  }
-                  p {
-                    color: #fff;
-                    @extend .text;
-
-                    text-align: center;
-                    font-size: 0.8rem;
-                  }
-                  .icon-container {
-                    display: flex;
-                    // align-items: center;
-                    justify-content: center;
-                    gap: 1.88rem;
-                    margin-top: 0.88rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      hr {
-        margin-top: 1.37rem;
-        color: #fff;
-      }
-      .lower {
-        display: grid;
-        place-items: center;
-        margin-top: 4.37rem;
-        // margin-bottom: 5rem;
-        img {
-          width: 12rem;
-        }
-        p {
-          color: #fff;
-          font-size: 1rem;
-          margin-top: 1.88rem;
-          line-height: 1.3rem;
-          text-align: center;
-        }
-      }
-      .copyright {
-        display: grid;
-        place-items: center;
-        margin-top: 5.37rem;
-
-        p {
-          color: #fff;
-          font-size: 0.88rem;
-          margin-top: 1.88rem;
-          line-height: 1.3rem;
-          text-align: center;
-          a {
-            color: $A-lightblue;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            display: flex;
-            // align-items: center;
-
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              place-items: center;
-              .map {
-                margin-top: 4.37rem;
-                img {
-                  width: 50rem;
-                }
-              }
-              .desti {
-                .desti-title {
-                  text-align: center;
-                }
-                .desti-list {
-                  text-align: left;
-                  margin-top: 1rem;
-                  margin-bottom: 0.98rem;
-
-                  div {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 1.3rem;
-                    margin-top: 1rem;
-                    .footer-link {
-                      a {
-                       
-                        font-size: .8rem;
-                        text-align: left;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          img {
-            width: 15rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .footer {
-      margin-top: 8.13rem;
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            place-items: center;
-            .upper {
-              gap: 4rem;
-              .desti {
-                .desti-title {
-                  text-align: center;
-                }
-                .desti-list {
-                  text-align: center;
-                  margin-top: 0.98rem;
-                  margin-bottom: 0.98rem;
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          margin-bottom: 0rem;
-          display: flex;
-          justify-content: space-between;
-          img {
-            margin-bottom: 1rem;
-            // width: 20rem;
-          }
-          p {
-            font-size: 1.3rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .footer {
-      margin-top: 10rem;
-      .container {
-        .footer-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 5rem;
-          .footer-link-container {
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              align-items: flex-start;
-              gap: 5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xxl) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          gap: 10rem;
-          .footer-link-container {
-            .upper {
-              gap: 10rem;
-            }
           }
         }
       }

@@ -1,107 +1,7 @@
 <template>
   <div class="body-main">
     <header id="app" class="header">
-      <nav class="nav" id="nav">
-        <div class="container banner">
-          <div class="logo">
-            <img src="../assets/Icons/Logo.svg" alt="" />
-          </div>
-          <div class="menu-bar menu">
-            <hr />
-            <hr />
-            <hr />
-          </div>
-
-          <div class="links-container">
-            <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
-            <div class="upper-nav">
-              <p>Contact@5alawoffice.com | +25116504949</p>
-              <ul>
-                <li>
-                  <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/twitter.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/google.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/youtube.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-              <div class="social"></div>
-            </div>
-            <ul class="nav-links">
-              <li><a href="" class="scroll-link"> Home</a></li>
-
-              <li class="drop-down">
-                <a href="practice" class="scroll-link drop-down-link"
-                  >Practice Area</a
-                >
-
-            <ul class="sublinks">
-                  <div class="corp-link">
-                    <li>
-                      <a href="coporate"> Coporate and Commercial</a>
-                    </li>
-                   
-                    <li><a href="power"> Power and Energy</a></li>
-                    <li><a href="telecom">ICT & Telecom</a></li>
-
-                    <li>
-                      <a href="charity">Charities & Nonprofit Organizations</a>
-                    </li>
-                    <li>
-                      <a href="employee">Employement and Immigration</a>
-                    </li>
-                    <li><a href="tax"> Taxation</a></li>
-                  </div>
-                </ul>
-              </li>
-
-              <li>
-                <a href="team" class="scroll-link">Teams</a>
-              </li>
-              <li class="drop-down2">
-                <a href="publication" class="scroll-link drop-down-link2"
-                  >Insights</a
-                >
-                <ul class="sublinks2">
-                  <div class="corp-link2">
-                    <li>
-                      <a href="publication"> Journal</a>
-                    </li>
-                    <li><a href="publication">Publication</a></li>
-                    <li><a href="publication"> Blog</a></li>
-                    <li><a href="publication">News</a></li>
-                  </div>
-                </ul>
-              </li>
-              <li>
-                <a href="about" class="scroll-link">About Us</a>
-              </li>
-              <li><a href="contact" class="scroll-link">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <NavApp />
       <div class="mid-title">
         <div
           class="wrapper"
@@ -146,7 +46,7 @@
             to you for decades to come.
           </p>
           <div class="button">
-            <a href="" class="btn btn-rounded-darkerblue">Contact Today!</a>
+            <a href="contact" class="btn btn-rounded-darkerblue">Contact Today!</a>
           </div>
         </div>
       </div>
@@ -211,7 +111,8 @@
     <section class="practice-area2">
       <div class="container">
         <div class="wrapper">
-          <div class="practice-card" data-aos="zoom-out">
+          <a href="charity">
+  <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -236,8 +137,10 @@
               accreditation agencies, and scientific and educational societies.
             </p>
           </div>
-
-          <div class="practice-card" data-aos="zoom-out">
+          </a>
+        
+<a href="employee">
+<div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -265,12 +168,12 @@
               <p class="prac-title">Mining</p>
             </div>
             <p>
-              Our lawyers work together to execute domestic and cross-border
-              transactions with ease, provide timely counsel, and help clients
-              navigate the evolving mining sector in Ethiopia.
+         Our lawyers work together to execute domestic and cross-border transactions with ease, provide timely counsel, and help clients navigate the evolving mining sector in Ethiopia.  5A Jurists Consultancy Group has a strong team of legal experts 
             </p>
           </div>
-          <div class="practice-card" data-aos="zoom-out">
+</a>
+       <a href="employee">
+         <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -297,7 +200,9 @@
             </p>
           </div>
 
-          <div class="practice-card" data-aos="zoom-out">
+         </a>   
+          <a href="tax">
+ <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
                 class="law-icon"
@@ -322,199 +227,65 @@
               often drive business strategy, structure, and deal consummation.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-hours">
-            <h2>HOURS FOR CONTACT</h2>
-            <p class="desc-p">
-              This is the contact hours; please make sure your time is in sync
-              with ours.
-            </p>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Monday-Thursday 6:00-19:00 GMT</p>
-            </div>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Firday-Staurday 7:00-18:00 GMT</p>
-            </div>
-
-            <div class="socials">
-              <img src="../assets/Icons/decor.svg" alt="" />
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/mail.svg" alt="" />
-                    <p>Contact@5alawoffice.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                    <p>5Alawoffice@linkedin.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                    <p>5Alawoffice@facebook.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/phone.svg" alt="" />
-                    <p>0116504949, Fax – 0116505758</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h2>CONTACT US</h2>
-            <p>
-              This is the contact form; Please make sure to fill it in order for
-              you to reach us
-            </p>
-            <form action="" class="myform">
-              <img
-                class="contact-decor"
-                src="../assets/Icons/decor2.svg"
-                alt=""
-              />
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Frist Name"
-                />
-                <input
-                  type="email"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Email"
-                />
-
-                <input
-                  class="line right-margin"
-                  type="text"
-                  name="area"
-                  placeholder="Select Area"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  class="line right-margin"
-                  placeholder="Attachement"
-                />
-              </div>
-              <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message
-            </textarea
+          </a>
+           <a href="telecom">
+ <div class="practice-card" data-aos="zoom-out">
+            <div class="practice-title">
+              <svg
+                class="law-icon"
+                width="52"
+                height="51"
+                viewBox="0 0 52 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-              <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
+                <path
+                  d="M26 34H19.5V31.875H26V34ZM26.6868 23.375L28.5567 21.25H19.5V27.625H25.0575L25.4757 25.5871L25.506 25.5H21.6667V23.375H26.6868ZM36.2722 32.096L29.7397 26.4074L29.7245 26.4265L28.7083 34L36.2722 32.096ZM37.6783 30.481L52 14.0122L45.5 8.5L31.1567 24.8009L37.6783 30.481ZM15.1667 25.5H8.66667V27.625H15.1667V25.5ZM41.1667 38.25H4.33333V17H32.2963L36.036 12.75H0V42.5H45.5V27.9947L41.1667 32.9609V38.25ZM15.1667 21.25H8.66667V23.375H15.1667V21.25ZM8.66667 34H15.1667V31.875H8.66667V34Z"
+                  fill="#2A2E53"
+                />
+              </svg>
 
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
-              </div> -->
-              <div class="submit-buttons">
-                <a class="btn btn-white" href="#">SEND MESSAGE</a>
-              </div>
-            </form>
+              <p class="prac-title">ICT & Telecom</p>
+            </div>
+            <p>
+              Tax issues underlie virtually every business formation, plan, and
+              transaction – whether domestic, international, or cross-border.
+              Tax laws and regulations are more than just considerations; they
+              often drive business strategy, structure, and deal consummation.
+            </p>
           </div>
+          </a>
+            <a href="coporate">
+ <div class="practice-card" data-aos="zoom-out">
+            <div class="practice-title">
+              <svg
+                class="law-icon"
+                width="52"
+                height="51"
+                viewBox="0 0 52 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26 34H19.5V31.875H26V34ZM26.6868 23.375L28.5567 21.25H19.5V27.625H25.0575L25.4757 25.5871L25.506 25.5H21.6667V23.375H26.6868ZM36.2722 32.096L29.7397 26.4074L29.7245 26.4265L28.7083 34L36.2722 32.096ZM37.6783 30.481L52 14.0122L45.5 8.5L31.1567 24.8009L37.6783 30.481ZM15.1667 25.5H8.66667V27.625H15.1667V25.5ZM41.1667 38.25H4.33333V17H32.2963L36.036 12.75H0V42.5H45.5V27.9947L41.1667 32.9609V38.25ZM15.1667 21.25H8.66667V23.375H15.1667V21.25ZM8.66667 34H15.1667V31.875H8.66667V34Z"
+                  fill="#2A2E53"
+                />
+              </svg>
+
+              <p class="prac-title">Coporates</p>
+            </div>
+            <p>
+             5A Jurists Consultancy Group regularly works with domestic and international clients on business formation and financing as well as myriad corporate transactions, contracts, securities, mergers, acquisitions, and joint ventures. Our clients have come to rely on our practical problem-solving skills 
+            </p>
+          </div>
+          </a>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="map">
-                <a href="">
-                  <img src="../assets/Image/map.jpg" alt="" />
-                </a>
-              </div>
-              <div class="desti">
-                <h3 class="desti-title">Quick links</h3>
-            <ul class="desti-list">
-                  <div class="links">
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link"><a href="practice">Practice </a></li>
-                    <li class="footer-link"><a href="publication">Publication</a></li>
-                    <li class="footer-link"><a href="publication">News</a></li>
-                    <li class="footer-link"><a href="contact">Contact Us</a></li>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">About us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Contact Us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-               <div class="icon-container">
-                     <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
-                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
-                     <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
-              <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/Icons/Logo.svg" alt="" />
-          <p>EXPERTISE. EXPERIENCE. EXCELLENCE.</p>
-        </div>
-        <div class="copyright">
-          <p>
-            All Rights Reserved.&copy; 2022 Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+     <section class="space"></section>
+  <ContactApp />
+   <section class="space"></section>
+    <FooterApp />
   </div>
 </template>
 
@@ -530,92 +301,17 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-    const dropDown = document.querySelector(".drop-down-link");
-    const dropDownFull = document.querySelector(".nav-links");
-    const sublinks = document.querySelector(".sublinks");
-    console.log(sublinks);
-    dropDown.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks.classList.add("show-links");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
+       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62220908a34c245641296e76/1ftaf6j28';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 
-    dropDownFull.addEventListener("mouseleave", () => {
-      sublinks.classList.remove("show-links");
-    });
-    const dropDown2 = document.querySelector(".drop-down-link2");
-    const dropDownFull2 = document.querySelector(".nav-links");
-    const sublinks2 = document.querySelector(".sublinks2");
-    console.log(sublinks2);
-    dropDown2.addEventListener("mouseover", (e) => {
-      const text = e.currentTarget.textContent;
-      const tempBtn = e.currentTarget.getBoundingClientRect();
-      const center = tempBtn.width / 2;
-      sublinks2.classList.add("show-links2");
-      // sublinks.style.left = `-${center + 5}px`
-      console.log(center);
-    });
-
-    dropDownFull2.addEventListener("mouseleave", () => {
-      sublinks2.classList.remove("show-links2");
-    });
-
-    const menu = document.querySelector(".menu");
-    const sidebar = document.querySelector(".links-container");
-    const close = document.querySelector(".close-btn");
-    const banner = document.querySelector(".banner");
-    menu.addEventListener("click", () => {
-      sidebar.style.right = "0";
-    });
-    close.addEventListener("click", () => {
-      sidebar.style.right = "-70vw";
-    });
-    const scrollLink = document.querySelectorAll(".scroll-link");
-    window.addEventListener("load", () => {
-      scrollLink.forEach((link) => {
-        if (link.href === path) {
-          link.style.color = "#71deb5";
-          link.style.fontWeight = "bold";
-        }
-      });
-    });
-
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector(".nav");
-      const menu = document.querySelector(".menu");
-      const logo = document.querySelector(".logo a");
-      const navHeight = nav.getBoundingClientRect().height;
-      const scrollHeight = window.pageYOffset;
-
-      if (navHeight < scrollHeight) {
-        nav.classList.add("fixed");
-        logo.innerHTML = `<picture>
-    <source media="(min-width:650px)" srcset=" ">
-    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
-  </picture>`;
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.add("black");
-            if (link.href === path) {
-              link.classList.remove("black");
-              link.style.color = "#71deb5";
-            }
-          });
-        }
-      } else {
-        nav.classList.remove("fixed");
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.remove("black");
-          });
-        }
-      }
-    });
+   
   },
   created() {},
 };
@@ -1311,543 +1007,9 @@ export default {
       }
     }
   }
-  .contact {
-    margin-top: 8rem;
-    .container {
-      .contact-box {
-        .contact-form {
-          background: $A-darkerblue;
-          padding: 1rem;
-          padding-right: 3rem;
-          margin-top: 5rem;
-          position: relative;
-          .contact-decor {
-            position: absolute;
-            right: 0.5rem;
-            top: 0;
-            width: 2rem;
-            height: 70vh;
-          }
-          h2 {
-            @extend .title;
-            margin-top: 0.94rem;
-            text-align: center;
-            line-height: 1.3rem;
-            color: #fff;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: center;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: #e1e9f2;
-          }
-          .myform {
-            place-content: center;
 
-            input,
-            textarea {
-              background: $A-darkerblue;
-              border: solid #fff;
-              border-style: none;
-              outline: none;
-              width: 100%;
-              margin-top: 1rem;
-              border: none;
-              border-bottom: 1px solid #fff;
-            }
-            input {
-              color: #fff;
-
-              &::placeholder {
-                color: #fff;
-              }
-            }
-            input[type="text"],
-            input[type="email"] {
-              padding: 1rem 0.8rem;
-              color: #fff;
-            }
-            textarea {
-              padding: 1rem 0.8rem;
-              color: #ffff;
-            }
-            // .list-areas {
-            //   div {
-            //     input {
-
-            //     }
-            //   }
-            // }
-
-            .submit-buttons {
-              margin-top: 5rem;
-              display: flex;
-              justify-content: center;
-            }
-          }
-        }
-        .contact-hours {
-          background: url("../assets/Image/hours.jpg") rgba(42, 46, 83, 0.7)
-            no-repeat;
-          background-position: center;
-          background-size: cover;
-          background-blend-mode: overlay;
-          // height: 70vh;
-          margin-top: 5rem;
-          padding: 1rem;
-          h2 {
-            @extend .title;
-            margin-top: 0.94rem;
-            text-align: left;
-            color: #fff;
-            line-height: 2rem;
-          }
-          .desc-p {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: left;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: #e1e9f2;
-          }
-          .time-contact {
-            display: flex;
-            align-items: center;
-            margin-top: 0.8rem;
-            p {
-              @extend .text;
-
-              text-align: left;
-              margin-left: 1rem;
-              color: #e1e9f2;
-            }
-          }
-          .socials {
-            display: flex;
-            margin-top: 3rem;
-            align-items: center;
-            gap: 1rem;
-            ul {
-              li {
-                a {
-                  display: flex;
-                  color: #e1e9f2;
-                  margin-top: 2rem;
-                  p {
-                    margin-left: 0.94rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .contact {
-      .container {
-        .contact-box {
-          display: flex;
-          .contact-form {
-            background: $A-darkerblue;
-            padding: 1rem;
-            padding-right: 4rem;
-            // height: 60vh;
-
-            .contact-decor {
-              width: 2.3rem;
-            }
-            h2 {
-              margin-top: 0.94rem;
-              text-align: center;
-              color: #fff;
-            }
-            p {
-              margin-top: 0.94rem;
-              text-align: center;
-              font-size: 0.8rem;
-              line-height: 1.3rem;
-              color: #e1e9f2;
-            }
-          }
-          .contact-hours {
-            // height: 65vh;
-            margin-top: 5rem;
-            padding: 1rem;
-            // width: 100%;
-            h2 {
-              margin-top: 0.94rem;
-              text-align: left;
-              color: #fff;
-            }
-            .desc-p {
-              margin-top: 0.94rem;
-              text-align: left;
-              font-size: 0.8rem;
-              line-height: 1.3rem;
-              color: #e1e9f2;
-            }
-            .time-contact {
-              display: flex;
-              align-items: center;
-              margin-top: 0.8rem;
-              p {
-                text-align: left;
-                margin-left: 1rem;
-                color: #e1e9f2;
-              }
-            }
-            .socials {
-              display: flex;
-              margin-top: 3rem;
-              align-items: center;
-              gap: 1rem;
-              ul {
-                li {
-                  a {
-                    display: flex;
-                    color: #e1e9f2;
-                    margin-top: 2rem;
-                    p {
-                      margin-left: 0.94rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .contact {
-      .container {
-        .contact-box {
-          display: flex;
-          .contact-form {
-            padding: 1rem;
-            // height: 60vh;
-            margin-top: 0rem;
-            padding-right: 5rem;
-            .contact-decor {
-              margin-top: 1rem;
-            }
-            h2 {
-              margin-top: 2.5rem;
-              text-align: center;
-              color: #fff;
-            }
-            p {
-              margin-top: 0.94rem;
-              text-align: center;
-              font-size: 0.8rem;
-              line-height: 1.3rem;
-              color: #e1e9f2;
-            }
-          }
-          .contact-hours {
-            // height: 65vh;
-            margin-top: 5rem;
-
-            padding: 3rem;
-            // width: 100%;
-            h2 {
-              margin-top: 0.94rem;
-              text-align: left;
-              color: #fff;
-            }
-            .desc-p {
-              margin-top: 0.94rem;
-              text-align: left;
-              font-size: 0.8rem;
-              line-height: 1.3rem;
-              color: #e1e9f2;
-            }
-            .time-contact {
-              display: flex;
-              align-items: center;
-              margin-top: 0.8rem;
-              p {
-                text-align: left;
-                margin-left: 1rem;
-                color: #e1e9f2;
-              }
-            }
-            .socials {
-              display: flex;
-              margin-top: 3rem;
-              align-items: center;
-              gap: 1rem;
-              ul {
-                li {
-                  a {
-                    display: flex;
-                    color: #e1e9f2;
-                    margin-top: 2rem;
-                    p {
-                      margin-left: 0.94rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .contact {
-      margin-top: 10rem;
-    }
-  }
-  .footer {
-    background: $A-darkerblue;
-    margin-top: 6.25rem;
-
-    .container {
-      // width: 100%;
-      .footer-wrapper {
-        .footer-link-container {
-          .upper {
-            display: grid;
-            // grid-template-columns: 1fr 1fr;
-            place-items: center;
-            .map {
-              display: flex;
-              justify-content: center;
-              img {
-                margin-top: 1rem;
-              }
-            }
-            .desti {
-              .desti-title {
-                color: #fff;
-                @extend .title;
-                margin-top: 4.37rem;
-                text-align: center;
-                font-size: 1.13rem;
-                font-weight: 500;
-                text-transform: uppercase;
-              }
-              .desti-list {
-                text-align: center;
-                margin-top: 1.88rem;
-                margin-bottom: 1.88rem;
-                // margin-left: 2rem;
-                // gap: 3.31rem;
-                .links {
-                  display: grid;
-
-                  grid-template-columns: 1fr 1fr;
-                  place-items: left;
-                  gap: 1.88rem;
-
-                  li {
-                    a {
-                      font-size: 0.8rem;
-                    }
-                  }
-                }
-                div {
-                  // display: grid;
-                  // place-items: left;
-                  gap: 1rem;
-                  margin-top: 0.8rem;
-
-                  .footer-link {
-                    a {
-                      color: #fff;
-                      font-size: 0.8rem;
-                    }
-                  }
-                  p {
-                    color: #fff;
-                    @extend .text;
-
-                    text-align: center;
-                    font-size: 0.8rem;
-                  }
-                  .icon-container {
-                    display: flex;
-                    // align-items: center;
-                    justify-content: center;
-                    gap: 1.88rem;
-                    margin-top: 0.88rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      hr {
-        margin-top: 1.37rem;
-        color: #fff;
-      }
-      .lower {
-        display: grid;
-        place-items: center;
-        margin-top: 4.37rem;
-        // margin-bottom: 5rem;
-        img {
-          width: 12rem;
-        }
-        p {
-          color: #fff;
-          font-size: 1rem;
-          margin-top: 1.88rem;
-          line-height: 1.3rem;
-          text-align: center;
-        }
-      }
-      .copyright {
-        display: grid;
-        place-items: center;
-        margin-top: 5.37rem;
-
-        p {
-          color: #fff;
-          font-size: 0.88rem;
-          margin-top: 1.88rem;
-          line-height: 1.3rem;
-          text-align: center;
-          a {
-            color: $A-lightblue;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            display: flex;
-            // align-items: center;
-
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              place-items: center;
-              .map {
-                margin-top: 4.37rem;
-                img {
-                  width: 50rem;
-                }
-              }
-              .desti {
-                .desti-title {
-                  text-align: center;
-                }
-                .desti-list {
-                  text-align: left;
-                  margin-top: 0.98rem;
-                  margin-bottom: 0.98rem;
-
-                  div {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 1.3rem;
-                    margin-top: 0.98rem;
-                    .footer-link {
-                      a {
-                        font-size: .8rem;
-                        text-align: left;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          img {
-            width: 15rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .footer {
-      margin-top: 8.13rem;
-      .container {
-        .footer-wrapper {
-          .footer-link-container {
-            place-items: center;
-            .upper {
-              gap: 4rem;
-              .desti {
-                .desti-title {
-                  text-align: center;
-                }
-                .desti-list {
-                  text-align: center;
-                  margin-top: 0.98rem;
-                  margin-bottom: 0.98rem;
-                }
-              }
-            }
-          }
-        }
-
-        .lower {
-          margin-bottom: 0rem;
-          display: flex;
-          justify-content: space-between;
-          img {
-            margin-bottom: 1rem;
-            // width: 20rem;
-          }
-          p {
-            font-size: 1.3rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .footer {
-      margin-top: 10rem;
-      .container {
-        .footer-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 5rem;
-          .footer-link-container {
-            .upper {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              align-items: flex-start;
-              gap: 5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xxl) {
-    .footer {
-      .container {
-        .footer-wrapper {
-          gap: 10rem;
-          .footer-link-container {
-            .upper {
-              gap: 10rem;
-            }
-          }
-        }
-      }
-    }
-  }
+ .space{
+   margin-top:8rem;
+ }
 }
 </style>
