@@ -394,7 +394,8 @@ export default {
                 font-size: 1rem;
                 color: #fff;
               }
-              .sublinks {
+              .sublinks,
+              .sublinks2 {
                 margin: 1rem 0;
 
                 color: $A-green;
