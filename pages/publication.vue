@@ -50,14 +50,14 @@
           <div class="search-object">
             <ul class="search-list">
               <li>
-                <a href=""> Coporate and Commercial</a>
+                <a href="coporate"> Coporate and Commercial</a>
               </li>
-              <li><a href="">Power and Energy</a></li>
-              <li><a href="">Banking & Finance</a></li>
-              <li><a href="">ICT & Telecom</a></li>
+              <li><a href="power">Power and Energy</a></li>
+              <li><a href="mining">Miming</a></li>
+              <li><a href="telecom">ICT & Telecom</a></li>
 
-              <li><a href="">Manufacturing and Industrial</a></li>
-              <li><a href="">Charities & Nonprofit Organizations</a></li>
+              <li><a href="employee">Employement and Immigration</a></li>
+              <li><a href="charity">Charities & Nonprofit Organizations</a></li>
             </ul>
             <div class="recent-blog">
               <h2>Recent Publication</h2>
@@ -66,7 +66,7 @@
                   <img
                     class="blog-picture"
                     src="../assets/Image/blog.jpg"
-                    alt=""
+                    alt="tax"
                   />
                   <p>Taxation</p>
                 </div>
@@ -74,7 +74,7 @@
                   <img
                     class="blog-picture"
                     src="../assets/Image/practice5.jpg"
-                    alt=""
+                    alt="employee"
                   />
                   <p>Organizations Law</p>
                 </div>
@@ -82,7 +82,7 @@
                   <img
                     class="blog-picture"
                     src="../assets/Image/bussiess.jpg"
-                    alt=""
+                    alt="mining"
                   />
                   <p>Mining</p>
                 </div>

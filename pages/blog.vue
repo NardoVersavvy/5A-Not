@@ -1,700 +1,246 @@
 <template>
   <div class="body-main">
     <header id="app" class="header">
-      <NavApp />
-      <div class="mid-moto">
-        <div class="container">
-          <div
-            class="moto-wrapper"
-            data-aos="fade-left"
-            data-aos-offset="20"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
-          >
-            <div class="rectangle">
-              <img src="../assets/Icons/Rectangle.svg" alt="" />
-            </div>
-            <div class="moto">
-              <p>EXPERTISE.</p>
-              <p>EXPERIENCE.</p>
-              <p>EXCELLENCE.</p>
-            </div>
-          </div>
+        <NavApp />
+      <div class="mid-title">
+        <div
+          class="wrapper"
+          data-aos="slide-left"
+          data-aos-offset="20"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <p>BLOG</p>
         </div>
       </div>
     </header>
-    <section class="description">
+    <section class="links">
       <div class="container">
-        <div class="desc">
-          <p>
-            We promise that we will put you first always and handle your affairs
-            with integrity, diligence, and discretion.
-          </p>
-        </div>
         <div class="link">
-          <a href="#">
-            <img
-              src="../assets/Icons/nav-arrow.svg"
-              class="right-arrow"
-              alt=""
+          <ul class="public-link">
+            <li>
+              <a href="#"> Laws</a>
+            </li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#"> Article</a></li>
+            <li><a href="#"> Research</a></li>
+            <li><a href="#"> Proclamations</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="publication-post">
+      <div class="container">
+        <div class="search">
+          <div class="input-container">
+            <button @click="search" type="submit" name="submit" class="search-button">
+              <img src="../assets/Icons/search.svg" class="icon" alt="" />
+            </button>
+            <input
+              class="input-field"
+              type="search"
+              v-model="searchTerm"
+              placeholder="Search..."
+              name="search"
             />
-          </a>
-          <p>Learn More About 5A</p>
-        </div>
-        <div class="hover"></div>
-      </div>
-    </section>
-    <section class="awards">
-      <div class="container">
-        <div
-          class="circle-bg"
-          data-aos="fade-zoom-in"
-          data-aos-offset="20"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-        >
-          <img src="../assets/Image/award.svg" alt="" />
-          <img src="../assets/Image/award2.svg" alt="" />
-          <img src="../assets/Image/award3.svg" alt="" />
-          <img src="../assets/Image/award4.svg" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="topdecor">
-      <div class="left">
-        <img class="left-decor" src="../assets/Icons/leftdecor.svg" alt="" />
-        <img class="edge-decor1" src="../assets/Icons/edge1.svg" alt="" />
-        <h2
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-        >
-          WHY WE ARE THE BEST CHOICE
-        </h2>
-      </div>
+          </div>
+          <div class="search-object">
+            <ul class="search-list">
+              <li>
+                <a href="coporate"> Coporate and Commercial</a>
+              </li>
+              <li><a href="power">Power and Energy</a></li>
+              <li><a href="mining">Miming</a></li>
+              <li><a href="telecom">ICT & Telecom</a></li>
 
-      <img class="pass-decor" src="../assets/Icons/meetdecor.svg" alt="" />
-      <div class="right">
-        <div class="best">
-          <div class="container">
-            <div
-              class="best-content"
-              data-aos="fade-up"
-              data-aos-offset="20"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-            >
-              <h1></h1>
-              <p>
-                We are committed to treating each of our clients with courtesy,
-                respect and compassion regardless of the size of their case. We
-                are a firm that will be here in the future, which we’ve
-                guaranteed with a succession plan to maintain our exemplary
-                service to you for decades to come.
-              </p>
-              <div class="button">
-                <a href="" class="btn btn-rounded-lightblue">Contact Today</a>
+              <li><a href="employee">Employement and Immigration</a></li>
+              <li><a href="charity">Charities & Nonprofit Organizations</a></li>
+            </ul>
+            <div class="recent-blog">
+              <h2>Recent Publication</h2>
+              <div class="wrapper">
+                <div class="recent">
+                  <img
+                    class="blog-picture"
+                    src="../assets/Image/blog.jpg"
+                    alt="tax"
+                  />
+                  <p>Taxation</p>
+                </div>
+                <div class="recent">
+                  <img
+                    class="blog-picture"
+                    src="../assets/Image/practice5.jpg"
+                    alt="employee"
+                  />
+                  <p>Organizations Law</p>
+                </div>
+                <div class="recent">
+                  <img
+                    class="blog-picture"
+                    src="../assets/Image/bussiess.jpg"
+                    alt="mining"
+                  />
+                  <p>Mining</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- <img class="decor" src="../assets/Image/best.JPG" alt="" /> -->
-        <img class="edge-decor" src="../assets/Icons/edge4.svg" alt="" />
-      </div>
-    </section>
-    <!-- <section class="best">
-      <div class="container">
         <div
-          class="best-content"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
+          class="publcation-wrapper"
+          v-for="row in allData"
+          :key="row.post_id"
         >
-          <h1>WHY WE ARE THE BEST CHOICE</h1>
-          <p>
-            We are committed to treating each of our clients with courtesy,
-            respect and compassion regardless of the size of their case. We are
-            a firm that will be here in the future, which we’ve guaranteed with
-            a succession plan to maintain our exemplary service to you for
-            decades to come.
-          </p>
-          <div class="button">
-            <a href="" class="btn btn-rounded-lightblue">Contact Today!</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="counter">
-      <div class="container">
-        <div class="decor1">
-          <img src="../assets/Icons/decor3.svg" alt="" />
-        </div>
-        <div class="decor">
-          <img src="../assets/Icons/decor3.svg" alt="" />
-        </div>
-        <div class="counter-number">
-          <div class="numbers">
-            <img class="icon-mid" src="../assets/Icons/trials.svg" alt="" />
-            <div class="number-collection">
-              <span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--1"
-                  data-fake="8642519073"
-                  >8</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--2"
-                  data-fake="5207186394"
-                  >5</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--3"
-                  data-fake="8395216407"
-                  >5</span
-                ></span
-              >
-            </div>
-            <p class="title">Trials</p>
-          </div>
-
-          <div class="numbers">
-            <img class="icon-mid" src="../assets/Icons/woncase.svg" alt="" />
-            <div class="number-collection">
-              <span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--1"
-                  data-fake="8642519073"
-                  >6</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--2"
-                  data-fake="5207186394"
-                  >8</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--3"
-                  data-fake="8395216407"
-                  >3</span
-                ></span
-              >
-            </div>
-            <p class="title">Won</p>
-          </div>
-          <div class="numbers">
-            <img class="icon-mid2" src="../assets/Icons/lawyer.svg" alt="" />
-            <div class="number-collection">
-              <span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--1"
-                  data-fake="8642519073"
-                  >1</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--2"
-                  data-fake="0527186394"
-                  >5</span
-                ></span
-              >
-            </div>
-            <p class="title">Lawyers</p>
-          </div>
-          <div class="numbers">
-            <img class="icon-mid2" src="../assets/Icons/awards.svg" alt="" />
-            <div class="number-collection">
-              <span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--1"
-                  data-fake="8642519073"
-                  >1</span
-                ></span
-              ><span class="numbers__window"
-                ><span
-                  class="numbers__window__digit numbers__window__digit--2"
-                  data-fake="5207186394"
-                  >0</span
-                ></span
-              >
-            </div>
-            <p class="title">Awards</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="practice">
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>CORPORATE AND COMMERCIAL</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice2.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>CONSTRUCTION, SURETY & DESIGN PROFESSIONALS</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice3.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>ICT & TELECOM</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice4.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>POWER AND ENERGY</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice1.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group’s other key area of focus is the power
-            & energy sector. Ethiopia is a country that is power-thirsty thus,
-            with huge potential and opportunity for companies engaged in the
-            generation of power such as hydro, wind, geothermal, and solar
-            power.
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>MANUFACTURING & INDUSTRIES</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice5.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-      <div
-        class="practice-card"
-        data-aos="slide-up"
-        data-aos-offset="20"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-        <h4>BANKING & FINANCE</h4>
-        <div class="more-arrow">
-          <img src="../assets/Icons/seemorearrow.svg" alt="" />
-        </div>
-        <img class="prac-img" src="../assets/Image/practice6.jpg" alt="" />
-        <div class="hover">
-          <p>
-            5A Jurists Consultancy Group regularly works with domestic and
-            international clients on business formation and financing as well as
-            myriad corporate transactions, contracts, securities, mergers,
-            acquisitions, and joint ventures
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="team-wrapper">
           <div
-            class="team-img"
+            class="single-publication"
             data-aos="slide-up"
             data-aos-offset="20"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in"
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <img class="edgepic" src="../assets/Icons/edge1.svg" alt="" />
-            <img class="team-pic" src="../assets/Image/Team.jpg" alt="" />
-            <img class="edgepic2" src="../assets/Icons/edge4.svg" alt="" />
+            <div class="img-wrapper">
+              <div class="lists">
+                <img class="pub-img" src="../assets/Image/pub.svg" alt="" />
+                <div class="pub-title">{{ row.post_title }}</div>
+              </div>
+            </div>
+            <div class="publication-desc">
+              <h4>{{ row.post_title }}</h4>
+              <p>
+                {{ row.post_content }}
+              </p>
+            </div>
           </div>
+          <div class="arrow">
+         
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="other-publication">
+      <div class="container">
+        <h2>Other Publications</h2>
+        <div class="wrapper">
           <div
-            class="team-desc"
-            data-aos="slide-up"
+            data-tilt
+            class="lists"
+            data-aos="zoom-out-up"
             data-aos-offset="20"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in"
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <h4>Meet the Team</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun consectetur adipiscing elit, sed do
-              eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididun consectetur
-              adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididun consectetur adipiscing elit, sed do eiusmod tempor
-              incididun.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididun consectetur adipiscing elit, sed
-              do eiusmod tempor incididun.
-            </p>
-            <div class="button">
-              <a class="btn btn-rounded-lightblue" href=""
-                >Meet the Team
-                <!-- <img src="../assets/Icons/seemorearrow.svg" alt="" /> -->
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-hours">
-            <h2>HOURS FOR CONTACT</h2>
-            <p class="desc-p">
-              This is the contact hours; please make sure your time is in sync
-              with ours.
-            </p>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Monday-Thursday 6:00-19:00 GMT</p>
-            </div>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Firday-Staurday 7:00-18:00 GMT</p>
-            </div>
-
-            <div class="socials">
-              <img src="../assets/Icons/decor.svg" alt="" />
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/mail.svg" alt="" />
-                    <p>Contact@5alawoffice.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                    <p>5Alawoffice@linkedin.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                    <p>5Alawoffice@facebook.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/phone.svg" alt="" />
-                    <p>0116504949, Fax – 0116505758</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h2>CONTACT US</h2>
-            <p>
-              This is the contact form; Please make sure to fill it in order for
-              you to reach us
-            </p>
-            <form action="" class="myform">
-              <img
-                class="contact-decor"
-                src="../assets/Icons/decor2.svg"
-                alt=""
-              />
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Frist Name"
-                />
-                <input
-                  type="email"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Email"
-                />
-
-                <input
-                  class="line right-margin"
-                  type="text"
-                  name="area"
-                  placeholder="Select Area"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  class="line right-margin"
-                  placeholder="Attachement"
-                />
-              </div>
-              <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message
-            </textarea
-              >
-              <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
-              </div> -->
-              <div class="submit-buttons">
-                <a class="btn btn-white" href="#">SEND MESSAGE</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonial">
-      <div class="container">
-        <h2>Testmonials</h2>
-        <div class="wrapper">
-          <div class="testmonial-card1">
-            <p>
-              5A Jurists were responsive and quick to take appropriate action.
-              They provided us with wise counsel and also good guidance. We are
-              extremely pleased with the level of professionalism & expertise
-              they have.
-            </p>
-            <span class="name"
-              ><hr />
-              FRI EL Ethiopia
-            </span>
-          </div>
-          <div class="testmonial-card">
-            <p>
-             Professional, efficient, and also personable. The team at 5A Jurists executed my case expeditiously and fairly. Highly recommend their services.
-            </p>
-            <span class="name"
-              ><hr />
-             TCT
-            </span>
-          </div>
-          <div class="testmonial-card1">
-            <p>
-             Everyone at 5A Jurists is professional, knowledgeable, & kind. I highly recommend this firm.
-            </p>
-            <span class="name"
-              ><hr />
-             Mr. Eyob Belihu
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="blog">
-      <div class="container">
-        <h2>News & Blog</h2>
-        <p class="sub-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod Lorem ipsum dolor sit amet
-        </p>
-        <div class="wrapper">
-          <div
-            class="blog-post"
-            data-aos="slide-up"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-center"
-          >
-            <h2>Blog</h2>
-            <p>
-              5A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun consectetur adipiscing elit, sed do
-              eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididun consectetur
-              adipiscing elit, sed do eiusmod tempor incididun.amet.
-            </p>
-            <div class="link">
-              <a href="#">
-                <img src="../assets/Icons/arrowwhite.svg" alt="" />
-              </a>
-              <p>Learn More</p>
-            </div>
-            <div class="bottom-poll">
-              <img src="../assets/Icons/poll.svg" alt="" />
-            </div>
+            <img class="pub-img" src="../assets/Image/pub2.svg" alt="" />
+            <div class="pub-title">Womens Right in Ethiopia</div>
           </div>
           <div
-            class="news"
-            data-aos="slide-up"
-            data-aos-delay="100"
+            data-tilt
+            class="lists"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <div class="title">
-              <h2>News</h2>
-            </div>
-            <div class="full-news">
-              <p>
-                5A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididun consectetur adipiscing elit, sed do
-                eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididun consectetur
-                adipiscing elit, sed do eiusmod tempor incididun.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididun.Lorem ipsum dolor Lorem ipsum dolor sit amet.
-              </p>
-              <div class="link">
-                <a href="#">
-                  <img src="../assets/Icons/arrownext.svg" alt="" />
-                </a>
-                <p>Learn More</p>
-              </div>
-            </div>
+            <img class="pub-img" src="../assets/Image/pub3.svg" alt="" />
+            <div class="pub-title">Crimal law in Ethiopia</div>
           </div>
           <div
-            class="blog-post"
-            data-aos="slide-up"
-            data-aos-delay="100"
+            data-tilt
+            class="lists"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <h2>Blog</h2>
-            <p>
-              5A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididun consectetur adipiscing elit, sed do
-              eiusmod tempor incididun.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididun consectetur
-              adipiscing elit, sed do eiusmod tempor incididun.amet.
-            </p>
-            <div class="link">
-              <a href="#">
-                <img src="../assets/Icons/arrowwhite.svg" alt="" />
-              </a>
-              <p>Learn More</p>
-            </div>
-            <div class="bottom-poll">
-              <img src="../assets/Icons/poll.svg" alt="" />
-            </div>
+            <img class="pub-img" src="../assets/Image/pub4.svg" alt="" />
+            <div class="pub-title">Contract of Mandate</div>
+          </div>
+          <div
+            data-tilt
+            class="lists"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img class="pub-img" src="../assets/Image/pub2.svg" alt="" />
+            <div class="pub-title">Childrens Law in Ethiopia</div>
+          </div>
+          <div
+            data-tilt
+            class="lists"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img class="pub-img" src="../assets/Image/pub3.svg" alt="" />
+            <div class="pub-title">Human Right</div>
+          </div>
+          <div
+            class="lists"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img class="pub-img" src="../assets/Image/pub4.svg" alt="" />
+            <div class="pub-title">Democratic in Ethiopia</div>
           </div>
         </div>
       </div>
     </section>
-  <FooterApp />
+    <ContactApp />
+   <section class="space"></section>
+    <FooterApp /> 
+
+    
   </div>
 </template>
 
-<script >
+<script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
+
+const config = {
+        headers: {
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,POST,OPTIONS,DELETE,PUT",
+        },
+      };
 export default {
+  data() {
+    return {
+      allData: [],
+      searchTerm: ''
+    };
+  },
   mounted() {
     AOS.init({
       duration: 900,
@@ -715,9 +261,47 @@ s0.parentNode.insertBefore(s1,s0);
 
   
   },
-  created() {},
+  methods: {
+    async search(){
+      try {
+        await axios.post("https://versavvymedia.com/5Aback/", {
+          action: "search",
+          term: this.searchTerm
+        }, config).then(res => {
+          console.log(res.data);
+          this.allData = res.data
+        })
+      } catch (err) {
+        console.log(err.message);
+      }
+    },
+    async fetchData() {
+      
+
+      try {
+        await axios
+          .post(
+            "https://versavvymedia.com/5Aback/",
+            {
+              action: "fetchAll",
+            },
+            config
+          )
+          .then((res) => {
+            console.log("response", res.data);
+            this.allData = res.data;
+          });
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  },
+  created() {
+    this.fetchData();
+  },
 };
 </script>
+
 <style lang="scss" scoped>
 .body-main {
   .show-links,
@@ -734,62 +318,38 @@ s0.parentNode.insertBefore(s1,s0);
     z-index: 999999;
   }
   header {
-    background: url("../assets/Image/home.jpg") no-repeat;
+    background: url("../assets/Image/publication.jpg") rgba(3, 42, 86, 0.3)
+      no-repeat;
     background-position: center center;
     background-size: cover;
     background-blend-mode: overlay;
+    height: 70vh;
     width: 100%;
-    height: 100vh;
 
-  
-    .mid-moto {
-      .container {
-        .moto-wrapper {
-          display: grid;
-          place-items: center;
-          .rectangle {
-            img {
-              margin-top: 10rem;
-              width: 15rem;
-            }
-          }
-          .moto {
-            margin-top: -2rem;
-            p {
-              margin-top: 0rem;
-              font-size: 2rem;
-              color: $A-white;
-              font-weight: 700;
-              text-transform: uppercase;
-              text-align: left;
-              margin-left: 1rem;
-            }
-          }
+   
+    .mid-title {
+      display: grid;
+      place-content: center;
+      .wrapper {
+        margin-top: 15rem;
+        p {
+          margin-top: 0.94rem;
+          font-size: 2rem;
+          color: $A-white;
+          font-weight: 700;
+          text-transform: uppercase;
         }
       }
     }
   }
   @include responsive($md) {
     header {
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-top: 5rem;
-            .rectangle {
-              img {
-                width: 18rem;
-              }
-            }
-            .moto {
-              margin-top: 10rem;
-              p {
-                font-size: 3rem;
-                margin-top: 1rem;
-                margin-left: -2rem;
-              }
-            }
+    
+      .mid-title {
+        .wrapper {
+          margin-top: 15rem;
+          p {
+            font-size: 2.3rem;
           }
         }
       }
@@ -798,685 +358,339 @@ s0.parentNode.insertBefore(s1,s0);
   @include responsive($lg) {
     header {
     
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            margin-top: 10rem;
-
-            .moto {
-              margin-top: 10rem;
-              p {
-                margin-top: 0.5rem;
-              }
-            }
-          }
+      .mid-title {
+        .wrapper {
+          margin-top: 20rem;
         }
       }
     }
   }
   @include responsive($xl) {
     header {
-    
-      .mid-moto {
-        .container {
-          .moto-wrapper {
-            justify-content: left;
-            margin-top: 5rem;
-            .rectangle {
-              img {
-                width: 20rem;
-              }
-            }
-
-            .moto {
-              margin-top: 15rem;
-              p {
-                font-size: 3.5rem;
-                margin-top: 1.5rem;
-                line-height: 2rem;
-                margin-left: -2rem;
-              }
-            }
+      
+      .mid-title {
+        .wrapper {
+          margin-top: 15rem;
+          p {
+            font-size: 3rem;
           }
         }
       }
     }
   }
-  .description {
-    background: #fff;
-    margin-top: -2rem;
-    margin-left: 2rem;
+  .links {
+    margin-top: 3rem;
     .container {
-      padding: 1rem;
-      width: 100%;
-      .desc {
-        p {
-          @extend .text;
-
-          font-size: 0.8rem;
-          color: $A-darkerblue;
-          font-weight: 400;
-          line-height: 1rem;
-        }
-      }
-      .link {
-        margin-top: 0.94rem;
-        display: flex;
-        align-items: center;
-        // a {
-        //   img {
-        //   }
-        // }
-        p {
-          @extend .text;
-
-          font-size: 0.8rem;
-          color: $A-green;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .description {
-      margin-left: 10rem;
-      .container {
-        padding: 1.5rem;
-        .desc {
-          p {
-            font-size: 1rem;
-          }
-        }
-        .link {
-          p {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .description {
-      margin-left: 21.44rem;
-      .container {
-        padding: 2rem;
-      }
-    }
-  }
-  @include responsive($xl) {
-    .description {
-      margin-left: 20rem;
-      .container {
-        position: relative;
-        .desc {
-          p {
-            font-size: 1rem;
-          }
-        }
-        .link {
-          margin-top: 2rem;
-          p {
-            font-size: 1rem;
-          }
-        }
-        .hover {
-          margin-top: 10rem;
-          margin-left: 2rem;
-          position: absolute;
-          bottom: 0.2rem;
-          left: 0.2rem;
-          content: "";
-          display: block;
-          width: 90%;
-          height: 60%;
-          background: $A-green;
-          z-index: -1;
-          transition: all 0.2s ease-in-out;
-        }
-        &:hover .hover {
-          transform: translateY(1rem) rotate(-1.54deg);
-        }
-        &:hover .right-arrow {
-          transform: translateX(0.2rem);
-        }
-      }
-    }
-  }
-   @include responsive($xxl) {
-    .description {
-      margin-left: 40rem;}
-   }
-  .awards {
-    margin-top: 8rem;
-    .container {
-      .circle-bg {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        border-radius: 10px;
-        border-color: $A-green;
-        img {
-          width: 4rem;
-            filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  &:hover{
-      filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  }
-        }
-      }
-    }
-  }
-
-  @include responsive($md) {
-    .awards {
-      .container {
-        .circle-bg {
-          img {
-            width: 7rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .awards {
-      margin-top: 10rem;
-      .container {
-        .circle-bg {
-          gap: 8rem;
-          img {
-            width: 7rem;
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .awards {
-      margin-top: 10rem;
-      .container {
-        .circle-bg {
-          gap: 8rem;
-          img {
-            width: 10rem;
-          }
-        }
-      }
-    }
-  }
-  .topdecor {
-    margin-top: 8rem;
-    position: relative;
-
-    .left {
-      background: $A-darkerblue;
-      width: 100%;
-      height: 30vh;
       display: grid;
       place-items: center;
 
-      .left-decor {
-        display: none;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 999;
-      }
-      .edge-decor1 {
-        top: -0.5rem;
-        left: -0.5rem;
-        position: absolute;
-        z-index: 999;
-      }
-      h2 {
-        @extend .h2;
-
-        color: $A-white;
-        font-size: 1.5rem;
-        font-weight: 600;
-        text-align: center;
-        z-index: 9999;
+      .link {
+        .public-link {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 2rem;
+          li {
+            a {
+              @extend .text;
+              font-size: 1rem;
+              font-weight: 500;
+              color: $A-darkerblue;
+            }
+          }
+          &:hover {
+            color: $A-lightblue;
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+        }
       }
     }
-    .pass-decor {
-      margin-top: -5rem;
-      position: absolute;
-      z-index: 999;
-      opacity: 0.4;
+  }
+  @include responsive($md) {
+    .links {
+      .container {
+        .link {
+          .public-link {
+            display: flex;
+          }
+        }
+      }
     }
-    .right {
-      position: relative;
-      .best {
-        background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-blend-mode: overlay;
-        background-attachment: fixed;
-        display: grid;
-        place-items: center;
-        .container {
-          padding: 2.5rem 0 4rem;
-          z-index: 9999;
-          .best-content {
-            // max-width: 32.69rem;
-
-            h1 {
-              @extend .h2;
-              color: #fff;
-              margin-bottom: 1.69rem;
-              text-align: center;
-            }
-            p {
-              font-weight: normal;
-              font-size: 1.13rem;
-              line-height: 1.75rem;
-              color: #fff;
-              margin-bottom: 1.2rem;
-              // max-width: 28.19rem;
-              text-align: center;
-            }
-            .button {
-              display: grid;
-              place-content: center;
+  }
+  @include responsive($lg) {
+    .links {
+      .container {
+        .link {
+          .public-link {
+            display: flex;
+            li {
               a {
-                @extend .text;
+                margin-left: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .publication-post {
+    margin-top: 5rem;
+    .container {
+      .publcation-wrapper {
+        background: #ecf2fd;
+        padding: 1rem;
+        position: relative;
+        .single-publication {
+          .img-wrapper {
+            .lists {
+              display: grid;
+              place-items: center;
+              position: relative;
+              margin-top: 2rem;
+
+              .pub-img {
+                // position: relative;
+              }
+              .pub-title {
+                position: absolute;
+                // top: 0;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                @extend .title;
+
+                text-align: center;
                 color: #fff;
               }
             }
           }
+          .publication-desc {
+            margin-top: 2rem;
+            h4 {
+              @extend .title;
+              font-weight: 500;
+              color: $A-darkerblue;
+              text-align: center;
+              line-height: 2rem;
+            }
+            p {
+              @extend .text;
+              margin-top: 0.94rem;
+              color: $A-darkerblue;
+            }
+          }
+        }
+        .arrow {
+          display: flex;
+          justify-content: right;
+          margin-top: 5rem;
+          img {
+            width: 3rem;
+          }
         }
       }
-      .decor {
-        height: 20rem;
-        width: 100%;
-        object-fit: cover;
-      }
-      .edge-decor {
-        bottom: -0.1rem;
-        right: -0.1rem;
-        position: absolute;
-        z-index: 999;
-      }
-    }
-  }
-  @include responsive($md) {
-    .topdecor {
-      display: flex;
-      width: 100%;
-      .left {
-        height: 40vh;
-        .left-decor {
-          display: block;
-          position: absolute;
-          left: 0;
-        }
-      }
-      .pass-decor {
-        margin-top: 0rem;
-        left: -4rem;
-        bottom: 0;
-        width: 40rem;
-      }
-      .right {
-        .best {
-          height: 40vh;
-        }
-        .decor {
-          height: 40vh;
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .topdecor {
-      display: flex;
-      .edge-decor1 {
-        width: 8rem;
-      }
-      .left {
-        width: 80%;
-        height: 30vh;
-      }
-      .pass-decor {
-        margin-top: 0rem;
-        left: 3.3rem;
-        bottom: 0;
-        width: 50rem;
-      }
-      .right {
-        .decor {
-          height: 30vh;
-        }
-        .edge-decor {
-          width: 8rem;
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .topdecor {
-      .left {
-        width: 60%;
-        height: 40vh;
+      .search {
+        // display: grid;
+        // place-items: center;
 
-        h2 {
-          margin-left: 3rem;
-          margin-right: 3rem;
-          font-size: 2rem;
+        margin-top: 5rem;
+        .input-container {
+          display: flex;
+
+          flex-direction: row-reverse;
+          width: 15.38rem;
+          margin-bottom: 2.13rem;
+
+          .search-button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+          }
+          .icon {
+            padding: 10px;
+            min-width: 50px;
+            // background: #fff;
+            border: 2px solid $A-darkerblue;
+            border-left: none;
+          }
+          .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            background: none;
+            border-color: #10284a;
+            border-right: none;
+          }
         }
-        .edge-decor1 {
-          width: 10rem;
-        }
-      }
-      .pass-decor {
-        margin-left: 15rem;
-      }
-      .right {
-        .decor {
-          height: 40vh;
-        }
-        .edge-decor {
-          width: 10rem;
-        }
-      }
-    }
-  }
-  @include responsive($xxl) {
-    .topdecor {
-      .left {
-        width: 75%;
-        height: 50vh;
-        h2 {
-          margin-left: 10rem;
-          margin-right: 10rem;
+        .search-object {
           margin-top: 0rem;
-          font-size: 2rem;
-        }
-      }
-      .pass-decor {
-        margin-left: 40rem;
-      }
-      .right {
-        .best {
-          height: 50vh;
-          .container {
-            .best-content {
-              p {
-                margin-left: 5rem;
-                margin-right: 5rem;
-                margin-top: 3rem;
+          margin-bottom: 5rem;
+          .search-list {
+            li {
+              margin-top: 0.94rem;
+              // text-transform: lowercase;
+              a {
+                color: $A-darkerblue;
+              }
+            }
+          }
+          .recent-blog {
+            margin-top: 5rem;
+            h2 {
+              @extend .title;
+              margin-top: 0.94rem;
+              font-size: 1.5rem;
+              text-align: center;
+              color: $A-darkerblue;
+            }
+            .wrapper {
+              .recent {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                margin-top: 2rem;
+                .blog-picture {
+                  width: 5rem;
+                  height: 5rem;
+                  object-fit: cover;
+                }
               }
             }
           }
         }
-        .decor {
-          height: 50vh;
+      }
+    }
+  }
+  @include responsive($md) {
+    .publication-post {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        .publcation-wrapper {
+          padding: 1rem;
+          .single-publication {
+            .publication-desc {
+              margin-top: 4rem;
+              p {
+                margin-top: 2rem;
+              }
+            }
+          }
+        }
+        .search {
+          margin-top: 0rem;
+          position: sticky;
+          top: 0;
+          .search-object {
+            .recent-blog {
+              .wrapper {
+                .recent {
+                  display: flex;
+                  align-items: center;
+                  gap: 2rem;
+                  margin-top: 2rem;
+                  .blog-picture {
+                    width: 5rem;
+                    height: 5rem;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-  // .best {
-  //   margin-top: 8rem;
-  //   background: url("../assets/Image/best.JPG") rgba(0, 0, 0, 0.6) no-repeat;
-  //   background-position: center center;
-  //   background-size: cover;
-  //   background-blend-mode: overlay;
-  //   background-attachment: fixed;
-  //   .container {
-  //     padding: 2.5rem 0 4rem;
-
-  //     .best-content {
-  //       // max-width: 32.69rem;
-
-  //       h1 {
-  //         @extend .h2;
-  //         color: #fff;
-  //         margin-bottom: 1.69rem;
-  //         text-align: center;
-  //       }
-  //       p {
-  //         font-weight: normal;
-  //         font-size: 1.13rem;
-  //         line-height: 1.75rem;
-  //         color: #fff;
-  //         margin-bottom: 1.2rem;
-  //         // max-width: 28.19rem;
-  //         text-align: center;
-  //       }
-  //       .button {
-  //         display: grid;
-  //         place-content: center;
-  //         a {
-  //           @extend .text;
-  //           color: #fff;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // @include responsive($md) {
-  //   .best {
-  //     .container {
-  //       .best-content {
-  //         margin-left: 5rem;
-  //         margin-right: 5rem;
-  //       }
-  //     }
-  //   }
-  // }
-  // @include responsive($lg) {
-  //   .best {
-  //     margin: 7rem 0;
-  //     background-attachment: none;
-  //   }
-  // }
-  // @include responsive($xl) {
-  //   .best {
-  //     margin-top: 10rem;
-  //     .container {
-  //       .best-content {
-  //         margin-left: 15rem;
-  //         margin-right: 15rem;
-  //         h1 {
-  //           margin-top: 3rem;
-  //         }
-  //         p {
-  //           margin-top: 3rem;
-  //           font-size: 1.13rem;
-  //           margin-bottom: 4rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  .counter {
+  @include responsive($lg) {
+    .publication-post {
+      margin-top: 10rem;
+      .container {
+        gap: 3rem;
+        .publcation-wrapper {
+          padding-left: 5rem;
+          padding-right: 5rem;
+          .single-publication {
+            .publication-desc {
+              margin-top: 4rem;
+              p {
+                margin-top: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive($xl) {
+    .publication-post {
+      margin-top: 10rem;
+      .container {
+        .publcation-wrapper {
+          padding-left: 5rem;
+          padding-right: 5rem;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+          .single-publication {
+            .publication-desc {
+              margin-top: 4rem;
+              p {
+                margin-top: 2rem;
+              }
+            }
+          }
+        }
+        .search {
+          .search-object {
+          }
+        }
+      }
+    }
+  }
+  .other-publication {
     margin-top: 8rem;
-    background-color: #e1e9f2;
-
     .container {
-      position: relative;
-      .decor {
-        position: absolute;
-
-        bottom: 0;
-        right: 0;
-        img {
-          margin-bottom: -1.8rem;
-          width: 10rem;
-        }
+      h2 {
+        @extend .title;
+        margin-top: 0.94rem;
+        text-align: center;
+        color: $A-darkerblue;
       }
-      .decor1 {
-        position: absolute;
-        display: none;
-        top: 0;
-        left: 0;
-        img {
-          margin-top: -1.8rem;
-          width: 10rem;
-        }
-      }
-      .counter-number {
-        display: flex;
-        .numbers {
-          font-size: 1.6rem;
-          line-height: 1em;
-          text-align: center;
-          margin: 30px auto;
-          overflow: hidden;
-          color: $A-lightblue;
+      .wrapper {
+        .lists {
+          display: grid;
+          place-items: center;
+          position: relative;
+          margin-top: 2rem;
 
-          padding-bottom: 0.5rem;
-          padding-top: 0.5rem;
-
-          // border: solid 2px;
-          // border-radius: 1rem;
-          .title {
-            color: $A-lightblue;
-            font-size: 1rem;
-            font-weight: 600;
+          .pub-img {
+            // position: relative;
           }
-          img {
-            margin-bottom: 0.94rem;
-          }
-          .icon-mid {
-            margin-left: 0.5rem;
-          }
-          .icon-mid2 {
-            margin-left: 1rem;
-          }
-        }
-
-        .numbers__window {
-          display: inline-block;
-          overflow: hidden;
-          width: 0.6em;
-          height: 1em;
-        }
-        .numbers__window__digit {
-          font: inherit;
-          word-break: break-all;
-          display: block;
-          width: 0;
-          padding: 0 0.52em 0 0;
-          margin: 0 auto;
-          overflow: inherit;
-          animation: counting 0.4s steps(10) forwards infinite;
-        }
-        .numbers__window__digit::before {
-          content: attr(data-fake);
-          display: inline-block;
-          width: 100%;
-          height: auto;
-        }
-        .numbers__window__digit--1 {
-          animation-iteration-count: 3;
-        }
-        .numbers__window__digit--2 {
-          animation-iteration-count: 6;
-        }
-        .numbers__window__digit--3 {
-          animation-iteration-count: 9;
-        }
-        .numbers__window__digit--4 {
-          animation-iteration-count: 12;
-        }
-        .numbers__window__digit--5 {
-          animation-iteration-count: 15;
-        }
-
-        @keyframes counting {
-          100% {
-            transform: translate3d(0, -10em, 0);
+          .pub-title {
+            position: absolute;
+            // top: 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            @extend .text;
+            font-size: 1.5rem;
+            margin-top: 0.94rem;
+            text-align: center;
+            color: #fff;
           }
         }
       }
     }
   }
   @include responsive($md) {
-    .counter {
-      margin-top: 8rem;
-
+    .other-publication {
       .container {
-        .numbers {
-          color: $A-lightblue;
-        }
-      }
-    }
-  }
-
-  @include responsive($lg) {
-    .counter {
-      margin-top: 10rem;
-
-      .container {
-        .counter-number {
-          .numbers {
-            color: $A-lightblue;
-            display: grid;
-            place-items: center;
-            // border: solid 2px;
-            // border-radius: 1rem;
-            width: 6rem;
-
-            img {
-              margin-left: 0.5rem;
-              margin-bottom: 1rem;
-            }
-            .icon-mid {
-              margin-left: 0.5rem;
-            }
-            .icon-mid2 {
-              margin-left: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @include responsive($xl) {
-    .counter {
-      margin-top: 10rem;
-
-      .container {
-        .decor1 {
-          display: block;
-          margin-left: -8rem;
-          img {
-            width: 15rem;
-
-            margin-top: -2.8rem;
-          }
-        }
-        .decor {
-          margin-right: -8rem;
-          img {
-            width: 15rem;
-            margin-bottom: -2.8rem;
-          }
-        }
-        .counter-number {
-          .numbers {
-            width: 7rem;
-            font-size: 1.6rem;
-            display: grid;
-            place-items: center;
-            img {
-              margin-left: 0rem;
-              margin-bottom: 1rem;
-            }
-            .icon-mid {
-              margin-left: 0rem;
-            }
-            .title {
-              margin-top: 1rem;
+        .wrapper {
+          display: flex;
+          gap: 1rem;
+          margin-top: 3rem;
+          .lists {
+            .pub-title {
               font-size: 1.3rem;
             }
           }
@@ -1484,224 +698,17 @@ s0.parentNode.insertBefore(s1,s0);
       }
     }
   }
-  .practice {
-    margin-top: 8rem;
-    .practice-card {
-      position: relative;
-      &:hover .hover {
-        visibility: visible;
-      }
-      &::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(42, 46, 83, 0.4);
-        z-index: 99;
-      }
-
-      .prac-img {
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      h4 {
-        position: absolute;
-        z-index: 999;
-        color: #fff;
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin: 1rem;
-        margin-top: 2rem;
-        line-height: 1.3rem;
-        text-align: left;
-      }
-      .more-arrow {
-        position: absolute;
-        z-index: 999;
-        bottom: 0;
-        right: 0;
-        color: #fff;
-        border: solid 2px;
-        border-radius: 10px;
-        padding: 0.2rem;
-        margin: 1rem;
-
-        img {
-          width: 2rem;
-        }
-      }
-      .hover {
-        z-index: 99;
-        position: absolute;
-        top: 0;
-        color: #fff;
-        text-align: center;
-        height: 100%;
-        padding: 20px;
-        width: 100%;
-
-        background: rgba(42, 46, 83, 0.9);
-
-        border-top: solid 1px #000;
-        transition: all 200ms ease-in-out;
-        visibility: hidden;
-        p {
-          font-size: 1.13rem;
-          margin-top: 5rem;
-          text-align: left;
-          color: #fff;
-          line-height: 1.5rem;
-        }
-      }
-    }
-  }
   @include responsive($md) {
-    .practice {
-      display: grid;
-
-      grid-template-columns: 1fr 1fr 1fr;
-      .practice-card {
-        h4 {
-          font-size: 1.13rem;
-          width: 90%;
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .practice {
-      margin-top: 10rem;
-      .practice-card {
-        overflow: hidden;
-        position: relative;
-        h4 {
-          font-size: 1.5rem;
-          line-height: 1.8rem;
-          width: 85%;
-        }
-        .hover {
-          p {
-            margin-top: 8rem;
-            font-size: 1.3rem;
-            line-height: 2rem;
-          }
-        }
-      }
-    }
-  }
-  .team {
-    margin-top: 8rem;
-    .container {
-      .team-wrapper {
-        .team-img {
-          .edgepic {
-            position: absolute;
-            z-index: 999;
-            width: 5rem;
-          }
-          .team-pic {
-            position: relative;
-            object-fit: cover;
-          }
-          .edgepic2 {
-            position: absolute;
-            z-index: 999;
-            width: 3rem;
-            bottom: -0.1rem;
-            right: -0.1rem;
-          }
-        }
-        .team-desc {
-          margin-top: 2rem;
-          h4 {
-            @extend .title;
-            margin-top: 0.94rem;
-            text-align: left;
-            color: $A-darkerblue;
-          }
-          p {
-            @extend .text;
-            margin-top: 0.94rem;
-            text-align: left;
-            color: $A-grey;
-
-            line-height: 1.5rem;
-          }
-          .button {
-            margin-top: 1.88rem;
-            a {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($md) {
-    .team {
+    .other-publication {
       .container {
-        .team-wrapper {
-          // display: flex;
-          margin-left: 5rem;
-          margin-right: 5rem;
+        .wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
           gap: 1rem;
-          .team-img {
-            .edgepic {
-              position: absolute;
-              z-index: 999;
-              width: 5rem;
-            }
-            .team-pic {
-              width: 50rem;
-            }
-            .edgepic2 {
-              position: absolute;
-              z-index: 999;
-              width: 5rem;
-              bottom: 0;
-              right: -0.1rem;
-            }
-          }
-          .team-desc {
-            margin-top: 4rem;
-            h4 {
-              margin-top: 0rem;
-            }
-            p {
-              margin-top: 1.88rem;
-            }
-            .button {
-              margin-top: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($lg) {
-    .team {
-      .container {
-        .team-wrapper {
-          display: flex;
-          margin-left: 0rem;
-          margin-right: 0rem;
-          .team-img {
-            .team-pic {
-              width: 300rem;
-              height: 30vh;
-            }
-          }
-          .team-desc {
-            margin-top: 0rem;
-            p {
-              margin-top: 2rem;
-              margin-bottom: 3rem;
-              font-size: 1rem;
-              font-weight: 2rem;
+          margin-top: 3rem;
+          .lists {
+            .pub-title {
+              font-size: 1.3rem;
             }
           }
         }
@@ -1709,33 +716,22 @@ s0.parentNode.insertBefore(s1,s0);
     }
   }
   @include responsive($xl) {
-    .team {
+    .other-publication {
       margin-top: 10rem;
       .container {
-        .team-wrapper {
-          .team-img {
-            .team-pic {
-              width: 40rem;
-              height: auto;
-            }
-          }
-          .team-desc {
-            width: 45%;
-            h4 {
-              font-size: 2.5rem;
-            }
-            p {
-              margin-top: 4rem;
-              margin-bottom: 5rem;
-
-              font-weight: 2rem;
+        .wrapper {
+          margin-top: 5rem;
+          .lists {
+            .pub-title {
+              margin-left: 5rem;
+              margin-right: 5rem;
+              font-size: 1.7rem;
             }
           }
         }
       }
     }
   }
-
   .contact {
     margin-top: 8rem;
     .container {
@@ -2030,247 +1026,249 @@ s0.parentNode.insertBefore(s1,s0);
       margin-top: 10rem;
     }
   }
-  .testimonial {
-    margin-top: 8rem;
-    .container {
-      h2 {
-        @extend .title;
-        text-align: center;
-        font-weight: 600;
-      }
-      .wrapper {
-      
-        .testmonial-card {
-          width: 20rem;
-          margin-top: 3rem;
-          background: $A-darkerblue;
-          padding: 2rem;
-          border-radius: 40px;
-          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  .footer {
+    background: $A-darkerblue;
+    margin-top: 6.25rem;
 
-          p {
-            margin-top: 0.94rem;
-            text-align: left;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: #e1e9f2;
-          }
-          .name {
-            display: flex;
-            justify-content: right;
-            margin-top: 1.5rem;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: #e1e9f2;
-            border-style: none;
-            hr {
-              width: 3rem;
+    .container {
+      // width: 100%;
+      .footer-wrapper {
+        .footer-link-container {
+          .upper {
+            display: grid;
+            // grid-template-columns: 1fr 1fr;
+            place-items: center;
+            .map {
+              display: flex;
+              justify-content: center;
+              img {
+                margin-top: 1rem;
+              }
+            }
+            .desti {
+              .desti-title {
+                color: #fff;
+                @extend .title;
+                margin-top: 4.37rem;
+                text-align: center;
+                font-size: 1.13rem;
+                font-weight: 500;
+                text-transform: uppercase;
+              }
+              .desti-list {
+                text-align: center;
+                margin-top: 1.88rem;
+                margin-bottom: 1.88rem;
+                // margin-left: 2rem;
+                // gap: 3.31rem;
+                .links {
+                  display: grid;
+
+                  grid-template-columns: 1fr 1fr;
+                  place-items: left;
+                  gap: 1.88rem;
+
+                  li {
+                    a {
+                      font-size: 0.8rem;
+                    }
+                  }
+                }
+                div {
+                  // display: grid;
+                  // place-items: left;
+                  gap: 1rem;
+                  margin-top: 0.8rem;
+
+                  .footer-link {
+                    a {
+                      color: #fff;
+                      font-size: 0.8rem;
+                    }
+                  }
+                  p {
+                    color: #fff;
+                    @extend .text;
+
+                    text-align: center;
+                    font-size: 0.8rem;
+                  }
+                  .icon-container {
+                    display: flex;
+                    // align-items: center;
+                    justify-content: center;
+                    gap: 1.88rem;
+                    margin-top: 0.88rem;
+                  }
+                }
+              }
             }
           }
         }
-        .testmonial-card1 {
-           width: 20rem;
-          margin-top: 3rem;
-          background: #fff;
-          padding: 2rem;
-          border-radius: 40px;
-          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      hr {
+        margin-top: 1.37rem;
+        color: #fff;
+      }
+      .lower {
+        display: grid;
+        place-items: center;
+        margin-top: 4.37rem;
+        // margin-bottom: 5rem;
+        img {
+          width: 12rem;
+        }
+        p {
+          color: #fff;
+          font-size: 1rem;
+          margin-top: 1.88rem;
+          line-height: 1.3rem;
+          text-align: center;
+        }
+      }
+      .copyright {
+        display: grid;
+        place-items: center;
+        margin-top: 5.37rem;
 
-          p {
-            margin-top: 0.94rem;
-            text-align: left;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: $A-darkerblue;
-          }
-          .name {
-            display: flex;
-            justify-content: right;
-            margin-top: 1.5rem;
-            font-size: 0.8rem;
-            line-height: 1.3rem;
-            color: $A-darkerblue;
-
-            hr {
-
-              width: 3rem;
-            }
+        p {
+          color: #fff;
+          font-size: 0.88rem;
+          margin-top: 1.88rem;
+          line-height: 1.3rem;
+          text-align: center;
+          a {
+            color: $A-lightblue;
           }
         }
       }
     }
   }
   @include responsive($md) {
-    .testimonial {
+    .footer {
       .container {
-        .wrapper {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-          .testmonial-card,
-          .testmonial-card1 {
-            width: 25rem;
-         
-            p {
-              font-size: 0.9rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  @include responsive($xl) {
-    .testimonial {
-      margin-top: 10rem;
-      .container {
-        .wrapper {
-          display: flex;
-          gap: 1rem;
-          .testmonial-card,
-          .testmonial-card1 {
-            p {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  .blog {
-    margin-top: 8rem;
-   margin-bottom: 8rem;
-    .container {
-      h2 {
-        @extend .title;
-        text-align: center;
-        font-weight: 600;
-      }
-      p {
-        @extend .text;
-        margin-top: 0.94rem;
-        text-align: center;
-        line-height: 1.13rem;
-        font-size: 0.8rem;
-        color: $A-grey;
-      }
-      .news {
-        margin-top: 7rem;
-        .title {
-          background: $A-lightblue;
-          padding: 1rem;
-          margin-top: 4rem;
-          h2 {
-            @extend .title;
-
-            margin-top: 0.94rem;
-            text-align: left;
-
-            color: #fff;
-          }
-        }
-        .full-news {
-          margin-top: 0.5rem;
-          background: #fff;
-          padding: 2rem;
-          p {
-            @extend .text;
-            color: $A-darkerblue;
-            text-align: left;
-          }
-
-          .link {
-            margin-top: 2rem;
+        .footer-wrapper {
+          .footer-link-container {
             display: flex;
-            align-items: center;
+            // align-items: center;
 
-            p {
-              @extend .text;
-              margin-top: 0rem;
+            .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              place-items: center;
+              .map {
+                margin-top: 4.37rem;
+                img {
+                  width: 50rem;
+                }
+              }
+              .desti {
+                .desti-title {
+                  text-align: center;
+                }
+                .desti-list {
+                  text-align: left;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
 
-              font-size: 1rem;
-              color: $A-darkerblue;
-              font-weight: 400;
+                  div {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.3rem;
+                    margin-top: 0.98rem;
+                    .footer-link {
+                      a {
+                        font-size: .8rem;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
-      }
-      .blog-post {
-        margin-top: 4rem;
-        background: $A-lightblue;
-        padding: 2rem;
-        h2 {
-          @extend .title;
 
-          margin-top: 0.94rem;
-          text-align: left;
-
-          color: #fff;
-        }
-        p {
-          @extend .text;
-          margin-top: 1rem;
-          font-size: 1rem;
-          color: #fff;
-          text-align: left;
-          font-weight: 400;
-        }
-        .link {
-          margin-top: 2rem;
-          display: flex;
-          align-items: center;
-
-          p {
-            @extend .text;
-            margin-top: 0rem;
-            font-size: 1rem;
-            color: #fff;
-            font-weight: 400;
-          }
-        }
-        .bottom-poll {
-          display: flex;
-          justify-content: center;
-          margin-top: 2rem;
-          margin-bottom: -5.38rem;
+        .lower {
           img {
-            width: 5rem;
+            width: 15rem;
           }
         }
       }
     }
   }
   @include responsive($lg) {
-    .blog {
+    .footer {
+      margin-top: 8.13rem;
       .container {
-        .wrapper {
-          gap: 1rem;
+        .footer-wrapper {
+          .footer-link-container {
+            place-items: center;
+            .upper {
+              gap: 4rem;
+              .desti {
+                .desti-title {
+                  text-align: center;
+                }
+                .desti-list {
+                  text-align: center;
+                  margin-top: 0.98rem;
+                  margin-bottom: 0.98rem;
+                }
+              }
+            }
+          }
+        }
+
+        .lower {
+          margin-bottom: 0rem;
           display: flex;
+          justify-content: space-between;
+          img {
+            margin-bottom: 1rem;
+            // width: 20rem;
+          }
+          p {
+            font-size: 1.3rem;
+          }
         }
       }
     }
   }
   @include responsive($xl) {
-    .blog {
+    .footer {
       margin-top: 10rem;
       .container {
-        .sub-title {
-          margin-top: 1.5rem;
-          font-size: 1rem;
-          margin-left: 25rem;
-          margin-right: 25rem;
-        }
-        .blog-post {
-          p {
-            margin-top: 4rem;
-            font-size: 1.13rem;
-          }
-          .link {
-            margin-top: 10rem;
+        .footer-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 5rem;
+          .footer-link-container {
+            .upper {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              align-items: flex-start;
+              gap: 5rem;
+            }
           }
         }
       }
     }
   }
-
+  @include responsive($xxl) {
+    .footer {
+      .container {
+        .footer-wrapper {
+          gap: 10rem;
+          .footer-link-container {
+            .upper {
+              gap: 10rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
