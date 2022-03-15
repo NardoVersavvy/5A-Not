@@ -219,7 +219,7 @@ export default {
       try {
         await axios
           .post(
-            "https://versavvymedia.com/5Aback/",
+            "https://5alawoffice.com/5Aback/",
             {
               action: "search",
               term: this.searchTerm,
@@ -238,7 +238,7 @@ export default {
       try {
         await axios
           .post(
-            "https://versavvymedia.com/5Aback/",
+            "https://5alawoffice.com/5Aback/",
             {
               action: "fetchAll",
             },

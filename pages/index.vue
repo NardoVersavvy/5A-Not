@@ -672,7 +672,7 @@ export default {
       try {
         await axios
           .post(
-            "https://versavvymedia.com/5Aback/",
+            "https://5alawoffice.com/5Aback/",
             {
               action: "search",
               term: this.searchTerm,
@@ -691,7 +691,7 @@ export default {
       try {
         await axios
           .post(
-            "https://versavvymedia.com/5Aback/",
+            "https://5alawoffice.com/5Aback/",
             {
               action: "fetchAll",
             },
@@ -843,19 +843,8 @@ export default {
         border-radius: 10px;
         border-color: $A-green;
         img {
-          width: 7rem;
-          object-fit: cover;
-          filter: grayscale(100%);
-          -webkit-filter: grayscale(100%);
-          -moz-filter: grayscale(100%);
-          &:hover {
-            filter: grayscale(0%);
-            -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-          }
+         
+         
         }
       }
     }

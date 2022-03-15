@@ -264,7 +264,7 @@ s0.parentNode.insertBefore(s1,s0);
   methods: {
     async search(){
       try {
-        await axios.post("https://versavvymedia.com/5Aback/", {
+        await axios.post("https://5alawoffice.com/5Aback/", {
           action: "search",
           term: this.searchTerm
         }, config).then(res => {
@@ -281,7 +281,7 @@ s0.parentNode.insertBefore(s1,s0);
       try {
         await axios
           .post(
-            "https://versavvymedia.com/5Aback/",
+            "https://5alawoffice.com/5Aback/",
             {
               action: "fetchAll",
             },
