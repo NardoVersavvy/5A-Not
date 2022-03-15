@@ -139,7 +139,7 @@
           </div>
           </a>
         
-<a href="employee">
+<a href="mining">
 <div class="practice-card" data-aos="zoom-out">
             <div class="practice-title">
               <svg
@@ -275,7 +275,7 @@
               <p class="prac-title">Coporates</p>
             </div>
             <p>
-             5A Jurists Consultancy Group regularly works with domestic and international clients on business formation and financing as well as myriad corporate transactions, contracts, securities, mergers, acquisitions, and joint ventures. Our clients have come to rely on our practical problem-solving skills 
+             5A Jurists Consultancy Group regularly works with domestic and international clients on business formation and financing as well as myriad corporate transactions, contracts, securities, mergers, acquisitions, and joint ventures. Our clients have come to rely 
             </p>
           </div>
           </a>

@@ -752,7 +752,9 @@ s0.parentNode.insertBefore(s1,s0);
       }
     }
   }
-
+.space{
+  margin-top: 8rem;
+}
   .pop-up {
     position: fixed;
     top: 0;
