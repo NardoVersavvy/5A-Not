@@ -490,7 +490,7 @@
         >
           <img src="../assets/Image/FRI-EL ETHIOPIA1.svg" alt="" />
           <img src="../assets/Image/TCT.svg" alt="" />
-          <img src="../assets/Image/client2.svg" alt="" />
+          <!-- <img src="../assets/Image/client2.svg" alt="" /> -->
         </div>
       </div>
     </section>
