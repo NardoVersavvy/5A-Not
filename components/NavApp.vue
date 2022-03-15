@@ -1,133 +1,115 @@
 <template>
-    
-      <nav class="nav" id="nav">
-        <div class="container banner">
-          <div class="logo">
-            <img src="../assets/Icons/Logo.svg" alt="" />
-          </div>
-          <div class="menu-bar menu">
-            <hr />
-            <hr />
-            <hr />
-          </div>
+  <nav class="nav" id="nav">
+    <div class="container banner">
+      <div class="logo">
+        <img src="../assets/Icons/Logo.svg" alt="" />
+      </div>
+      <div class="menu-bar menu">
+        <hr />
+        <hr />
+        <hr />
+      </div>
 
-          <div class="links-container">
-            <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
-            <div class="upper-nav">
-              <p>Contact@5alawoffice.com | +25116504949</p>
-              <ul>
-                <li>
-                  <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/twitter.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/google.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/youtube.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-              <div class="social"></div>
-            </div>
-            <ul class="nav-links">
-              <li><a href="" class="scroll-link"> Home</a></li>
-              <li class="drop">
-                <a href="practice" class="scroll-link drop-down-link"
-                  >Sector & Practice Area</a
-                >
-                <ul class="sublinks">
-                  <div class="corp-link">
-                    <li>
-                      <a href="coporate"> Coporate and Commercial</a>
-                    </li>
-
-                    <li><a href="power"> Power and Energy</a></li>
-                    <li><a href="telecom">ICT & Telecom</a></li>
-
-                    <li>
-                      <a href="charity">Charities & Nonprofit </a>
-                    </li>
-                      <li>
-                      <a href="mining">Mining</a>
-                    </li>
-                    <li>
-                      <a href="employee">Employement and Immigration</a>
-                    </li>
-                     
-                    <li><a href="tax"> Taxation</a></li>
-                  </div>
-                </ul>
-              </li>
-
-              <li>
-                <a href="team" class="scroll-link">Teams</a>
-              </li>
-              <li class="drop">
-                <a href="insight" class="scroll-link drop-down-link"
-                  >Insight</a
-                >
-                <ul class="sublinks2">
-                  <div class="corp-link">
-                    <li>
-                      <a href="publication"> Publication</a>
-                    </li>
-                    <li><a href="news">News</a></li>
-                    <li><a href="blog">Blog</a></li>
-                    <li><a href="journal">Journal</a></li>
-                  </div>
-                </ul>
-              </li>
-              <li>
-                <a href="about" class="scroll-link">About Us</a>
-              </li>
-              <li><a href="contact" class="scroll-link">Contact Us</a></li>
-              <li>
-                <!-- <a href="publication"><img src="../assets/Icons/search1.svg" class="search" alt="" /></a>  -->
-                <div class="input-container">
-                  <button
-                    @click="search"
-                    type="submit"
-                    name="submit"
-                    class="search-button"
-                  >
-                    <img
-                      src="../assets/Icons/search1.svg"
-                      class="icon"
-                      alt=""
-                    />
-                  </button>
-                  <input
-                    class="input-field"
-                    type="search"
-                    v-model="searchTerm"
-                    placeholder="Search..."
-                    name="search"
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
+      <div class="links-container">
+        <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
+        <div class="upper-nav">
+          <p>Contact@5alawoffice.com | +25116504949</p>
+          <ul>
+            <li>
+              <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/Icons/twitter.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/Icons/facebook.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/Icons/google.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/Icons/linkedin.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""><img src="../assets/Icons/youtube.svg" alt="" /> </a>
+            </li>
+          </ul>
+          <div class="social"></div>
         </div>
-      </nav>
-   
+        <ul class="nav-links">
+          <li><a href="" class="scroll-link"> Home</a></li>
+          <li class="drop">
+            <a href="practice" class="scroll-link drop-down-link"
+              >Sector & Practice Area</a
+            >
+            <ul class="sublinks">
+              <div class="corp-link">
+                <li>
+                  <a href="coporate"> Coporate and Commercial</a>
+                </li>
+
+                <li><a href="power"> Power and Energy</a></li>
+                <li><a href="telecom">ICT & Telecom</a></li>
+
+                <li>
+                  <a href="charity">Charities & Nonprofit </a>
+                </li>
+                <li>
+                  <a href="mining">Mining</a>
+                </li>
+                <li>
+                  <a href="employee">Employement and Immigration</a>
+                </li>
+
+                <li><a href="tax"> Taxation</a></li>
+              </div>
+            </ul>
+          </li>
+
+          <li>
+            <a href="team" class="scroll-link">Teams</a>
+          </li>
+          <li class="drop">
+            <a href="insight" class="scroll-link drop-down-link">Insight</a>
+            <ul class="sublinks2">
+              <div class="corp-link">
+                <li>
+                  <a href="publication"> Publication</a>
+                </li>
+                <li><a href="news">News</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="journal">Journal</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="about" class="scroll-link">About Us</a>
+          </li>
+          <li><a href="contact" class="scroll-link">Contact Us</a></li>
+          <li>
+            <!-- <a href="publication"><img src="../assets/Icons/search1.svg" class="search" alt="" /></a>  -->
+            <div class="input-container">
+              <button
+                @click="search"
+                type="submit"
+                name="submit"
+                class="search-button"
+              >
+                <img src="../assets/Icons/search1.svg" class="icon" alt="" />
+              </button>
+              <input
+                class="input-field"
+                type="search"
+                v-model="searchTerm"
+                placeholder="Search..."
+                name="search"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -258,8 +240,8 @@ export default {
 </script>
 
 <style lang="scss">
-.body-main{
-    .show-links,
+.body-main {
+  .show-links,
   .show-links2 {
     display: flex !important;
   }
@@ -273,145 +255,145 @@ export default {
     z-index: 999999;
   }
 
-    nav {
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-          margin-top: 1rem;
-          img {
-            width: 11rem;
-          }
+  nav {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        margin-top: 1rem;
+        img {
+          width: 11rem;
         }
-        .menu-bar {
-          margin-top: 1rem;
-          hr {
-            margin: auto;
-            margin-top: 0.5rem;
-            color: $A-white;
-            border-style: solid;
-            width: 2.35rem;
-          }
+      }
+      .menu-bar {
+        margin-top: 1rem;
+        hr {
+          margin: auto;
+          margin-top: 0.5rem;
+          color: $A-white;
+          border-style: solid;
+          width: 2.35rem;
         }
-        .links-container {
-          position: fixed;
-          top: 0;
-          right: -70vw;
-          height: 100vh;
-          width: 70vw;
-          background: $A-darkerblue;
-          z-index: 9999999999;
-          transition: $trans;
-          .upper-nav {
-            display: none;
+      }
+      .links-container {
+        position: fixed;
+        top: 0;
+        right: -70vw;
+        height: 100vh;
+        width: 70vw;
+        background: $A-darkerblue;
+        z-index: 9999999999;
+        transition: $trans;
+        .upper-nav {
+          display: none;
+        }
+        .close-btn {
+          padding: 1rem;
+          width: 5rem;
+          position: absolute;
+          top: 0rem;
+          right: 0rem;
+        }
+        .nav-links {
+          height: 50%;
+          padding-top: 25rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding-left: 2rem;
+          .drop-down2 {
+            a {
+              color: #fff;
+            }
           }
-          .close-btn {
-            padding: 1rem;
-            width: 5rem;
-            position: absolute;
-            top: 0rem;
-            right: 0rem;
-          }
-          .nav-links {
-            height: 50%;
-            padding-top: 25rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-left: 2rem;
-            .drop-down2 {
-              a {
+          li {
+            margin-bottom: 0.5rem;
+            .input-container {
+              display: flex;
+              flex-direction: row-reverse;
+              width: 13rem;
+              height: 0.4rem;
+              margin-bottom: 0rem;
+              margin-right: -3rem;
+              margin-left: -1rem;
+              .search-button {
+                background: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+              }
+              .icon {
+                height: 2.1rem;
+                padding: 5px;
+
+                min-width: 50px;
+                // background: #fff;
+                border: 2px solid $A-white;
+                border-start-end-radius: 20px;
+                border-end-end-radius: 20px;
+                border-left: none;
+              }
+              ::placeholder {
                 color: #fff;
+                opacity: 1; /* Firefox */
+              }
+              :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #fff;
+              }
+              ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #fff;
+              }
+              .input-field {
+                width: 100%;
+                padding: 15px;
+                color: $A-white;
+                font-size: 1rem;
+                outline: none;
+                background: none;
+                border-style: solid;
+                border-color: $A-white;
+                border-start-start-radius: 20px;
+                border-end-start-radius: 20px;
+                border-right: none;
               }
             }
-            li {
-              margin-bottom: 0.5rem;
-              .input-container {
-                display: flex;
-                flex-direction: row-reverse;
-                width: 13rem;
-                height: 0.4rem;
-                margin-bottom: 0rem;
-                margin-right: -3rem;
-                margin-left: -1rem;
-                .search-button {
-                  background: none;
-                  border: none;
-                  padding: 0;
-                  margin: 0;
-                }
-                .icon {
-                  height: 2.1rem;
-                  padding: 5px;
+            .scroll-link {
+              @extend .text-medium;
+              font-size: 1rem;
+              color: #fff;
+            }
+            .sublinks,
+            .sublinks2 {
+              margin: 1rem 0;
 
-                  min-width: 50px;
-                  // background: #fff;
-                  border: 2px solid $A-white;
-                  border-start-end-radius: 20px;
-                  border-end-end-radius: 20px;
-                  border-left: none;
-                }
-                ::placeholder {
-                  color: #fff;
-                  opacity: 1; /* Firefox */
-                }
-                :-ms-input-placeholder {
-                  /* Internet Explorer 10-11 */
-                  color: #fff;
-                }
-                ::-ms-input-placeholder {
-                  /* Microsoft Edge */
-                  color: #fff;
-                }
-                .input-field {
-                  width: 100%;
-                  padding: 15px;
-                  color: $A-white;
-                  font-size: 1rem;
-                  outline: none;
-                  background: none;
-                  border-style: solid;
-                  border-color: $A-white;
-                  border-start-start-radius: 20px;
-                  border-end-start-radius: 20px;
-                  border-right: none;
-                }
-              }
-              .scroll-link {
-                @extend .text-medium;
+              color: $A-green;
+
+              h3 {
+                font-family: "medium bt";
+                font-weight: 500;
                 font-size: 1rem;
-                color: #fff;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
               }
-              .sublinks,
-              .sublinks2 {
-                margin: 1rem 0;
+              img {
+                width: 1.2rem;
+              }
+              li {
+                margin-bottom: 0.5rem;
+                margin-left: 1rem;
 
-                color: $A-green;
-                h3 {
-                  font-family: "medium bt";
-                  font-weight: 500;
-                  font-size: 1rem;
-                  line-height: 1.5rem;
-                  margin-bottom: 1rem;
-                }
-                img {
-                  width: 1.2rem;
-                }
-                li {
-                  margin-bottom: 0.5rem;
-                  margin-left: 1rem;
-
-                  a {
-                    font-family: "light bt";
-                    font-size: 0.88rem;
-                    display: flex;
-                    gap: 0.5rem;
-                    color: $A-white;
-                    transition: color 0.2s linear;
-                    img {
-                      width: 0.5rem;
-                    }
+                a {
+                  font-family: "light bt";
+                  font-size: 0.88rem;
+                  display: flex;
+                  gap: 0.5rem;
+                  color: $A-white;
+                  transition: color 0.2s linear;
+                  img {
+                    width: 0.5rem;
                   }
                 }
               }
@@ -420,7 +402,8 @@ export default {
         }
       }
     }
- 
+  }
+
   @include responsive($md) {
     header {
       .mid-moto {
@@ -448,143 +431,137 @@ export default {
     }
   }
   @include responsive($lg) {
-  
-      nav {
-        .container {
-          .links-container {
-            width: 30vh;
-            .close-btn {
-              width: 6rem;
-            }
-            .nav-links {
-              padding-top: 15rem;
-            }
+    nav {
+      .container {
+        .links-container {
+          width: 30vh;
+          .close-btn {
+            width: 6rem;
+          }
+          .nav-links {
+            padding-top: 15rem;
           }
         }
       }
-   
-    
+    }
   }
   @include responsive($xl) {
-   
-      nav {
-        .container {
-          .logo {
-            img {
-              width: 15rem;
-            }
+    nav {
+      .container {
+        .logo {
+          img {
+            width: 15rem;
           }
-          .menu-bar {
+        }
+        .menu-bar {
+          display: none;
+        }
+        .links-container {
+          display: block;
+          position: static;
+          // width: 50%;
+          height: auto;
+          z-index: 9999999999;
+          transition: $trans;
+          background: none;
+          width: auto;
+          .close-btn {
             display: none;
           }
-          .links-container {
-            display: block;
-            position: static;
-            // width: 50%;
+          .upper-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            padding-left: 2rem;
+            gap: 3rem;
+            p {
+              color: #fff;
+              font-size: 1rem;
+            }
+            ul {
+              display: flex;
+              gap: 1rem;
+            }
+          }
+
+          .nav-links {
             height: auto;
-            z-index: 9999999999;
-            transition: $trans;
-            background: none;
-            width: auto;
-            .close-btn {
-              display: none;
-            }
-            .upper-nav {
-              display: flex;
-              justify-content: space-between;
-              margin-top: 1.5rem;
-              padding-left: 2rem;
-              gap: 3rem;
-              p {
+            display: flex;
+            padding-top: 0%;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            li {
+              .scroll-link {
                 color: #fff;
-                font-size: 1rem;
               }
-              ul {
-                display: flex;
-                gap: 1rem;
+              a {
+                font-size: 0.8rem;
+
+                &:hover {
+                  color: $A-green;
+                  font-size: 1rem;
+                  font-weight: 600;
+                }
               }
             }
 
-            .nav-links {
-              height: auto;
-              display: flex;
-              padding-top: 0%;
-              flex-direction: row;
-              gap: 2rem;
-              margin-top: 1rem;
-              padding-left: 2rem;
-              position: relative;
-              li {
-                .scroll-link {
-                  color: #fff;
+            .drop {
+              .sublinks,
+              .sublinks2 {
+                position: absolute;
+                width: auto;
+                background: rgba(104, 133, 77, 0.5);
+                padding: 1.2rem 1rem 1rem 0.5rem;
+                border-radius: 1rem;
+                display: none;
+                top: 60px;
+                h3 {
+                  font-size: 1.13rem;
+                  margin-bottom: 1.2rem;
                 }
-                a {
-                  font-size: .8rem;
+                li {
+                  margin-bottom: 1rem;
 
-                  &:hover {
-                    color: $A-green;
+                  width: 170px;
+                  float: none;
+                  display: list-item;
+                  position: relative;
+                  a {
+                    color: $A-white;
+                    opacity: 1;
+
                     font-size: 1rem;
-                    font-weight: 600;
                   }
                 }
               }
+              &:hover {
+                cursor: pointer;
 
-              .drop {
-                .sublinks, .sublinks2 {
+                .sublinks {
+                  display: block;
+                  margin-top: -1.8rem;
+
+                  width: 450px;
+                  left: 5.5rem;
                   position: absolute;
-                  width: auto;
-               
-                  background: $A-green;
-                  padding: 1.2rem 1rem 1rem 0.5rem;
-                  border-radius: 1rem;
-                  display: none;
-                  top: 60px;
-                  h3 {
-                    font-size: 1.13rem;
-                    margin-bottom: 1.2rem;
-                  }
-                  li {
-                    margin-bottom: 1rem;
-
-                    width: 170px;
-                    float: none;
-                    display: list-item;
-                    position: relative;
-                    a {
-                      color: $A-white;
-                      font-size: 1rem;
-                    }
-                  }
                 }
-                  &:hover {
-                       cursor: pointer;
-      
-        .sublinks{
-                    display: block;
-          margin-top: -1.8rem;
-          
-          width: 450px;
-         left: 5.5rem;
-          position: absolute;
-        }
-         .sublinks2{
-                    display: block;
-         margin-top: -1.8rem;
-          
-          width: 200px;
-         left: 21rem;
-          position: absolute;
-        }
-                  }
+                .sublinks2 {
+                  display: block;
+                  margin-top: -1.8rem;
+
+                  width: 200px;
+                  left: 21rem;
+                  position: absolute;
+                }
               }
             }
           }
         }
       }
-      
-    
+    }
   }
 }
-
-
 </style>

@@ -842,9 +842,20 @@ export default {
         gap: 2rem;
         border-radius: 10px;
         border-color: $A-green;
-        img {
-         
-         
+        img {  
+          width: 20rem;
+          object-fit: cover;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+          }
         }
       }
     }
