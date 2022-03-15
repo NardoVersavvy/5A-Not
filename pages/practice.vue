@@ -17,7 +17,7 @@
         </div>
       </div>
     </header>
-    <section class="description">
+       <section class="description">
       <div class="container">
         <div class="desc">
           <p>
@@ -26,14 +26,14 @@
           </p>
         </div>
         <div class="link">
-          <a href="#">
+          <a href="about">
             <img
               src="../assets/Icons/nav-arrow.svg"
               class="right-arrow"
               alt=""
             />
           </a>
-          <p>Learn More About 5A</p>
+          <p><a href="about"> Learn More About 5A</a></p>
         </div>
         <div class="hover"></div>
       </div>
@@ -876,11 +876,13 @@ s0.parentNode.insertBefore(s1,s0);
         //   }
         // }
         p {
-          @extend .text;
+          a {
+            @extend .text;
 
-          font-size: 0.8rem;
-          color: $A-green;
-          font-weight: 400;
+            font-size: 0.8rem;
+            color: $A-green;
+            font-weight: 400;
+          }
         }
       }
     }
@@ -950,10 +952,11 @@ s0.parentNode.insertBefore(s1,s0);
       }
     }
   }
-   @include responsive($xxl) {
+  @include responsive($xxl) {
     .description {
-      margin-left: 40rem;}
-   }
+      margin-left: 40rem;
+    }
+  }
   .area-sample {
     margin-top: 8rem;
     position: relative;

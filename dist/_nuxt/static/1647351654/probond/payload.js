@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/probond", {data:[{}],fetch:{},mutations:void 0});

@@ -513,7 +513,7 @@ export default {
               .sublinks2 {
                 position: absolute;
                 width: auto;
-                background: rgba(104, 133, 77, 0.5);
+                background: rgba(104, 133, 77, 0.8);
                 padding: 1.2rem 1rem 1rem 0.5rem;
                 border-radius: 1rem;
                 display: none;

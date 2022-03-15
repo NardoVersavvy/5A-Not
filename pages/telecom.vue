@@ -5,7 +5,7 @@
       <div class="mid-title">
         <div
           class="wrapper"
-          data-aos="slide-left"
+          data-aos="slide-right"
           data-aos-offset="20"
           data-aos-delay="50"
           data-aos-duration="1000"

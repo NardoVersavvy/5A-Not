@@ -404,6 +404,7 @@ Message
         </div>
       </div>
     </section>
+    <section class="space"></section>
     <FooterApp />
   </div>
 </template>

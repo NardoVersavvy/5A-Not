@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="link">
-          <a href="#">
+          <a href="about">
             <img
               src="../assets/Icons/nav-arrow.svg"
               class="right-arrow"
