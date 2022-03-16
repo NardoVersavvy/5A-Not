@@ -85,7 +85,7 @@
                 service to you for decades to come.
               </p>
               <div class="button">
-                <a href="" class="btn btn-rounded-lightblue">Contact Today</a>
+                <a href="contact" class="btn btn-rounded-lightblue">Contact Today</a>
               </div>
             </div>
           </div>
